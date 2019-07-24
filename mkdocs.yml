@@ -1,0 +1,45 @@
+# Main
+site_name: ICPC.NINJA
+site_description: 'Solutions to Competitive Programming Problems'
+site_author: 'JCHRYS'
+#site_url: ''
+
+# Repo
+repo_name: 'jchrys/icpc'
+#repo_url: 'https://github.com/jchrys/icpc'
+
+
+# Theme
+theme:
+  name: 'material'
+  language: 'en'
+
+# CDN Dependencies
+extra_css:
+  - 'https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css'
+extra_javascript:
+  - 'https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js'
+  - 'https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js'
+
+# pymdownx
+markdown_extensions:
+  - codehilite:
+      linenums: true
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - admonition
+  - footnotes
+  - meta
+
+# Copyright
+copyright: 'jchrys &copy;2019~'
+
+
+# TABLE OF CONTENTS
+nav:
+    - Home: index.md
+    - Algorithms: PlaceHolder.md
+    - DataStructures: 
+        - Hash Tables:
+            - Preface: PlaceHolder.md
+            - Hash Functions: DataStructures/HashTables/HashFunctions.md
