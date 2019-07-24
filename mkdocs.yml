@@ -2,7 +2,7 @@
 site_name: ICPC.NINJA
 site_description: 'Solutions to Competitive Programming Problems'
 site_author: 'JCHRYS'
-#site_url: ''
+site_url: 'https://icpc.ninja'
 
 # Repo
 repo_name: 'jchrys/icpc'
