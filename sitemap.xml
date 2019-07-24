@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>http://icpc.ninja/</loc>
+     <loc>https://jchrys.girhub.io/icpc/</loc>
      <lastmod>2019-07-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://icpc.ninja/PlaceHolder/</loc>
+     <loc>https://jchrys.girhub.io/icpc/PlaceHolder/</loc>
      <lastmod>2019-07-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://icpc.ninja/PlaceHolder/</loc>
+     <loc>https://jchrys.girhub.io/icpc/PlaceHolder/</loc>
      <lastmod>2019-07-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://icpc.ninja/DataStructures/HashTables/HashFunctions/</loc>
+     <loc>https://jchrys.girhub.io/icpc/DataStructures/HashTables/HashFunctions/</loc>
      <lastmod>2019-07-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
