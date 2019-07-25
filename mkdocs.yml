@@ -54,5 +54,5 @@ nav:
     - DataStructures: 
         - Stack: DataStructures/Stack.md
         - Hash Tables:
-            - Preface: PlaceHolder.md
+            - Preface: DataStructures/HashTables/Preface.md
             - Hash Functions: DataStructures/HashTables/HashFunctions.md
