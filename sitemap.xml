@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://icpc.ninja/</loc>
-     <lastmod>2019-07-25</lastmod>
+     <lastmod>2019-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Emoji/</loc>
-     <lastmod>2019-07-25</lastmod>
+     <lastmod>2019-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/PlaceHolder/</loc>
-     <lastmod>2019-07-25</lastmod>
+     <lastmod>2019-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/Stack/</loc>
-     <lastmod>2019-07-25</lastmod>
+     <lastmod>2019-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://icpc.ninja/PlaceHolder/</loc>
-     <lastmod>2019-07-25</lastmod>
+     <loc>https://icpc.ninja/DataStructures/HashTables/Preface/</loc>
+     <lastmod>2019-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/HashTables/HashFunctions/</loc>
-     <lastmod>2019-07-25</lastmod>
+     <lastmod>2019-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
