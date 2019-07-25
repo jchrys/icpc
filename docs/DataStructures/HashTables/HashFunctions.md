@@ -7,8 +7,7 @@ A hash function is any function that can be used to map data of arbitrary size o
 >this algorithm (k=33) was first reported by dan bernstein many years ago in comp.lang.c. another version of this algorithm (now favored by bernstein) uses xor: hash(i) = hash(i-1) * 33 ^ str[i]; the magic of number 33 (why it works better than many other constants, prime or not) has never adequately explained
 
 ```cpp
-    #define ll unsigned long long
-
+    #define ll unsigned long long 
     unsigned long long djb2(char *str) {
         unsigned long long hash = 5381;
         int c;
@@ -58,3 +57,4 @@ ll loseLose(char *str) {
 }
 
 ```
+

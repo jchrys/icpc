@@ -16,8 +16,10 @@ theme:
 
 # CDN Dependencies
 extra_css:
+  - 'css/katex.css'
   - 'https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css'
 extra_javascript:
+  - 'js/katex.js'
   - 'https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js'
   - 'https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js'
 
@@ -40,6 +42,7 @@ nav:
     - Home: index.md
     - Algorithms: PlaceHolder.md
     - DataStructures: 
+        - Stack: DataStructures/Stack.md
         - Hash Tables:
             - Preface: PlaceHolder.md
             - Hash Functions: DataStructures/HashTables/HashFunctions.md
