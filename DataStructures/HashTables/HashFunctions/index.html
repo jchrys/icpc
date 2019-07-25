@@ -63,6 +63,8 @@
     <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
     
     
+      <link rel="stylesheet" href="../../../css/katex.css">
+    
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css">
     
     
@@ -265,18 +267,30 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../../Stack/" title="Stack" class="md-nav__link">
+      Stack
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
     
-    <label class="md-nav__link" for="nav-3-1">
+    <label class="md-nav__link" for="nav-3-2">
       Hash Tables
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-1">
+      <label class="md-nav__title" for="nav-3-2">
         Hash Tables
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -461,17 +475,15 @@
 <blockquote>
 <p>this algorithm (k=33) was first reported by dan bernstein many years ago in comp.lang.c. another version of this algorithm (now favored by bernstein) uses xor: hash(i) = hash(i-1) * 33 ^ str[i]; the magic of number 33 (why it works better than many other constants, prime or not) has never adequately explained</p>
 </blockquote>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>    <span class="cp">#define ll unsigned long long</span>
-
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>    <span class="cp">#define ll unsigned long long </span>
     <span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="nf">djb2</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">str</span><span class="p">)</span> <span class="p">{</span>
         <span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">hash</span> <span class="o">=</span> <span class="mi">5381</span><span class="p">;</span>
         <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
@@ -608,6 +620,8 @@
       <script src="../../../assets/javascripts/application.245445c6.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+        <script src="../../../js/katex.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js"></script>
       
