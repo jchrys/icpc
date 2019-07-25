@@ -331,6 +331,33 @@
     Hash Functions
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-djb2" title="1. DJB2" class="md-nav__link">
+    1. DJB2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-sdbm" title="2. sdbm" class="md-nav__link">
+    2. sdbm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-lose-lose" title="3. lose lose" class="md-nav__link">
+    3. lose lose
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -379,6 +406,33 @@
     Hash Functions
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-djb2" title="1. DJB2" class="md-nav__link">
+    1. DJB2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-sdbm" title="2. sdbm" class="md-nav__link">
+    2. sdbm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-lose-lose" title="3. lose lose" class="md-nav__link">
+    3. lose lose
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
       
@@ -403,41 +457,92 @@
                 <h1 id="hash-function">Hash Function</h1>
 <p>A hash function is any function that can be used to map data of arbitrary size onto data of a fixed size.</p>
 <h2 id="hash-functions">Hash Functions</h2>
-<ol>
-<li>
-<p>DJB2</p>
-</li>
-<li>
-<p>C++</p>
-</li>
-</ol>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="nf">djb2</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">str</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">hash</span> <span class="o">=</span> <span class="mi">5381</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
-    <span class="k">while</span> <span class="p">((</span><span class="n">c</span> <span class="o">=</span> <span class="o">*</span><span class="p">(</span><span class="n">str</span><span class="o">++</span><span class="p">)))</span> <span class="p">{</span>
-        <span class="n">hash</span> <span class="o">=</span> <span class="p">(</span><span class="n">hash</span> <span class="o">&lt;&lt;</span> <span class="mi">5</span><span class="p">)</span> <span class="o">+</span> <span class="n">hash</span> <span class="o">+</span> <span class="n">c</span><span class="p">;</span>
+<h3 id="1-djb2">1. DJB2 <a href="http://www.cse.yorku.ca/~oz/hash.html"><img alt="🐛" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f41b.svg" title=":bug:" /></a></h3>
+<blockquote>
+<p>this algorithm (k=33) was first reported by dan bernstein many years ago in comp.lang.c. another version of this algorithm (now favored by bernstein) uses xor: hash(i) = hash(i-1) * 33 ^ str[i]; the magic of number 33 (why it works better than many other constants, prime or not) has never adequately explained</p>
+</blockquote>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>    <span class="cp">#define ll unsigned long long</span>
+
+    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="nf">djb2</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">str</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">hash</span> <span class="o">=</span> <span class="mi">5381</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
+        <span class="k">while</span> <span class="p">((</span><span class="n">c</span> <span class="o">=</span> <span class="o">*</span><span class="p">(</span><span class="n">str</span><span class="o">++</span><span class="p">)))</span> <span class="p">{</span>
+            <span class="n">hash</span> <span class="o">=</span> <span class="p">(</span><span class="n">hash</span> <span class="o">&lt;&lt;</span> <span class="mi">5</span><span class="p">)</span> <span class="o">+</span> <span class="n">hash</span> <span class="o">+</span> <span class="n">c</span><span class="p">;</span> <span class="c1">//equivalent to hash = hash * 33 + c;</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">hash</span><span class="p">;</span>
     <span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="2-sdbm">2. sdbm <a href="http://www.cse.yorku.ca/~oz/hash.html"><img alt="🐛" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f41b.svg" title=":bug:" /></a></h3>
+<blockquote>
+<p>this algorithm was created for sdbm (a public-domain reimplementation of ndbm) database library. it was found to do well in scrambling bits, causing better distribution of the keys and fewer splits. it also happens to be a good general hashing function with good distribution. the actual function is hash(i) = hash(i - 1) * 65599 + str[i];; what is included below is faster version used in gawk. (there iseven a faster, duff's device version) the magic constant 65599 was picked out of thin air while experimenting with different constants, and turns out to be a prime. this is one of the algorithms used in berkeley db (see sleepy cat) and else where</p>
+</blockquote>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">#define ll unsigned long long</span>
+
+<span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="nf">djb2</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">str</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">hash</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
+
+    <span class="k">while</span> <span class="p">((</span><span class="n">c</span> <span class="o">=</span> <span class="o">*</span><span class="p">(</span><span class="n">str</span><span class="o">++</span><span class="p">)))</span> <span class="p">{</span>
+        <span class="n">hash</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="p">(</span><span class="n">hash</span> <span class="o">&lt;&lt;</span> <span class="mi">6</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">hash</span> <span class="o">&lt;&lt;</span> <span class="mi">16</span><span class="p">)</span> <span class="o">-</span> <span class="n">hash</span><span class="p">;</span> 
+    <span class="p">}</span>
+
     <span class="k">return</span> <span class="n">hash</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </td></tr></table>
 
-<ul>
-<li>JavaScript</li>
-</ul>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kd">function</span> <span class="nx">djb2</span><span class="p">()</span> <span class="p">{</span>
+<h3 id="3-lose-lose">3. lose lose <a href="http://www.cse.yorku.ca/~oz/hash.html"><img alt="🐛" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f41b.svg" title=":bug:" /></a></h3>
+<blockquote>
+<p>This hash function appeared in K&amp;R (1st ed) but at least the reader was warned: "This is not the best possible algorithm, but it has the merit of extreme simplicity". This is an understatement; It is a terrible hashing algorithm, and it could have been much better without scarificing its "extreme simplicity." Many C programmers use this function without actually testing it, or checking something like Knuth's Sorting and searching, so it stuck. It is now found mixed with other respectable code, eg.cnews.</p>
+</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Don't use this algorithm, it's terrible.</p>
+</div>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">#define ll unsigned long long</span>
 
-    <span class="k">return</span> <span class="nx">hash</span><span class="p">;</span>
+<span class="n">ll</span> <span class="nf">loseLose</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">str</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">ll</span> <span class="n">hash</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
+
+    <span class="k">while</span> <span class="p">(</span><span class="n">c</span> <span class="o">=</span> <span class="o">*</span><span class="n">str</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">hash</span> <span class="o">+=</span> <span class="n">c</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">hash</span>
 <span class="p">}</span>
 </pre></div>
 </td></tr></table>
