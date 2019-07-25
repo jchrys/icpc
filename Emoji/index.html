@@ -1,0 +1,1941 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Solutions to Competitive Programming Problems">
+      
+      
+        <link rel="canonical" href="https://icpc.ninja/Emoji/">
+      
+      
+        <meta name="author" content="JCHRYS">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Emoji - ICPC.NINJA</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.0284f74d.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../css/katex.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://icpc.ninja" title="ICPC.NINJA" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              ICPC.NINJA
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Emoji
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/jchrys/icpc/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    jchrys/icpc
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://icpc.ninja" title="ICPC.NINJA" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    ICPC.NINJA
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/jchrys/icpc/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    jchrys/icpc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="Emoji" class="md-nav__link md-nav__link--active">
+      Emoji
+    </a>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../PlaceHolder/" title="Algorithms" class="md-nav__link">
+      Algorithms
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      DataStructures
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        DataStructures
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DataStructures/Stack/" title="Stack" class="md-nav__link">
+      Stack
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Hash Tables
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        Hash Tables
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../PlaceHolder/" title="Preface" class="md-nav__link">
+      Preface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DataStructures/HashTables/HashFunctions/" title="Hash Functions" class="md-nav__link">
+      Hash Functions
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/jchrys/icpc/edit/master/docs/Emoji.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Emoji</h1>
+                
+                <p>People</p>
+<table>
+<thead>
+<tr>
+<th><img align="absmiddle" alt=":bowtie:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/bowtie.png" title=":bowtie:" width="20px" /> <code>:bowtie:</code></th>
+<th><img align="absmiddle" alt=":smile:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f604.png" title=":smile:" width="20px" /> <code>:smile:</code></th>
+<th><img align="absmiddle" alt=":laughing:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f606.png" title=":laughing:" width="20px" /> <code>:laughing:</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img align="absmiddle" alt=":blush:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f60a.png" title=":blush:" width="20px" /> <code>:blush:</code></td>
+<td><img align="absmiddle" alt=":smiley:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f603.png" title=":smiley:" width="20px" /> <code>:smiley:</code></td>
+<td><img align="absmiddle" alt=":relaxed:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/263a.png" title=":relaxed:" width="20px" /> <code>:relaxed:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":smirk:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f60f.png" title=":smirk:" width="20px" /> <code>:smirk:</code></td>
+<td><img align="absmiddle" alt=":heart_eyes:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f60d.png" title=":heart_eyes:" width="20px" /> <code>:heart_eyes:</code></td>
+<td><img align="absmiddle" alt=":kissing_heart:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f618.png" title=":kissing_heart:" width="20px" /> <code>:kissing_heart:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":kissing_closed_eyes:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f61a.png" title=":kissing_closed_eyes:" width="20px" /> <code>:kissing_closed_eyes:</code></td>
+<td><img align="absmiddle" alt=":flushed:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f633.png" title=":flushed:" width="20px" /> <code>:flushed:</code></td>
+<td><img align="absmiddle" alt=":relieved:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f60c.png" title=":relieved:" width="20px" /> <code>:relieved:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":satisfied:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f606.png" title=":satisfied:" width="20px" /> <code>:satisfied:</code></td>
+<td><img align="absmiddle" alt=":grin:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f601.png" title=":grin:" width="20px" /> <code>:grin:</code></td>
+<td><img align="absmiddle" alt=":wink:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f609.png" title=":wink:" width="20px" /> <code>:wink:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":stuck_out_tongue_winking_eye:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f61c.png" title=":stuck_out_tongue_winking_eye:" width="20px" /> <code>:stuck_out_tongue_winking_eye:</code></td>
+<td><img align="absmiddle" alt=":stuck_out_tongue_closed_eyes:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f61d.png" title=":stuck_out_tongue_closed_eyes:" width="20px" /> <code>:stuck_out_tongue_closed_eyes:</code></td>
+<td><img align="absmiddle" alt=":grinning:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f600.png" title=":grinning:" width="20px" /> <code>:grinning:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":kissing:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f617.png" title=":kissing:" width="20px" /> <code>:kissing:</code></td>
+<td><img align="absmiddle" alt=":kissing_smiling_eyes:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f619.png" title=":kissing_smiling_eyes:" width="20px" /> <code>:kissing_smiling_eyes:</code></td>
+<td><img align="absmiddle" alt=":stuck_out_tongue:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f61b.png" title=":stuck_out_tongue:" width="20px" /> <code>:stuck_out_tongue:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":sleeping:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f634.png" title=":sleeping:" width="20px" /> <code>:sleeping:</code></td>
+<td><img align="absmiddle" alt=":worried:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f61f.png" title=":worried:" width="20px" /> <code>:worried:</code></td>
+<td><img align="absmiddle" alt=":frowning:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f626.png" title=":frowning:" width="20px" /> <code>:frowning:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":anguished:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f627.png" title=":anguished:" width="20px" /> <code>:anguished:</code></td>
+<td><img align="absmiddle" alt=":open_mouth:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f62e.png" title=":open_mouth:" width="20px" /> <code>:open_mouth:</code></td>
+<td><img align="absmiddle" alt=":grimacing:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f62c.png" title=":grimacing:" width="20px" /> <code>:grimacing:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":confused:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f615.png" title=":confused:" width="20px" /> <code>:confused:</code></td>
+<td><img align="absmiddle" alt=":hushed:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f62f.png" title=":hushed:" width="20px" /> <code>:hushed:</code></td>
+<td><img align="absmiddle" alt=":expressionless:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f611.png" title=":expressionless:" width="20px" /> <code>:expressionless:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":unamused:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f612.png" title=":unamused:" width="20px" /> <code>:unamused:</code></td>
+<td><img align="absmiddle" alt=":sweat_smile:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f605.png" title=":sweat_smile:" width="20px" /> <code>:sweat_smile:</code></td>
+<td><img align="absmiddle" alt=":sweat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f613.png" title=":sweat:" width="20px" /> <code>:sweat:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":disappointed_relieved:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f625.png" title=":disappointed_relieved:" width="20px" /> <code>:disappointed_relieved:</code></td>
+<td><img align="absmiddle" alt=":weary:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f629.png" title=":weary:" width="20px" /> <code>:weary:</code></td>
+<td><img align="absmiddle" alt=":pensive:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f614.png" title=":pensive:" width="20px" /> <code>:pensive:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":disappointed:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f61e.png" title=":disappointed:" width="20px" /> <code>:disappointed:</code></td>
+<td><img align="absmiddle" alt=":confounded:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f616.png" title=":confounded:" width="20px" /> <code>:confounded:</code></td>
+<td><img align="absmiddle" alt=":fearful:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f628.png" title=":fearful:" width="20px" /> <code>:fearful:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":cold_sweat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f630.png" title=":cold_sweat:" width="20px" /> <code>:cold_sweat:</code></td>
+<td><img align="absmiddle" alt=":persevere:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f623.png" title=":persevere:" width="20px" /> <code>:persevere:</code></td>
+<td><img align="absmiddle" alt=":cry:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f622.png" title=":cry:" width="20px" /> <code>:cry:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":sob:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f62d.png" title=":sob:" width="20px" /> <code>:sob:</code></td>
+<td><img align="absmiddle" alt=":joy:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f602.png" title=":joy:" width="20px" /> <code>:joy:</code></td>
+<td><img align="absmiddle" alt=":astonished:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f632.png" title=":astonished:" width="20px" /> <code>:astonished:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":scream:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f631.png" title=":scream:" width="20px" /> <code>:scream:</code></td>
+<td><img align="absmiddle" alt=":neckbeard:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/neckbeard.png" title=":neckbeard:" width="20px" /> <code>:neckbeard:</code></td>
+<td><img align="absmiddle" alt=":tired_face:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f62b.png" title=":tired_face:" width="20px" /> <code>:tired_face:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":angry:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f620.png" title=":angry:" width="20px" /> <code>:angry:</code></td>
+<td><img align="absmiddle" alt=":rage:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f621.png" title=":rage:" width="20px" /> <code>:rage:</code></td>
+<td><img align="absmiddle" alt=":triumph:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f624.png" title=":triumph:" width="20px" /> <code>:triumph:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":sleepy:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f62a.png" title=":sleepy:" width="20px" /> <code>:sleepy:</code></td>
+<td><img align="absmiddle" alt=":yum:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f60b.png" title=":yum:" width="20px" /> <code>:yum:</code></td>
+<td><img align="absmiddle" alt=":mask:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f637.png" title=":mask:" width="20px" /> <code>:mask:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":sunglasses:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f60e.png" title=":sunglasses:" width="20px" /> <code>:sunglasses:</code></td>
+<td><img align="absmiddle" alt=":dizzy_face:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f635.png" title=":dizzy_face:" width="20px" /> <code>:dizzy_face:</code></td>
+<td><img align="absmiddle" alt=":imp:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f47f.png" title=":imp:" width="20px" /> <code>:imp:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":smiling_imp:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f608.png" title=":smiling_imp:" width="20px" /> <code>:smiling_imp:</code></td>
+<td><img align="absmiddle" alt=":neutral_face:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f610.png" title=":neutral_face:" width="20px" /> <code>:neutral_face:</code></td>
+<td><img align="absmiddle" alt=":no_mouth:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f636.png" title=":no_mouth:" width="20px" /> <code>:no_mouth:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":innocent:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f607.png" title=":innocent:" width="20px" /> <code>:innocent:</code></td>
+<td><img align="absmiddle" alt=":alien:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f47d.png" title=":alien:" width="20px" /> <code>:alien:</code></td>
+<td><img align="absmiddle" alt=":yellow_heart:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f49b.png" title=":yellow_heart:" width="20px" /> <code>:yellow_heart:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":blue_heart:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f499.png" title=":blue_heart:" width="20px" /> <code>:blue_heart:</code></td>
+<td><img align="absmiddle" alt=":purple_heart:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f49c.png" title=":purple_heart:" width="20px" /> <code>:purple_heart:</code></td>
+<td><img align="absmiddle" alt=":heart:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2764.png" title=":heart:" width="20px" /> <code>:heart:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":green_heart:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f49a.png" title=":green_heart:" width="20px" /> <code>:green_heart:</code></td>
+<td><img align="absmiddle" alt=":broken_heart:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f494.png" title=":broken_heart:" width="20px" /> <code>:broken_heart:</code></td>
+<td><img align="absmiddle" alt=":heartbeat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f493.png" title=":heartbeat:" width="20px" /> <code>:heartbeat:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":heartpulse:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f497.png" title=":heartpulse:" width="20px" /> <code>:heartpulse:</code></td>
+<td><img align="absmiddle" alt=":two_hearts:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f495.png" title=":two_hearts:" width="20px" /> <code>:two_hearts:</code></td>
+<td><img align="absmiddle" alt=":revolving_hearts:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f49e.png" title=":revolving_hearts:" width="20px" /> <code>:revolving_hearts:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":cupid:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f498.png" title=":cupid:" width="20px" /> <code>:cupid:</code></td>
+<td><img align="absmiddle" alt=":sparkling_heart:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f496.png" title=":sparkling_heart:" width="20px" /> <code>:sparkling_heart:</code></td>
+<td><img align="absmiddle" alt=":sparkles:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2728.png" title=":sparkles:" width="20px" /> <code>:sparkles:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":star:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2b50.png" title=":star:" width="20px" /> <code>:star:</code></td>
+<td><img align="absmiddle" alt=":star2:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f31f.png" title=":star2:" width="20px" /> <code>:star2:</code></td>
+<td><img align="absmiddle" alt=":dizzy:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4ab.png" title=":dizzy:" width="20px" /> <code>:dizzy:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":boom:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4a5.png" title=":boom:" width="20px" /> <code>:boom:</code></td>
+<td><img align="absmiddle" alt=":collision:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4a5.png" title=":collision:" width="20px" /> <code>:collision:</code></td>
+<td><img align="absmiddle" alt=":anger:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4a2.png" title=":anger:" width="20px" /> <code>:anger:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":exclamation:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2757.png" title=":exclamation:" width="20px" /> <code>:exclamation:</code></td>
+<td><img align="absmiddle" alt=":question:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2753.png" title=":question:" width="20px" /> <code>:question:</code></td>
+<td><img align="absmiddle" alt=":grey_exclamation:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2755.png" title=":grey_exclamation:" width="20px" /> <code>:grey_exclamation:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":grey_question:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2754.png" title=":grey_question:" width="20px" /> <code>:grey_question:</code></td>
+<td><img align="absmiddle" alt=":zzz:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4a4.png" title=":zzz:" width="20px" /> <code>:zzz:</code></td>
+<td><img align="absmiddle" alt=":dash:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4a8.png" title=":dash:" width="20px" /> <code>:dash:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":sweat_drops:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4a6.png" title=":sweat_drops:" width="20px" /> <code>:sweat_drops:</code></td>
+<td><img align="absmiddle" alt=":notes:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3b6.png" title=":notes:" width="20px" /> <code>:notes:</code></td>
+<td><img align="absmiddle" alt=":musical_note:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3b5.png" title=":musical_note:" width="20px" /> <code>:musical_note:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":fire:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f525.png" title=":fire:" width="20px" /> <code>:fire:</code></td>
+<td><img align="absmiddle" alt=":hankey:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4a9.png" title=":hankey:" width="20px" /> <code>:hankey:</code></td>
+<td><img align="absmiddle" alt=":poop:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4a9.png" title=":poop:" width="20px" /> <code>:poop:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":shit:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4a9.png" title=":shit:" width="20px" /> <code>:shit:</code></td>
+<td><img align="absmiddle" alt=":+1:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f44d.png" title=":+1:" width="20px" /> <code>:+1:</code></td>
+<td><img align="absmiddle" alt=":thumbsup:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f44d.png" title=":thumbsup:" width="20px" /> <code>:thumbsup:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":-1:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f44e.png" title=":-1:" width="20px" /> <code>:-1:</code></td>
+<td><img align="absmiddle" alt=":thumbsdown:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f44e.png" title=":thumbsdown:" width="20px" /> <code>:thumbsdown:</code></td>
+<td><img align="absmiddle" alt=":ok_hand:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f44c.png" title=":ok_hand:" width="20px" /> <code>:ok_hand:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":punch:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f44a.png" title=":punch:" width="20px" /> <code>:punch:</code></td>
+<td><img align="absmiddle" alt=":facepunch:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f44a.png" title=":facepunch:" width="20px" /> <code>:facepunch:</code></td>
+<td><img align="absmiddle" alt=":fist:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/270a.png" title=":fist:" width="20px" /> <code>:fist:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":v:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/270c.png" title=":v:" width="20px" /> <code>:v:</code></td>
+<td><img align="absmiddle" alt=":wave:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f44b.png" title=":wave:" width="20px" /> <code>:wave:</code></td>
+<td><img align="absmiddle" alt=":hand:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/270b.png" title=":hand:" width="20px" /> <code>:hand:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":raised_hand:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/270b.png" title=":raised_hand:" width="20px" /> <code>:raised_hand:</code></td>
+<td><img align="absmiddle" alt=":open_hands:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f450.png" title=":open_hands:" width="20px" /> <code>:open_hands:</code></td>
+<td><img align="absmiddle" alt=":point_up:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/261d.png" title=":point_up:" width="20px" /> <code>:point_up:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":point_down:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f447.png" title=":point_down:" width="20px" /> <code>:point_down:</code></td>
+<td><img align="absmiddle" alt=":point_left:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" width="20px" /> <code>:point_left:</code></td>
+<td><img align="absmiddle" alt=":point_right:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f449.png" title=":point_right:" width="20px" /> <code>:point_right:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":raised_hands:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f64c.png" title=":raised_hands:" width="20px" /> <code>:raised_hands:</code></td>
+<td><img align="absmiddle" alt=":pray:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f64f.png" title=":pray:" width="20px" /> <code>:pray:</code></td>
+<td><img align="absmiddle" alt=":point_up_2:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f446.png" title=":point_up_2:" width="20px" /> <code>:point_up_2:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":clap:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f44f.png" title=":clap:" width="20px" /> <code>:clap:</code></td>
+<td><img align="absmiddle" alt=":muscle:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4aa.png" title=":muscle:" width="20px" /> <code>:muscle:</code></td>
+<td><img align="absmiddle" alt=":metal:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f918.png" title=":metal:" width="20px" /> <code>:metal:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":fu:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f595.png" title=":fu:" width="20px" /> <code>:fu:</code></td>
+<td><img align="absmiddle" alt=":walking:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6b6.png" title=":walking:" width="20px" /> <code>:walking:</code></td>
+<td><img align="absmiddle" alt=":runner:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3c3.png" title=":runner:" width="20px" /> <code>:runner:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":running:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3c3.png" title=":running:" width="20px" /> <code>:running:</code></td>
+<td><img align="absmiddle" alt=":couple:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f46b.png" title=":couple:" width="20px" /> <code>:couple:</code></td>
+<td><img align="absmiddle" alt=":family:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f46a.png" title=":family:" width="20px" /> <code>:family:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":two_men_holding_hands:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f46c.png" title=":two_men_holding_hands:" width="20px" /> <code>:two_men_holding_hands:</code></td>
+<td><img align="absmiddle" alt=":two_women_holding_hands:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f46d.png" title=":two_women_holding_hands:" width="20px" /> <code>:two_women_holding_hands:</code></td>
+<td><img align="absmiddle" alt=":dancer:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f483.png" title=":dancer:" width="20px" /> <code>:dancer:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":dancers:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f46f.png" title=":dancers:" width="20px" /> <code>:dancers:</code></td>
+<td><img align="absmiddle" alt=":ok_woman:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f646.png" title=":ok_woman:" width="20px" /> <code>:ok_woman:</code></td>
+<td><img align="absmiddle" alt=":no_good:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f645.png" title=":no_good:" width="20px" /> <code>:no_good:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":information_desk_person:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f481.png" title=":information_desk_person:" width="20px" /> <code>:information_desk_person:</code></td>
+<td><img align="absmiddle" alt=":raising_hand:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f64b.png" title=":raising_hand:" width="20px" /> <code>:raising_hand:</code></td>
+<td><img align="absmiddle" alt=":bride_with_veil:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f470.png" title=":bride_with_veil:" width="20px" /> <code>:bride_with_veil:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":person_with_pouting_face:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f64e.png" title=":person_with_pouting_face:" width="20px" /> <code>:person_with_pouting_face:</code></td>
+<td><img align="absmiddle" alt=":person_frowning:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f64d.png" title=":person_frowning:" width="20px" /> <code>:person_frowning:</code></td>
+<td><img align="absmiddle" alt=":bow:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f647.png" title=":bow:" width="20px" /> <code>:bow:</code></td>
+</tr>
+<tr>
+<td>:couplekiss: <code>:couplekiss:</code></td>
+<td><img align="absmiddle" alt=":couple_with_heart:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f491.png" title=":couple_with_heart:" width="20px" /> <code>:couple_with_heart:</code></td>
+<td><img align="absmiddle" alt=":massage:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f486.png" title=":massage:" width="20px" /> <code>:massage:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":haircut:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f487.png" title=":haircut:" width="20px" /> <code>:haircut:</code></td>
+<td><img align="absmiddle" alt=":nail_care:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f485.png" title=":nail_care:" width="20px" /> <code>:nail_care:</code></td>
+<td><img align="absmiddle" alt=":boy:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f466.png" title=":boy:" width="20px" /> <code>:boy:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":girl:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f467.png" title=":girl:" width="20px" /> <code>:girl:</code></td>
+<td><img align="absmiddle" alt=":woman:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f469.png" title=":woman:" width="20px" /> <code>:woman:</code></td>
+<td><img align="absmiddle" alt=":man:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f468.png" title=":man:" width="20px" /> <code>:man:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":baby:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f476.png" title=":baby:" width="20px" /> <code>:baby:</code></td>
+<td><img align="absmiddle" alt=":older_woman:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f475.png" title=":older_woman:" width="20px" /> <code>:older_woman:</code></td>
+<td><img align="absmiddle" alt=":older_man:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f474.png" title=":older_man:" width="20px" /> <code>:older_man:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":person_with_blond_hair:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f471.png" title=":person_with_blond_hair:" width="20px" /> <code>:person_with_blond_hair:</code></td>
+<td><img align="absmiddle" alt=":man_with_gua_pi_mao:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f472.png" title=":man_with_gua_pi_mao:" width="20px" /> <code>:man_with_gua_pi_mao:</code></td>
+<td><img align="absmiddle" alt=":man_with_turban:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f473.png" title=":man_with_turban:" width="20px" /> <code>:man_with_turban:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":construction_worker:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f477.png" title=":construction_worker:" width="20px" /> <code>:construction_worker:</code></td>
+<td><img align="absmiddle" alt=":cop:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f46e.png" title=":cop:" width="20px" /> <code>:cop:</code></td>
+<td><img align="absmiddle" alt=":angel:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f47c.png" title=":angel:" width="20px" /> <code>:angel:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":princess:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f478.png" title=":princess:" width="20px" /> <code>:princess:</code></td>
+<td><img align="absmiddle" alt=":smiley_cat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f63a.png" title=":smiley_cat:" width="20px" /> <code>:smiley_cat:</code></td>
+<td><img align="absmiddle" alt=":smile_cat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f638.png" title=":smile_cat:" width="20px" /> <code>:smile_cat:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":heart_eyes_cat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f63b.png" title=":heart_eyes_cat:" width="20px" /> <code>:heart_eyes_cat:</code></td>
+<td><img align="absmiddle" alt=":kissing_cat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f63d.png" title=":kissing_cat:" width="20px" /> <code>:kissing_cat:</code></td>
+<td><img align="absmiddle" alt=":smirk_cat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f63c.png" title=":smirk_cat:" width="20px" /> <code>:smirk_cat:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":scream_cat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f640.png" title=":scream_cat:" width="20px" /> <code>:scream_cat:</code></td>
+<td><img align="absmiddle" alt=":crying_cat_face:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f63f.png" title=":crying_cat_face:" width="20px" /> <code>:crying_cat_face:</code></td>
+<td><img align="absmiddle" alt=":joy_cat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f639.png" title=":joy_cat:" width="20px" /> <code>:joy_cat:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":pouting_cat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f63e.png" title=":pouting_cat:" width="20px" /> <code>:pouting_cat:</code></td>
+<td><img align="absmiddle" alt=":japanese_ogre:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f479.png" title=":japanese_ogre:" width="20px" /> <code>:japanese_ogre:</code></td>
+<td><img align="absmiddle" alt=":japanese_goblin:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f47a.png" title=":japanese_goblin:" width="20px" /> <code>:japanese_goblin:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":see_no_evil:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f648.png" title=":see_no_evil:" width="20px" /> <code>:see_no_evil:</code></td>
+<td><img align="absmiddle" alt=":hear_no_evil:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f649.png" title=":hear_no_evil:" width="20px" /> <code>:hear_no_evil:</code></td>
+<td><img align="absmiddle" alt=":speak_no_evil:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f64a.png" title=":speak_no_evil:" width="20px" /> <code>:speak_no_evil:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":guardsman:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f482.png" title=":guardsman:" width="20px" /> <code>:guardsman:</code></td>
+<td><img align="absmiddle" alt=":skull:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f480.png" title=":skull:" width="20px" /> <code>:skull:</code></td>
+<td><img align="absmiddle" alt=":feet:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f43e.png" title=":feet:" width="20px" /> <code>:feet:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":lips:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f444.png" title=":lips:" width="20px" /> <code>:lips:</code></td>
+<td><img align="absmiddle" alt=":kiss:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f48b.png" title=":kiss:" width="20px" /> <code>:kiss:</code></td>
+<td><img align="absmiddle" alt=":droplet:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4a7.png" title=":droplet:" width="20px" /> <code>:droplet:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":ear:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f442.png" title=":ear:" width="20px" /> <code>:ear:</code></td>
+<td><img align="absmiddle" alt=":eyes:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f440.png" title=":eyes:" width="20px" /> <code>:eyes:</code></td>
+<td><img align="absmiddle" alt=":nose:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f443.png" title=":nose:" width="20px" /> <code>:nose:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":tongue:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f445.png" title=":tongue:" width="20px" /> <code>:tongue:</code></td>
+<td><img align="absmiddle" alt=":love_letter:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f48c.png" title=":love_letter:" width="20px" /> <code>:love_letter:</code></td>
+<td><img align="absmiddle" alt=":bust_in_silhouette:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f464.png" title=":bust_in_silhouette:" width="20px" /> <code>:bust_in_silhouette:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":busts_in_silhouette:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f465.png" title=":busts_in_silhouette:" width="20px" /> <code>:busts_in_silhouette:</code></td>
+<td><img align="absmiddle" alt=":speech_balloon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4ac.png" title=":speech_balloon:" width="20px" /> <code>:speech_balloon:</code></td>
+<td><img align="absmiddle" alt=":thought_balloon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4ad.png" title=":thought_balloon:" width="20px" /> <code>:thought_balloon:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":feelsgood:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/feelsgood.png" title=":feelsgood:" width="20px" /> <code>:feelsgood:</code></td>
+<td><img align="absmiddle" alt=":finnadie:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/finnadie.png" title=":finnadie:" width="20px" /> <code>:finnadie:</code></td>
+<td><img align="absmiddle" alt=":goberserk:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/goberserk.png" title=":goberserk:" width="20px" /> <code>:goberserk:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":godmode:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/godmode.png" title=":godmode:" width="20px" /> <code>:godmode:</code></td>
+<td><img align="absmiddle" alt=":hurtrealbad:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/hurtrealbad.png" title=":hurtrealbad:" width="20px" /> <code>:hurtrealbad:</code></td>
+<td><img align="absmiddle" alt=":rage1:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/rage1.png" title=":rage1:" width="20px" /> <code>:rage1:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":rage2:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/rage2.png" title=":rage2:" width="20px" /> <code>:rage2:</code></td>
+<td><img align="absmiddle" alt=":rage3:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/rage3.png" title=":rage3:" width="20px" /> <code>:rage3:</code></td>
+<td><img align="absmiddle" alt=":rage4:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/rage4.png" title=":rage4:" width="20px" /> <code>:rage4:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":suspect:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/suspect.png" title=":suspect:" width="20px" /> <code>:suspect:</code></td>
+<td><img align="absmiddle" alt=":trollface:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/trollface.png" title=":trollface:" width="20px" /> <code>:trollface:</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Nature</p>
+<table>
+<thead>
+<tr>
+<th><img align="absmiddle" alt=":sunny:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2600.png" title=":sunny:" width="20px" /> <code>:sunny:</code></th>
+<th><img align="absmiddle" alt=":umbrella:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2614.png" title=":umbrella:" width="20px" /> <code>:umbrella:</code></th>
+<th><img align="absmiddle" alt=":cloud:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2601.png" title=":cloud:" width="20px" /> <code>:cloud:</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img align="absmiddle" alt=":snowflake:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2744.png" title=":snowflake:" width="20px" /> <code>:snowflake:</code></td>
+<td><img align="absmiddle" alt=":snowman:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26c4.png" title=":snowman:" width="20px" /> <code>:snowman:</code></td>
+<td><img align="absmiddle" alt=":zap:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26a1.png" title=":zap:" width="20px" /> <code>:zap:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":cyclone:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f300.png" title=":cyclone:" width="20px" /> <code>:cyclone:</code></td>
+<td><img align="absmiddle" alt=":foggy:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f301.png" title=":foggy:" width="20px" /> <code>:foggy:</code></td>
+<td><img align="absmiddle" alt=":ocean:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f30a.png" title=":ocean:" width="20px" /> <code>:ocean:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":cat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f431.png" title=":cat:" width="20px" /> <code>:cat:</code></td>
+<td><img align="absmiddle" alt=":dog:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f436.png" title=":dog:" width="20px" /> <code>:dog:</code></td>
+<td><img align="absmiddle" alt=":mouse:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f42d.png" title=":mouse:" width="20px" /> <code>:mouse:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":hamster:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f439.png" title=":hamster:" width="20px" /> <code>:hamster:</code></td>
+<td><img align="absmiddle" alt=":rabbit:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f430.png" title=":rabbit:" width="20px" /> <code>:rabbit:</code></td>
+<td><img align="absmiddle" alt=":wolf:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f43a.png" title=":wolf:" width="20px" /> <code>:wolf:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":frog:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f438.png" title=":frog:" width="20px" /> <code>:frog:</code></td>
+<td><img align="absmiddle" alt=":tiger:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f42f.png" title=":tiger:" width="20px" /> <code>:tiger:</code></td>
+<td><img align="absmiddle" alt=":koala:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f428.png" title=":koala:" width="20px" /> <code>:koala:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":bear:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f43b.png" title=":bear:" width="20px" /> <code>:bear:</code></td>
+<td><img align="absmiddle" alt=":pig:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f437.png" title=":pig:" width="20px" /> <code>:pig:</code></td>
+<td><img align="absmiddle" alt=":pig_nose:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f43d.png" title=":pig_nose:" width="20px" /> <code>:pig_nose:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":cow:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f42e.png" title=":cow:" width="20px" /> <code>:cow:</code></td>
+<td><img align="absmiddle" alt=":boar:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f417.png" title=":boar:" width="20px" /> <code>:boar:</code></td>
+<td><img align="absmiddle" alt=":monkey_face:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f435.png" title=":monkey_face:" width="20px" /> <code>:monkey_face:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":monkey:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f412.png" title=":monkey:" width="20px" /> <code>:monkey:</code></td>
+<td><img align="absmiddle" alt=":horse:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f434.png" title=":horse:" width="20px" /> <code>:horse:</code></td>
+<td><img align="absmiddle" alt=":racehorse:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f40e.png" title=":racehorse:" width="20px" /> <code>:racehorse:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":camel:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f42b.png" title=":camel:" width="20px" /> <code>:camel:</code></td>
+<td><img align="absmiddle" alt=":sheep:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f411.png" title=":sheep:" width="20px" /> <code>:sheep:</code></td>
+<td><img align="absmiddle" alt=":elephant:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f418.png" title=":elephant:" width="20px" /> <code>:elephant:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":panda_face:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f43c.png" title=":panda_face:" width="20px" /> <code>:panda_face:</code></td>
+<td><img align="absmiddle" alt=":snake:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f40d.png" title=":snake:" width="20px" /> <code>:snake:</code></td>
+<td><img align="absmiddle" alt=":bird:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f426.png" title=":bird:" width="20px" /> <code>:bird:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":baby_chick:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f424.png" title=":baby_chick:" width="20px" /> <code>:baby_chick:</code></td>
+<td><img align="absmiddle" alt=":hatched_chick:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f425.png" title=":hatched_chick:" width="20px" /> <code>:hatched_chick:</code></td>
+<td><img align="absmiddle" alt=":hatching_chick:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f423.png" title=":hatching_chick:" width="20px" /> <code>:hatching_chick:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":chicken:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f414.png" title=":chicken:" width="20px" /> <code>:chicken:</code></td>
+<td><img align="absmiddle" alt=":penguin:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f427.png" title=":penguin:" width="20px" /> <code>:penguin:</code></td>
+<td><img align="absmiddle" alt=":turtle:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f422.png" title=":turtle:" width="20px" /> <code>:turtle:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":bug:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f41b.png" title=":bug:" width="20px" /> <code>:bug:</code></td>
+<td><img align="absmiddle" alt=":honeybee:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f41d.png" title=":honeybee:" width="20px" /> <code>:honeybee:</code></td>
+<td><img align="absmiddle" alt=":ant:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f41c.png" title=":ant:" width="20px" /> <code>:ant:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":beetle:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f41e.png" title=":beetle:" width="20px" /> <code>:beetle:</code></td>
+<td><img align="absmiddle" alt=":snail:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f40c.png" title=":snail:" width="20px" /> <code>:snail:</code></td>
+<td><img align="absmiddle" alt=":octopus:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f419.png" title=":octopus:" width="20px" /> <code>:octopus:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":tropical_fish:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f420.png" title=":tropical_fish:" width="20px" /> <code>:tropical_fish:</code></td>
+<td><img align="absmiddle" alt=":fish:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f41f.png" title=":fish:" width="20px" /> <code>:fish:</code></td>
+<td><img align="absmiddle" alt=":whale:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f433.png" title=":whale:" width="20px" /> <code>:whale:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":whale2:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f40b.png" title=":whale2:" width="20px" /> <code>:whale2:</code></td>
+<td><img align="absmiddle" alt=":dolphin:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f42c.png" title=":dolphin:" width="20px" /> <code>:dolphin:</code></td>
+<td><img align="absmiddle" alt=":cow2:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f404.png" title=":cow2:" width="20px" /> <code>:cow2:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":ram:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f40f.png" title=":ram:" width="20px" /> <code>:ram:</code></td>
+<td><img align="absmiddle" alt=":rat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f400.png" title=":rat:" width="20px" /> <code>:rat:</code></td>
+<td><img align="absmiddle" alt=":water_buffalo:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f403.png" title=":water_buffalo:" width="20px" /> <code>:water_buffalo:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":tiger2:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f405.png" title=":tiger2:" width="20px" /> <code>:tiger2:</code></td>
+<td><img align="absmiddle" alt=":rabbit2:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f407.png" title=":rabbit2:" width="20px" /> <code>:rabbit2:</code></td>
+<td><img align="absmiddle" alt=":dragon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f409.png" title=":dragon:" width="20px" /> <code>:dragon:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":goat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f410.png" title=":goat:" width="20px" /> <code>:goat:</code></td>
+<td><img align="absmiddle" alt=":rooster:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f413.png" title=":rooster:" width="20px" /> <code>:rooster:</code></td>
+<td><img align="absmiddle" alt=":dog2:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f415.png" title=":dog2:" width="20px" /> <code>:dog2:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":pig2:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f416.png" title=":pig2:" width="20px" /> <code>:pig2:</code></td>
+<td><img align="absmiddle" alt=":mouse2:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f401.png" title=":mouse2:" width="20px" /> <code>:mouse2:</code></td>
+<td><img align="absmiddle" alt=":ox:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f402.png" title=":ox:" width="20px" /> <code>:ox:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":dragon_face:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f432.png" title=":dragon_face:" width="20px" /> <code>:dragon_face:</code></td>
+<td><img align="absmiddle" alt=":blowfish:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f421.png" title=":blowfish:" width="20px" /> <code>:blowfish:</code></td>
+<td><img align="absmiddle" alt=":crocodile:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f40a.png" title=":crocodile:" width="20px" /> <code>:crocodile:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":dromedary_camel:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f42a.png" title=":dromedary_camel:" width="20px" /> <code>:dromedary_camel:</code></td>
+<td><img align="absmiddle" alt=":leopard:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f406.png" title=":leopard:" width="20px" /> <code>:leopard:</code></td>
+<td><img align="absmiddle" alt=":cat2:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f408.png" title=":cat2:" width="20px" /> <code>:cat2:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":poodle:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f429.png" title=":poodle:" width="20px" /> <code>:poodle:</code></td>
+<td><img align="absmiddle" alt=":paw_prints:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f43e.png" title=":paw_prints:" width="20px" /> <code>:paw_prints:</code></td>
+<td><img align="absmiddle" alt=":bouquet:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f490.png" title=":bouquet:" width="20px" /> <code>:bouquet:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":cherry_blossom:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f338.png" title=":cherry_blossom:" width="20px" /> <code>:cherry_blossom:</code></td>
+<td><img align="absmiddle" alt=":tulip:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f337.png" title=":tulip:" width="20px" /> <code>:tulip:</code></td>
+<td><img align="absmiddle" alt=":four_leaf_clover:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f340.png" title=":four_leaf_clover:" width="20px" /> <code>:four_leaf_clover:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":rose:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f339.png" title=":rose:" width="20px" /> <code>:rose:</code></td>
+<td><img align="absmiddle" alt=":sunflower:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f33b.png" title=":sunflower:" width="20px" /> <code>:sunflower:</code></td>
+<td><img align="absmiddle" alt=":hibiscus:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f33a.png" title=":hibiscus:" width="20px" /> <code>:hibiscus:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":maple_leaf:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f341.png" title=":maple_leaf:" width="20px" /> <code>:maple_leaf:</code></td>
+<td><img align="absmiddle" alt=":leaves:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f343.png" title=":leaves:" width="20px" /> <code>:leaves:</code></td>
+<td><img align="absmiddle" alt=":fallen_leaf:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f342.png" title=":fallen_leaf:" width="20px" /> <code>:fallen_leaf:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":herb:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f33f.png" title=":herb:" width="20px" /> <code>:herb:</code></td>
+<td><img align="absmiddle" alt=":mushroom:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f344.png" title=":mushroom:" width="20px" /> <code>:mushroom:</code></td>
+<td><img align="absmiddle" alt=":cactus:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f335.png" title=":cactus:" width="20px" /> <code>:cactus:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":palm_tree:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f334.png" title=":palm_tree:" width="20px" /> <code>:palm_tree:</code></td>
+<td><img align="absmiddle" alt=":evergreen_tree:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f332.png" title=":evergreen_tree:" width="20px" /> <code>:evergreen_tree:</code></td>
+<td><img align="absmiddle" alt=":deciduous_tree:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f333.png" title=":deciduous_tree:" width="20px" /> <code>:deciduous_tree:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":chestnut:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f330.png" title=":chestnut:" width="20px" /> <code>:chestnut:</code></td>
+<td><img align="absmiddle" alt=":seedling:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f331.png" title=":seedling:" width="20px" /> <code>:seedling:</code></td>
+<td><img align="absmiddle" alt=":blossom:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f33c.png" title=":blossom:" width="20px" /> <code>:blossom:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":ear_of_rice:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f33e.png" title=":ear_of_rice:" width="20px" /> <code>:ear_of_rice:</code></td>
+<td><img align="absmiddle" alt=":shell:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f41a.png" title=":shell:" width="20px" /> <code>:shell:</code></td>
+<td><img align="absmiddle" alt=":globe_with_meridians:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f310.png" title=":globe_with_meridians:" width="20px" /> <code>:globe_with_meridians:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":sun_with_face:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f31e.png" title=":sun_with_face:" width="20px" /> <code>:sun_with_face:</code></td>
+<td><img align="absmiddle" alt=":full_moon_with_face:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f31d.png" title=":full_moon_with_face:" width="20px" /> <code>:full_moon_with_face:</code></td>
+<td><img align="absmiddle" alt=":new_moon_with_face:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f31a.png" title=":new_moon_with_face:" width="20px" /> <code>:new_moon_with_face:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":new_moon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f311.png" title=":new_moon:" width="20px" /> <code>:new_moon:</code></td>
+<td><img align="absmiddle" alt=":waxing_crescent_moon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f312.png" title=":waxing_crescent_moon:" width="20px" /> <code>:waxing_crescent_moon:</code></td>
+<td><img align="absmiddle" alt=":first_quarter_moon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f313.png" title=":first_quarter_moon:" width="20px" /> <code>:first_quarter_moon:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":waxing_gibbous_moon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f314.png" title=":waxing_gibbous_moon:" width="20px" /> <code>:waxing_gibbous_moon:</code></td>
+<td><img align="absmiddle" alt=":full_moon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f315.png" title=":full_moon:" width="20px" /> <code>:full_moon:</code></td>
+<td><img align="absmiddle" alt=":waning_gibbous_moon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f316.png" title=":waning_gibbous_moon:" width="20px" /> <code>:waning_gibbous_moon:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":last_quarter_moon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f317.png" title=":last_quarter_moon:" width="20px" /> <code>:last_quarter_moon:</code></td>
+<td><img align="absmiddle" alt=":waning_crescent_moon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f318.png" title=":waning_crescent_moon:" width="20px" /> <code>:waning_crescent_moon:</code></td>
+<td><img align="absmiddle" alt=":last_quarter_moon_with_face:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f31c.png" title=":last_quarter_moon_with_face:" width="20px" /> <code>:last_quarter_moon_with_face:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":first_quarter_moon_with_face:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f31b.png" title=":first_quarter_moon_with_face:" width="20px" /> <code>:first_quarter_moon_with_face:</code></td>
+<td><img align="absmiddle" alt=":moon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f314.png" title=":moon:" width="20px" /> <code>:moon:</code></td>
+<td><img align="absmiddle" alt=":earth_africa:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f30d.png" title=":earth_africa:" width="20px" /> <code>:earth_africa:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":earth_americas:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f30e.png" title=":earth_americas:" width="20px" /> <code>:earth_americas:</code></td>
+<td><img align="absmiddle" alt=":earth_asia:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f30f.png" title=":earth_asia:" width="20px" /> <code>:earth_asia:</code></td>
+<td><img align="absmiddle" alt=":volcano:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f30b.png" title=":volcano:" width="20px" /> <code>:volcano:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":milky_way:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f30c.png" title=":milky_way:" width="20px" /> <code>:milky_way:</code></td>
+<td><img align="absmiddle" alt=":partly_sunny:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26c5.png" title=":partly_sunny:" width="20px" /> <code>:partly_sunny:</code></td>
+<td><img align="absmiddle" alt=":octocat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/octocat.png" title=":octocat:" width="20px" /> <code>:octocat:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":squirrel:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/shipit.png" title=":squirrel:" width="20px" /> <code>:squirrel:</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Objects</p>
+<table>
+<thead>
+<tr>
+<th><img align="absmiddle" alt=":bamboo:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f38d.png" title=":bamboo:" width="20px" /> <code>:bamboo:</code></th>
+<th><img align="absmiddle" alt=":gift_heart:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f49d.png" title=":gift_heart:" width="20px" /> <code>:gift_heart:</code></th>
+<th><img align="absmiddle" alt=":dolls:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f38e.png" title=":dolls:" width="20px" /> <code>:dolls:</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img align="absmiddle" alt=":school_satchel:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f392.png" title=":school_satchel:" width="20px" /> <code>:school_satchel:</code></td>
+<td><img align="absmiddle" alt=":mortar_board:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f393.png" title=":mortar_board:" width="20px" /> <code>:mortar_board:</code></td>
+<td><img align="absmiddle" alt=":flags:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f38f.png" title=":flags:" width="20px" /> <code>:flags:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":fireworks:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f386.png" title=":fireworks:" width="20px" /> <code>:fireworks:</code></td>
+<td><img align="absmiddle" alt=":sparkler:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f387.png" title=":sparkler:" width="20px" /> <code>:sparkler:</code></td>
+<td><img align="absmiddle" alt=":wind_chime:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f390.png" title=":wind_chime:" width="20px" /> <code>:wind_chime:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":rice_scene:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f391.png" title=":rice_scene:" width="20px" /> <code>:rice_scene:</code></td>
+<td><img align="absmiddle" alt=":jack_o_lantern:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f383.png" title=":jack_o_lantern:" width="20px" /> <code>:jack_o_lantern:</code></td>
+<td><img align="absmiddle" alt=":ghost:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f47b.png" title=":ghost:" width="20px" /> <code>:ghost:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":santa:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f385.png" title=":santa:" width="20px" /> <code>:santa:</code></td>
+<td><img align="absmiddle" alt=":christmas_tree:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f384.png" title=":christmas_tree:" width="20px" /> <code>:christmas_tree:</code></td>
+<td><img align="absmiddle" alt=":gift:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f381.png" title=":gift:" width="20px" /> <code>:gift:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":bell:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f514.png" title=":bell:" width="20px" /> <code>:bell:</code></td>
+<td><img align="absmiddle" alt=":no_bell:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f515.png" title=":no_bell:" width="20px" /> <code>:no_bell:</code></td>
+<td><img align="absmiddle" alt=":tanabata_tree:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f38b.png" title=":tanabata_tree:" width="20px" /> <code>:tanabata_tree:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":tada:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f389.png" title=":tada:" width="20px" /> <code>:tada:</code></td>
+<td><img align="absmiddle" alt=":confetti_ball:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f38a.png" title=":confetti_ball:" width="20px" /> <code>:confetti_ball:</code></td>
+<td><img align="absmiddle" alt=":balloon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f388.png" title=":balloon:" width="20px" /> <code>:balloon:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":crystal_ball:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f52e.png" title=":crystal_ball:" width="20px" /> <code>:crystal_ball:</code></td>
+<td><img align="absmiddle" alt=":cd:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4bf.png" title=":cd:" width="20px" /> <code>:cd:</code></td>
+<td><img align="absmiddle" alt=":dvd:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4c0.png" title=":dvd:" width="20px" /> <code>:dvd:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":floppy_disk:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4be.png" title=":floppy_disk:" width="20px" /> <code>:floppy_disk:</code></td>
+<td><img align="absmiddle" alt=":camera:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <code>:camera:</code></td>
+<td><img align="absmiddle" alt=":video_camera:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4f9.png" title=":video_camera:" width="20px" /> <code>:video_camera:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":movie_camera:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3a5.png" title=":movie_camera:" width="20px" /> <code>:movie_camera:</code></td>
+<td><img align="absmiddle" alt=":computer:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4bb.png" title=":computer:" width="20px" /> <code>:computer:</code></td>
+<td><img align="absmiddle" alt=":tv:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4fa.png" title=":tv:" width="20px" /> <code>:tv:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":iphone:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4f1.png" title=":iphone:" width="20px" /> <code>:iphone:</code></td>
+<td><img align="absmiddle" alt=":phone:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/260e.png" title=":phone:" width="20px" /> <code>:phone:</code></td>
+<td><img align="absmiddle" alt=":telephone:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/260e.png" title=":telephone:" width="20px" /> <code>:telephone:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":telephone_receiver:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4de.png" title=":telephone_receiver:" width="20px" /> <code>:telephone_receiver:</code></td>
+<td><img align="absmiddle" alt=":pager:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4df.png" title=":pager:" width="20px" /> <code>:pager:</code></td>
+<td><img align="absmiddle" alt=":fax:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4e0.png" title=":fax:" width="20px" /> <code>:fax:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":minidisc:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4bd.png" title=":minidisc:" width="20px" /> <code>:minidisc:</code></td>
+<td><img align="absmiddle" alt=":vhs:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4fc.png" title=":vhs:" width="20px" /> <code>:vhs:</code></td>
+<td><img align="absmiddle" alt=":sound:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f509.png" title=":sound:" width="20px" /> <code>:sound:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":speaker:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f508.png" title=":speaker:" width="20px" /> <code>:speaker:</code></td>
+<td><img align="absmiddle" alt=":mute:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f507.png" title=":mute:" width="20px" /> <code>:mute:</code></td>
+<td><img align="absmiddle" alt=":loudspeaker:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4e2.png" title=":loudspeaker:" width="20px" /> <code>:loudspeaker:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":mega:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4e3.png" title=":mega:" width="20px" /> <code>:mega:</code></td>
+<td><img align="absmiddle" alt=":hourglass:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/231b.png" title=":hourglass:" width="20px" /> <code>:hourglass:</code></td>
+<td><img align="absmiddle" alt=":hourglass_flowing_sand:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/23f3.png" title=":hourglass_flowing_sand:" width="20px" /> <code>:hourglass_flowing_sand:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":alarm_clock:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/23f0.png" title=":alarm_clock:" width="20px" /> <code>:alarm_clock:</code></td>
+<td><img align="absmiddle" alt=":watch:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/231a.png" title=":watch:" width="20px" /> <code>:watch:</code></td>
+<td><img align="absmiddle" alt=":radio:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4fb.png" title=":radio:" width="20px" /> <code>:radio:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":satellite:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4e1.png" title=":satellite:" width="20px" /> <code>:satellite:</code></td>
+<td><img align="absmiddle" alt=":loop:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/27bf.png" title=":loop:" width="20px" /> <code>:loop:</code></td>
+<td><img align="absmiddle" alt=":mag:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f50d.png" title=":mag:" width="20px" /> <code>:mag:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":mag_right:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f50e.png" title=":mag_right:" width="20px" /> <code>:mag_right:</code></td>
+<td><img align="absmiddle" alt=":unlock:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f513.png" title=":unlock:" width="20px" /> <code>:unlock:</code></td>
+<td><img align="absmiddle" alt=":lock:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f512.png" title=":lock:" width="20px" /> <code>:lock:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":lock_with_ink_pen:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f50f.png" title=":lock_with_ink_pen:" width="20px" /> <code>:lock_with_ink_pen:</code></td>
+<td><img align="absmiddle" alt=":closed_lock_with_key:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f510.png" title=":closed_lock_with_key:" width="20px" /> <code>:closed_lock_with_key:</code></td>
+<td><img align="absmiddle" alt=":key:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f511.png" title=":key:" width="20px" /> <code>:key:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":bulb:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" width="20px" /> <code>:bulb:</code></td>
+<td><img align="absmiddle" alt=":flashlight:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f526.png" title=":flashlight:" width="20px" /> <code>:flashlight:</code></td>
+<td><img align="absmiddle" alt=":high_brightness:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f506.png" title=":high_brightness:" width="20px" /> <code>:high_brightness:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":low_brightness:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f505.png" title=":low_brightness:" width="20px" /> <code>:low_brightness:</code></td>
+<td><img align="absmiddle" alt=":electric_plug:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f50c.png" title=":electric_plug:" width="20px" /> <code>:electric_plug:</code></td>
+<td><img align="absmiddle" alt=":battery:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f50b.png" title=":battery:" width="20px" /> <code>:battery:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":calling:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4f2.png" title=":calling:" width="20px" /> <code>:calling:</code></td>
+<td><img align="absmiddle" alt=":email:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2709.png" title=":email:" width="20px" /> <code>:email:</code></td>
+<td><img align="absmiddle" alt=":mailbox:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4eb.png" title=":mailbox:" width="20px" /> <code>:mailbox:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":postbox:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4ee.png" title=":postbox:" width="20px" /> <code>:postbox:</code></td>
+<td><img align="absmiddle" alt=":bath:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6c0.png" title=":bath:" width="20px" /> <code>:bath:</code></td>
+<td><img align="absmiddle" alt=":bathtub:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6c1.png" title=":bathtub:" width="20px" /> <code>:bathtub:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":shower:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6bf.png" title=":shower:" width="20px" /> <code>:shower:</code></td>
+<td><img align="absmiddle" alt=":toilet:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6bd.png" title=":toilet:" width="20px" /> <code>:toilet:</code></td>
+<td><img align="absmiddle" alt=":wrench:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f527.png" title=":wrench:" width="20px" /> <code>:wrench:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":nut_and_bolt:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f529.png" title=":nut_and_bolt:" width="20px" /> <code>:nut_and_bolt:</code></td>
+<td><img align="absmiddle" alt=":hammer:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f528.png" title=":hammer:" width="20px" /> <code>:hammer:</code></td>
+<td><img align="absmiddle" alt=":seat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4ba.png" title=":seat:" width="20px" /> <code>:seat:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":moneybag:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4b0.png" title=":moneybag:" width="20px" /> <code>:moneybag:</code></td>
+<td><img align="absmiddle" alt=":yen:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4b4.png" title=":yen:" width="20px" /> <code>:yen:</code></td>
+<td><img align="absmiddle" alt=":dollar:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4b5.png" title=":dollar:" width="20px" /> <code>:dollar:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":pound:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4b7.png" title=":pound:" width="20px" /> <code>:pound:</code></td>
+<td><img align="absmiddle" alt=":euro:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4b6.png" title=":euro:" width="20px" /> <code>:euro:</code></td>
+<td><img align="absmiddle" alt=":credit_card:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4b3.png" title=":credit_card:" width="20px" /> <code>:credit_card:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":money_with_wings:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4b8.png" title=":money_with_wings:" width="20px" /> <code>:money_with_wings:</code></td>
+<td><img align="absmiddle" alt=":e-mail:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4e7.png" title=":e-mail:" width="20px" /> <code>:e-mail:</code></td>
+<td><img align="absmiddle" alt=":inbox_tray:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4e5.png" title=":inbox_tray:" width="20px" /> <code>:inbox_tray:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":outbox_tray:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4e4.png" title=":outbox_tray:" width="20px" /> <code>:outbox_tray:</code></td>
+<td><img align="absmiddle" alt=":envelope:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2709.png" title=":envelope:" width="20px" /> <code>:envelope:</code></td>
+<td><img align="absmiddle" alt=":incoming_envelope:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4e8.png" title=":incoming_envelope:" width="20px" /> <code>:incoming_envelope:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":postal_horn:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4ef.png" title=":postal_horn:" width="20px" /> <code>:postal_horn:</code></td>
+<td><img align="absmiddle" alt=":mailbox_closed:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4ea.png" title=":mailbox_closed:" width="20px" /> <code>:mailbox_closed:</code></td>
+<td><img align="absmiddle" alt=":mailbox_with_mail:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4ec.png" title=":mailbox_with_mail:" width="20px" /> <code>:mailbox_with_mail:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":mailbox_with_no_mail:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4ed.png" title=":mailbox_with_no_mail:" width="20px" /> <code>:mailbox_with_no_mail:</code></td>
+<td><img align="absmiddle" alt=":door:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6aa.png" title=":door:" width="20px" /> <code>:door:</code></td>
+<td><img align="absmiddle" alt=":smoking:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6ac.png" title=":smoking:" width="20px" /> <code>:smoking:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":bomb:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4a3.png" title=":bomb:" width="20px" /> <code>:bomb:</code></td>
+<td><img align="absmiddle" alt=":gun:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f52b.png" title=":gun:" width="20px" /> <code>:gun:</code></td>
+<td><img align="absmiddle" alt=":hocho:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f52a.png" title=":hocho:" width="20px" /> <code>:hocho:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":pill:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f48a.png" title=":pill:" width="20px" /> <code>:pill:</code></td>
+<td><img align="absmiddle" alt=":syringe:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f489.png" title=":syringe:" width="20px" /> <code>:syringe:</code></td>
+<td><img align="absmiddle" alt=":page_facing_up:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4c4.png" title=":page_facing_up:" width="20px" /> <code>:page_facing_up:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":page_with_curl:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4c3.png" title=":page_with_curl:" width="20px" /> <code>:page_with_curl:</code></td>
+<td><img align="absmiddle" alt=":bookmark_tabs:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4d1.png" title=":bookmark_tabs:" width="20px" /> <code>:bookmark_tabs:</code></td>
+<td><img align="absmiddle" alt=":bar_chart:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4ca.png" title=":bar_chart:" width="20px" /> <code>:bar_chart:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":chart_with_upwards_trend:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4c8.png" title=":chart_with_upwards_trend:" width="20px" /> <code>:chart_with_upwards_trend:</code></td>
+<td><img align="absmiddle" alt=":chart_with_downwards_trend:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4c9.png" title=":chart_with_downwards_trend:" width="20px" /> <code>:chart_with_downwards_trend:</code></td>
+<td><img align="absmiddle" alt=":scroll:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4dc.png" title=":scroll:" width="20px" /> <code>:scroll:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":clipboard:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4cb.png" title=":clipboard:" width="20px" /> <code>:clipboard:</code></td>
+<td><img align="absmiddle" alt=":calendar:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4c6.png" title=":calendar:" width="20px" /> <code>:calendar:</code></td>
+<td><img align="absmiddle" alt=":date:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4c5.png" title=":date:" width="20px" /> <code>:date:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":card_index:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4c7.png" title=":card_index:" width="20px" /> <code>:card_index:</code></td>
+<td><img align="absmiddle" alt=":file_folder:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4c1.png" title=":file_folder:" width="20px" /> <code>:file_folder:</code></td>
+<td><img align="absmiddle" alt=":open_file_folder:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4c2.png" title=":open_file_folder:" width="20px" /> <code>:open_file_folder:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":scissors:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2702.png" title=":scissors:" width="20px" /> <code>:scissors:</code></td>
+<td><img align="absmiddle" alt=":pushpin:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4cc.png" title=":pushpin:" width="20px" /> <code>:pushpin:</code></td>
+<td><img align="absmiddle" alt=":paperclip:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4ce.png" title=":paperclip:" width="20px" /> <code>:paperclip:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":black_nib:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2712.png" title=":black_nib:" width="20px" /> <code>:black_nib:</code></td>
+<td><img align="absmiddle" alt=":pencil2:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/270f.png" title=":pencil2:" width="20px" /> <code>:pencil2:</code></td>
+<td><img align="absmiddle" alt=":straight_ruler:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4cf.png" title=":straight_ruler:" width="20px" /> <code>:straight_ruler:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":triangular_ruler:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4d0.png" title=":triangular_ruler:" width="20px" /> <code>:triangular_ruler:</code></td>
+<td><img align="absmiddle" alt=":closed_book:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4d5.png" title=":closed_book:" width="20px" /> <code>:closed_book:</code></td>
+<td><img align="absmiddle" alt=":green_book:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4d7.png" title=":green_book:" width="20px" /> <code>:green_book:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":blue_book:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4d8.png" title=":blue_book:" width="20px" /> <code>:blue_book:</code></td>
+<td><img align="absmiddle" alt=":orange_book:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4d9.png" title=":orange_book:" width="20px" /> <code>:orange_book:</code></td>
+<td><img align="absmiddle" alt=":notebook:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4d3.png" title=":notebook:" width="20px" /> <code>:notebook:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":notebook_with_decorative_cover:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4d4.png" title=":notebook_with_decorative_cover:" width="20px" /> <code>:notebook_with_decorative_cover:</code></td>
+<td><img align="absmiddle" alt=":ledger:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4d2.png" title=":ledger:" width="20px" /> <code>:ledger:</code></td>
+<td><img align="absmiddle" alt=":books:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4da.png" title=":books:" width="20px" /> <code>:books:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":bookmark:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f516.png" title=":bookmark:" width="20px" /> <code>:bookmark:</code></td>
+<td><img align="absmiddle" alt=":name_badge:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4db.png" title=":name_badge:" width="20px" /> <code>:name_badge:</code></td>
+<td><img align="absmiddle" alt=":microscope:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f52c.png" title=":microscope:" width="20px" /> <code>:microscope:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":telescope:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f52d.png" title=":telescope:" width="20px" /> <code>:telescope:</code></td>
+<td><img align="absmiddle" alt=":newspaper:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4f0.png" title=":newspaper:" width="20px" /> <code>:newspaper:</code></td>
+<td><img align="absmiddle" alt=":football:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3c8.png" title=":football:" width="20px" /> <code>:football:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":basketball:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3c0.png" title=":basketball:" width="20px" /> <code>:basketball:</code></td>
+<td><img align="absmiddle" alt=":soccer:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26bd.png" title=":soccer:" width="20px" /> <code>:soccer:</code></td>
+<td><img align="absmiddle" alt=":baseball:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26be.png" title=":baseball:" width="20px" /> <code>:baseball:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":tennis:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3be.png" title=":tennis:" width="20px" /> <code>:tennis:</code></td>
+<td><img align="absmiddle" alt=":8ball:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3b1.png" title=":8ball:" width="20px" /> <code>:8ball:</code></td>
+<td><img align="absmiddle" alt=":rugby_football:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3c9.png" title=":rugby_football:" width="20px" /> <code>:rugby_football:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":bowling:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3b3.png" title=":bowling:" width="20px" /> <code>:bowling:</code></td>
+<td><img align="absmiddle" alt=":golf:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26f3.png" title=":golf:" width="20px" /> <code>:golf:</code></td>
+<td><img align="absmiddle" alt=":mountain_bicyclist:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6b5.png" title=":mountain_bicyclist:" width="20px" /> <code>:mountain_bicyclist:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":bicyclist:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6b4.png" title=":bicyclist:" width="20px" /> <code>:bicyclist:</code></td>
+<td><img align="absmiddle" alt=":horse_racing:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3c7.png" title=":horse_racing:" width="20px" /> <code>:horse_racing:</code></td>
+<td><img align="absmiddle" alt=":snowboarder:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3c2.png" title=":snowboarder:" width="20px" /> <code>:snowboarder:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":swimmer:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3ca.png" title=":swimmer:" width="20px" /> <code>:swimmer:</code></td>
+<td><img align="absmiddle" alt=":surfer:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3c4.png" title=":surfer:" width="20px" /> <code>:surfer:</code></td>
+<td><img align="absmiddle" alt=":ski:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3bf.png" title=":ski:" width="20px" /> <code>:ski:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":spades:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2660.png" title=":spades:" width="20px" /> <code>:spades:</code></td>
+<td><img align="absmiddle" alt=":hearts:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2665.png" title=":hearts:" width="20px" /> <code>:hearts:</code></td>
+<td><img align="absmiddle" alt=":clubs:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2663.png" title=":clubs:" width="20px" /> <code>:clubs:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":diamonds:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2666.png" title=":diamonds:" width="20px" /> <code>:diamonds:</code></td>
+<td><img align="absmiddle" alt=":gem:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f48e.png" title=":gem:" width="20px" /> <code>:gem:</code></td>
+<td><img align="absmiddle" alt=":ring:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f48d.png" title=":ring:" width="20px" /> <code>:ring:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":trophy:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3c6.png" title=":trophy:" width="20px" /> <code>:trophy:</code></td>
+<td><img align="absmiddle" alt=":musical_score:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3bc.png" title=":musical_score:" width="20px" /> <code>:musical_score:</code></td>
+<td><img align="absmiddle" alt=":musical_keyboard:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3b9.png" title=":musical_keyboard:" width="20px" /> <code>:musical_keyboard:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":violin:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3bb.png" title=":violin:" width="20px" /> <code>:violin:</code></td>
+<td><img align="absmiddle" alt=":space_invader:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f47e.png" title=":space_invader:" width="20px" /> <code>:space_invader:</code></td>
+<td><img align="absmiddle" alt=":video_game:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3ae.png" title=":video_game:" width="20px" /> <code>:video_game:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":black_joker:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f0cf.png" title=":black_joker:" width="20px" /> <code>:black_joker:</code></td>
+<td><img align="absmiddle" alt=":flower_playing_cards:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3b4.png" title=":flower_playing_cards:" width="20px" /> <code>:flower_playing_cards:</code></td>
+<td><img align="absmiddle" alt=":game_die:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3b2.png" title=":game_die:" width="20px" /> <code>:game_die:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":dart:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3af.png" title=":dart:" width="20px" /> <code>:dart:</code></td>
+<td><img align="absmiddle" alt=":mahjong:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f004.png" title=":mahjong:" width="20px" /> <code>:mahjong:</code></td>
+<td><img align="absmiddle" alt=":clapper:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3ac.png" title=":clapper:" width="20px" /> <code>:clapper:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":memo:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" width="20px" /> <code>:memo:</code></td>
+<td><img align="absmiddle" alt=":pencil:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4dd.png" title=":pencil:" width="20px" /> <code>:pencil:</code></td>
+<td><img align="absmiddle" alt=":book:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4d6.png" title=":book:" width="20px" /> <code>:book:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":art:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3a8.png" title=":art:" width="20px" /> <code>:art:</code></td>
+<td><img align="absmiddle" alt=":microphone:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3a4.png" title=":microphone:" width="20px" /> <code>:microphone:</code></td>
+<td><img align="absmiddle" alt=":headphones:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3a7.png" title=":headphones:" width="20px" /> <code>:headphones:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":trumpet:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3ba.png" title=":trumpet:" width="20px" /> <code>:trumpet:</code></td>
+<td><img align="absmiddle" alt=":saxophone:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3b7.png" title=":saxophone:" width="20px" /> <code>:saxophone:</code></td>
+<td><img align="absmiddle" alt=":guitar:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3b8.png" title=":guitar:" width="20px" /> <code>:guitar:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":shoe:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f45e.png" title=":shoe:" width="20px" /> <code>:shoe:</code></td>
+<td><img align="absmiddle" alt=":sandal:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f461.png" title=":sandal:" width="20px" /> <code>:sandal:</code></td>
+<td><img align="absmiddle" alt=":high_heel:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f460.png" title=":high_heel:" width="20px" /> <code>:high_heel:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":lipstick:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f484.png" title=":lipstick:" width="20px" /> <code>:lipstick:</code></td>
+<td><img align="absmiddle" alt=":boot:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f462.png" title=":boot:" width="20px" /> <code>:boot:</code></td>
+<td><img align="absmiddle" alt=":shirt:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f455.png" title=":shirt:" width="20px" /> <code>:shirt:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":tshirt:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f455.png" title=":tshirt:" width="20px" /> <code>:tshirt:</code></td>
+<td><img align="absmiddle" alt=":necktie:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f454.png" title=":necktie:" width="20px" /> <code>:necktie:</code></td>
+<td><img align="absmiddle" alt=":womans_clothes:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f45a.png" title=":womans_clothes:" width="20px" /> <code>:womans_clothes:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":dress:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f457.png" title=":dress:" width="20px" /> <code>:dress:</code></td>
+<td><img align="absmiddle" alt=":running_shirt_with_sash:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3bd.png" title=":running_shirt_with_sash:" width="20px" /> <code>:running_shirt_with_sash:</code></td>
+<td><img align="absmiddle" alt=":jeans:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f456.png" title=":jeans:" width="20px" /> <code>:jeans:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":kimono:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f458.png" title=":kimono:" width="20px" /> <code>:kimono:</code></td>
+<td><img align="absmiddle" alt=":bikini:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f459.png" title=":bikini:" width="20px" /> <code>:bikini:</code></td>
+<td><img align="absmiddle" alt=":ribbon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f380.png" title=":ribbon:" width="20px" /> <code>:ribbon:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":tophat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3a9.png" title=":tophat:" width="20px" /> <code>:tophat:</code></td>
+<td><img align="absmiddle" alt=":crown:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f451.png" title=":crown:" width="20px" /> <code>:crown:</code></td>
+<td><img align="absmiddle" alt=":womans_hat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f452.png" title=":womans_hat:" width="20px" /> <code>:womans_hat:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":mans_shoe:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f45e.png" title=":mans_shoe:" width="20px" /> <code>:mans_shoe:</code></td>
+<td><img align="absmiddle" alt=":closed_umbrella:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f302.png" title=":closed_umbrella:" width="20px" /> <code>:closed_umbrella:</code></td>
+<td><img align="absmiddle" alt=":briefcase:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4bc.png" title=":briefcase:" width="20px" /> <code>:briefcase:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":handbag:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f45c.png" title=":handbag:" width="20px" /> <code>:handbag:</code></td>
+<td><img align="absmiddle" alt=":pouch:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f45d.png" title=":pouch:" width="20px" /> <code>:pouch:</code></td>
+<td><img align="absmiddle" alt=":purse:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f45b.png" title=":purse:" width="20px" /> <code>:purse:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":eyeglasses:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f453.png" title=":eyeglasses:" width="20px" /> <code>:eyeglasses:</code></td>
+<td><img align="absmiddle" alt=":fishing_pole_and_fish:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3a3.png" title=":fishing_pole_and_fish:" width="20px" /> <code>:fishing_pole_and_fish:</code></td>
+<td><img align="absmiddle" alt=":coffee:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2615.png" title=":coffee:" width="20px" /> <code>:coffee:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":tea:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f375.png" title=":tea:" width="20px" /> <code>:tea:</code></td>
+<td><img align="absmiddle" alt=":sake:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f376.png" title=":sake:" width="20px" /> <code>:sake:</code></td>
+<td><img align="absmiddle" alt=":baby_bottle:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f37c.png" title=":baby_bottle:" width="20px" /> <code>:baby_bottle:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":beer:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f37a.png" title=":beer:" width="20px" /> <code>:beer:</code></td>
+<td><img align="absmiddle" alt=":beers:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f37b.png" title=":beers:" width="20px" /> <code>:beers:</code></td>
+<td><img align="absmiddle" alt=":cocktail:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f378.png" title=":cocktail:" width="20px" /> <code>:cocktail:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":tropical_drink:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f379.png" title=":tropical_drink:" width="20px" /> <code>:tropical_drink:</code></td>
+<td><img align="absmiddle" alt=":wine_glass:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f377.png" title=":wine_glass:" width="20px" /> <code>:wine_glass:</code></td>
+<td><img align="absmiddle" alt=":fork_and_knife:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f374.png" title=":fork_and_knife:" width="20px" /> <code>:fork_and_knife:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":pizza:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f355.png" title=":pizza:" width="20px" /> <code>:pizza:</code></td>
+<td><img align="absmiddle" alt=":hamburger:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f354.png" title=":hamburger:" width="20px" /> <code>:hamburger:</code></td>
+<td><img align="absmiddle" alt=":fries:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f35f.png" title=":fries:" width="20px" /> <code>:fries:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":poultry_leg:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f357.png" title=":poultry_leg:" width="20px" /> <code>:poultry_leg:</code></td>
+<td><img align="absmiddle" alt=":meat_on_bone:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f356.png" title=":meat_on_bone:" width="20px" /> <code>:meat_on_bone:</code></td>
+<td><img align="absmiddle" alt=":spaghetti:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f35d.png" title=":spaghetti:" width="20px" /> <code>:spaghetti:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":curry:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f35b.png" title=":curry:" width="20px" /> <code>:curry:</code></td>
+<td><img align="absmiddle" alt=":fried_shrimp:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f364.png" title=":fried_shrimp:" width="20px" /> <code>:fried_shrimp:</code></td>
+<td><img align="absmiddle" alt=":bento:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f371.png" title=":bento:" width="20px" /> <code>:bento:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":sushi:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f363.png" title=":sushi:" width="20px" /> <code>:sushi:</code></td>
+<td><img align="absmiddle" alt=":fish_cake:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f365.png" title=":fish_cake:" width="20px" /> <code>:fish_cake:</code></td>
+<td><img align="absmiddle" alt=":rice_ball:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f359.png" title=":rice_ball:" width="20px" /> <code>:rice_ball:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":rice_cracker:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f358.png" title=":rice_cracker:" width="20px" /> <code>:rice_cracker:</code></td>
+<td><img align="absmiddle" alt=":rice:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f35a.png" title=":rice:" width="20px" /> <code>:rice:</code></td>
+<td><img align="absmiddle" alt=":ramen:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f35c.png" title=":ramen:" width="20px" /> <code>:ramen:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":stew:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f372.png" title=":stew:" width="20px" /> <code>:stew:</code></td>
+<td><img align="absmiddle" alt=":oden:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f362.png" title=":oden:" width="20px" /> <code>:oden:</code></td>
+<td><img align="absmiddle" alt=":dango:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f361.png" title=":dango:" width="20px" /> <code>:dango:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":egg:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f95a.png" title=":egg:" width="20px" /> <code>:egg:</code></td>
+<td><img align="absmiddle" alt=":bread:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f35e.png" title=":bread:" width="20px" /> <code>:bread:</code></td>
+<td><img align="absmiddle" alt=":doughnut:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f369.png" title=":doughnut:" width="20px" /> <code>:doughnut:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":custard:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f36e.png" title=":custard:" width="20px" /> <code>:custard:</code></td>
+<td><img align="absmiddle" alt=":icecream:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f366.png" title=":icecream:" width="20px" /> <code>:icecream:</code></td>
+<td><img align="absmiddle" alt=":ice_cream:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f368.png" title=":ice_cream:" width="20px" /> <code>:ice_cream:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":shaved_ice:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f367.png" title=":shaved_ice:" width="20px" /> <code>:shaved_ice:</code></td>
+<td><img align="absmiddle" alt=":birthday:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f382.png" title=":birthday:" width="20px" /> <code>:birthday:</code></td>
+<td><img align="absmiddle" alt=":cake:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f370.png" title=":cake:" width="20px" /> <code>:cake:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":cookie:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f36a.png" title=":cookie:" width="20px" /> <code>:cookie:</code></td>
+<td><img align="absmiddle" alt=":chocolate_bar:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f36b.png" title=":chocolate_bar:" width="20px" /> <code>:chocolate_bar:</code></td>
+<td><img align="absmiddle" alt=":candy:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f36c.png" title=":candy:" width="20px" /> <code>:candy:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":lollipop:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f36d.png" title=":lollipop:" width="20px" /> <code>:lollipop:</code></td>
+<td><img align="absmiddle" alt=":honey_pot:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f36f.png" title=":honey_pot:" width="20px" /> <code>:honey_pot:</code></td>
+<td><img align="absmiddle" alt=":apple:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f34e.png" title=":apple:" width="20px" /> <code>:apple:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":green_apple:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f34f.png" title=":green_apple:" width="20px" /> <code>:green_apple:</code></td>
+<td><img align="absmiddle" alt=":tangerine:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f34a.png" title=":tangerine:" width="20px" /> <code>:tangerine:</code></td>
+<td><img align="absmiddle" alt=":lemon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f34b.png" title=":lemon:" width="20px" /> <code>:lemon:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":cherries:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f352.png" title=":cherries:" width="20px" /> <code>:cherries:</code></td>
+<td><img align="absmiddle" alt=":grapes:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f347.png" title=":grapes:" width="20px" /> <code>:grapes:</code></td>
+<td><img align="absmiddle" alt=":watermelon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f349.png" title=":watermelon:" width="20px" /> <code>:watermelon:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":strawberry:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f353.png" title=":strawberry:" width="20px" /> <code>:strawberry:</code></td>
+<td><img align="absmiddle" alt=":peach:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f351.png" title=":peach:" width="20px" /> <code>:peach:</code></td>
+<td><img align="absmiddle" alt=":melon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f348.png" title=":melon:" width="20px" /> <code>:melon:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":banana:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f34c.png" title=":banana:" width="20px" /> <code>:banana:</code></td>
+<td><img align="absmiddle" alt=":pear:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f350.png" title=":pear:" width="20px" /> <code>:pear:</code></td>
+<td><img align="absmiddle" alt=":pineapple:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f34d.png" title=":pineapple:" width="20px" /> <code>:pineapple:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":sweet_potato:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f360.png" title=":sweet_potato:" width="20px" /> <code>:sweet_potato:</code></td>
+<td><img align="absmiddle" alt=":eggplant:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f346.png" title=":eggplant:" width="20px" /> <code>:eggplant:</code></td>
+<td><img align="absmiddle" alt=":tomato:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f345.png" title=":tomato:" width="20px" /> <code>:tomato:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":corn:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f33d.png" title=":corn:" width="20px" /> <code>:corn:</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Places</p>
+<table>
+<thead>
+<tr>
+<th><img align="absmiddle" alt=":house:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3e0.png" title=":house:" width="20px" /> <code>:house:</code></th>
+<th><img align="absmiddle" alt=":house_with_garden:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3e1.png" title=":house_with_garden:" width="20px" /> <code>:house_with_garden:</code></th>
+<th><img align="absmiddle" alt=":school:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3eb.png" title=":school:" width="20px" /> <code>:school:</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img align="absmiddle" alt=":office:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3e2.png" title=":office:" width="20px" /> <code>:office:</code></td>
+<td><img align="absmiddle" alt=":post_office:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3e3.png" title=":post_office:" width="20px" /> <code>:post_office:</code></td>
+<td><img align="absmiddle" alt=":hospital:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3e5.png" title=":hospital:" width="20px" /> <code>:hospital:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":bank:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3e6.png" title=":bank:" width="20px" /> <code>:bank:</code></td>
+<td><img align="absmiddle" alt=":convenience_store:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3ea.png" title=":convenience_store:" width="20px" /> <code>:convenience_store:</code></td>
+<td><img align="absmiddle" alt=":love_hotel:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3e9.png" title=":love_hotel:" width="20px" /> <code>:love_hotel:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":hotel:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3e8.png" title=":hotel:" width="20px" /> <code>:hotel:</code></td>
+<td><img align="absmiddle" alt=":wedding:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f492.png" title=":wedding:" width="20px" /> <code>:wedding:</code></td>
+<td><img align="absmiddle" alt=":church:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26ea.png" title=":church:" width="20px" /> <code>:church:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":department_store:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3ec.png" title=":department_store:" width="20px" /> <code>:department_store:</code></td>
+<td><img align="absmiddle" alt=":european_post_office:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3e4.png" title=":european_post_office:" width="20px" /> <code>:european_post_office:</code></td>
+<td><img align="absmiddle" alt=":city_sunrise:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f307.png" title=":city_sunrise:" width="20px" /> <code>:city_sunrise:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":city_sunset:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f306.png" title=":city_sunset:" width="20px" /> <code>:city_sunset:</code></td>
+<td><img align="absmiddle" alt=":japanese_castle:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3ef.png" title=":japanese_castle:" width="20px" /> <code>:japanese_castle:</code></td>
+<td><img align="absmiddle" alt=":european_castle:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3f0.png" title=":european_castle:" width="20px" /> <code>:european_castle:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":tent:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26fa.png" title=":tent:" width="20px" /> <code>:tent:</code></td>
+<td><img align="absmiddle" alt=":factory:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3ed.png" title=":factory:" width="20px" /> <code>:factory:</code></td>
+<td><img align="absmiddle" alt=":tokyo_tower:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f5fc.png" title=":tokyo_tower:" width="20px" /> <code>:tokyo_tower:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":japan:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f5fe.png" title=":japan:" width="20px" /> <code>:japan:</code></td>
+<td><img align="absmiddle" alt=":mount_fuji:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f5fb.png" title=":mount_fuji:" width="20px" /> <code>:mount_fuji:</code></td>
+<td><img align="absmiddle" alt=":sunrise_over_mountains:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f304.png" title=":sunrise_over_mountains:" width="20px" /> <code>:sunrise_over_mountains:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":sunrise:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f305.png" title=":sunrise:" width="20px" /> <code>:sunrise:</code></td>
+<td><img align="absmiddle" alt=":stars:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f320.png" title=":stars:" width="20px" /> <code>:stars:</code></td>
+<td><img align="absmiddle" alt=":statue_of_liberty:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f5fd.png" title=":statue_of_liberty:" width="20px" /> <code>:statue_of_liberty:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":bridge_at_night:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f309.png" title=":bridge_at_night:" width="20px" /> <code>:bridge_at_night:</code></td>
+<td><img align="absmiddle" alt=":carousel_horse:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3a0.png" title=":carousel_horse:" width="20px" /> <code>:carousel_horse:</code></td>
+<td><img align="absmiddle" alt=":rainbow:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f308.png" title=":rainbow:" width="20px" /> <code>:rainbow:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":ferris_wheel:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3a1.png" title=":ferris_wheel:" width="20px" /> <code>:ferris_wheel:</code></td>
+<td><img align="absmiddle" alt=":fountain:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26f2.png" title=":fountain:" width="20px" /> <code>:fountain:</code></td>
+<td><img align="absmiddle" alt=":roller_coaster:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3a2.png" title=":roller_coaster:" width="20px" /> <code>:roller_coaster:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":ship:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6a2.png" title=":ship:" width="20px" /> <code>:ship:</code></td>
+<td><img align="absmiddle" alt=":speedboat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6a4.png" title=":speedboat:" width="20px" /> <code>:speedboat:</code></td>
+<td><img align="absmiddle" alt=":boat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26f5.png" title=":boat:" width="20px" /> <code>:boat:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":sailboat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26f5.png" title=":sailboat:" width="20px" /> <code>:sailboat:</code></td>
+<td><img align="absmiddle" alt=":rowboat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6a3.png" title=":rowboat:" width="20px" /> <code>:rowboat:</code></td>
+<td><img align="absmiddle" alt=":anchor:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2693.png" title=":anchor:" width="20px" /> <code>:anchor:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":rocket:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f680.png" title=":rocket:" width="20px" /> <code>:rocket:</code></td>
+<td><img align="absmiddle" alt=":airplane:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2708.png" title=":airplane:" width="20px" /> <code>:airplane:</code></td>
+<td><img align="absmiddle" alt=":helicopter:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f681.png" title=":helicopter:" width="20px" /> <code>:helicopter:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":steam_locomotive:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f682.png" title=":steam_locomotive:" width="20px" /> <code>:steam_locomotive:</code></td>
+<td><img align="absmiddle" alt=":tram:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f68a.png" title=":tram:" width="20px" /> <code>:tram:</code></td>
+<td><img align="absmiddle" alt=":mountain_railway:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f69e.png" title=":mountain_railway:" width="20px" /> <code>:mountain_railway:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":bike:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6b2.png" title=":bike:" width="20px" /> <code>:bike:</code></td>
+<td><img align="absmiddle" alt=":aerial_tramway:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6a1.png" title=":aerial_tramway:" width="20px" /> <code>:aerial_tramway:</code></td>
+<td><img align="absmiddle" alt=":suspension_railway:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f69f.png" title=":suspension_railway:" width="20px" /> <code>:suspension_railway:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":mountain_cableway:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6a0.png" title=":mountain_cableway:" width="20px" /> <code>:mountain_cableway:</code></td>
+<td><img align="absmiddle" alt=":tractor:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f69c.png" title=":tractor:" width="20px" /> <code>:tractor:</code></td>
+<td><img align="absmiddle" alt=":blue_car:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f699.png" title=":blue_car:" width="20px" /> <code>:blue_car:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":oncoming_automobile:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f698.png" title=":oncoming_automobile:" width="20px" /> <code>:oncoming_automobile:</code></td>
+<td><img align="absmiddle" alt=":car:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f697.png" title=":car:" width="20px" /> <code>:car:</code></td>
+<td><img align="absmiddle" alt=":red_car:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f697.png" title=":red_car:" width="20px" /> <code>:red_car:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":taxi:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f695.png" title=":taxi:" width="20px" /> <code>:taxi:</code></td>
+<td><img align="absmiddle" alt=":oncoming_taxi:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f696.png" title=":oncoming_taxi:" width="20px" /> <code>:oncoming_taxi:</code></td>
+<td><img align="absmiddle" alt=":articulated_lorry:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f69b.png" title=":articulated_lorry:" width="20px" /> <code>:articulated_lorry:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":bus:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f68c.png" title=":bus:" width="20px" /> <code>:bus:</code></td>
+<td><img align="absmiddle" alt=":oncoming_bus:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f68d.png" title=":oncoming_bus:" width="20px" /> <code>:oncoming_bus:</code></td>
+<td><img align="absmiddle" alt=":rotating_light:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6a8.png" title=":rotating_light:" width="20px" /> <code>:rotating_light:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":police_car:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f693.png" title=":police_car:" width="20px" /> <code>:police_car:</code></td>
+<td><img align="absmiddle" alt=":oncoming_police_car:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f694.png" title=":oncoming_police_car:" width="20px" /> <code>:oncoming_police_car:</code></td>
+<td><img align="absmiddle" alt=":fire_engine:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f692.png" title=":fire_engine:" width="20px" /> <code>:fire_engine:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":ambulance:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f691.png" title=":ambulance:" width="20px" /> <code>:ambulance:</code></td>
+<td><img align="absmiddle" alt=":minibus:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f690.png" title=":minibus:" width="20px" /> <code>:minibus:</code></td>
+<td><img align="absmiddle" alt=":truck:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f69a.png" title=":truck:" width="20px" /> <code>:truck:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":train:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f68b.png" title=":train:" width="20px" /> <code>:train:</code></td>
+<td><img align="absmiddle" alt=":station:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f689.png" title=":station:" width="20px" /> <code>:station:</code></td>
+<td><img align="absmiddle" alt=":train2:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f686.png" title=":train2:" width="20px" /> <code>:train2:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":bullettrain_front:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f685.png" title=":bullettrain_front:" width="20px" /> <code>:bullettrain_front:</code></td>
+<td><img align="absmiddle" alt=":bullettrain_side:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f684.png" title=":bullettrain_side:" width="20px" /> <code>:bullettrain_side:</code></td>
+<td><img align="absmiddle" alt=":light_rail:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f688.png" title=":light_rail:" width="20px" /> <code>:light_rail:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":monorail:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f69d.png" title=":monorail:" width="20px" /> <code>:monorail:</code></td>
+<td><img align="absmiddle" alt=":railway_car:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f683.png" title=":railway_car:" width="20px" /> <code>:railway_car:</code></td>
+<td><img align="absmiddle" alt=":trolleybus:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f68e.png" title=":trolleybus:" width="20px" /> <code>:trolleybus:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":ticket:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3ab.png" title=":ticket:" width="20px" /> <code>:ticket:</code></td>
+<td><img align="absmiddle" alt=":fuelpump:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26fd.png" title=":fuelpump:" width="20px" /> <code>:fuelpump:</code></td>
+<td><img align="absmiddle" alt=":vertical_traffic_light:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6a6.png" title=":vertical_traffic_light:" width="20px" /> <code>:vertical_traffic_light:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":traffic_light:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6a5.png" title=":traffic_light:" width="20px" /> <code>:traffic_light:</code></td>
+<td><img align="absmiddle" alt=":warning:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26a0.png" title=":warning:" width="20px" /> <code>:warning:</code></td>
+<td><img align="absmiddle" alt=":construction:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6a7.png" title=":construction:" width="20px" /> <code>:construction:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":beginner:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f530.png" title=":beginner:" width="20px" /> <code>:beginner:</code></td>
+<td><img align="absmiddle" alt=":atm:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3e7.png" title=":atm:" width="20px" /> <code>:atm:</code></td>
+<td><img align="absmiddle" alt=":slot_machine:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3b0.png" title=":slot_machine:" width="20px" /> <code>:slot_machine:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":busstop:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f68f.png" title=":busstop:" width="20px" /> <code>:busstop:</code></td>
+<td><img align="absmiddle" alt=":barber:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f488.png" title=":barber:" width="20px" /> <code>:barber:</code></td>
+<td><img align="absmiddle" alt=":hotsprings:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2668.png" title=":hotsprings:" width="20px" /> <code>:hotsprings:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":checkered_flag:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3c1.png" title=":checkered_flag:" width="20px" /> <code>:checkered_flag:</code></td>
+<td><img align="absmiddle" alt=":crossed_flags:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f38c.png" title=":crossed_flags:" width="20px" /> <code>:crossed_flags:</code></td>
+<td><img align="absmiddle" alt=":izakaya_lantern:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3ee.png" title=":izakaya_lantern:" width="20px" /> <code>:izakaya_lantern:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":moyai:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f5ff.png" title=":moyai:" width="20px" /> <code>:moyai:</code></td>
+<td><img align="absmiddle" alt=":circus_tent:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3aa.png" title=":circus_tent:" width="20px" /> <code>:circus_tent:</code></td>
+<td><img align="absmiddle" alt=":performing_arts:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3ad.png" title=":performing_arts:" width="20px" /> <code>:performing_arts:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":round_pushpin:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4cd.png" title=":round_pushpin:" width="20px" /> <code>:round_pushpin:</code></td>
+<td><img align="absmiddle" alt=":triangular_flag_on_post:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6a9.png" title=":triangular_flag_on_post:" width="20px" /> <code>:triangular_flag_on_post:</code></td>
+<td><img align="absmiddle" alt=":jp:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f1ef-1f1f5.png" title=":jp:" width="20px" /> <code>:jp:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":kr:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f1f0-1f1f7.png" title=":kr:" width="20px" /> <code>:kr:</code></td>
+<td><img align="absmiddle" alt=":cn:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f1e8-1f1f3.png" title=":cn:" width="20px" /> <code>:cn:</code></td>
+<td><img align="absmiddle" alt=":us:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f1fa-1f1f8.png" title=":us:" width="20px" /> <code>:us:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":fr:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f1eb-1f1f7.png" title=":fr:" width="20px" /> <code>:fr:</code></td>
+<td><img align="absmiddle" alt=":es:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f1ea-1f1f8.png" title=":es:" width="20px" /> <code>:es:</code></td>
+<td><img align="absmiddle" alt=":it:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f1ee-1f1f9.png" title=":it:" width="20px" /> <code>:it:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":ru:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f1f7-1f1fa.png" title=":ru:" width="20px" /> <code>:ru:</code></td>
+<td><img align="absmiddle" alt=":gb:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f1ec-1f1e7.png" title=":gb:" width="20px" /> <code>:gb:</code></td>
+<td><img align="absmiddle" alt=":uk:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f1ec-1f1e7.png" title=":uk:" width="20px" /> <code>:uk:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":de:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f1e9-1f1ea.png" title=":de:" width="20px" /> <code>:de:</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Symbols</p>
+<table>
+<thead>
+<tr>
+<th><img align="absmiddle" alt=":one:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/0031-20e3.png" title=":one:" width="20px" /> <code>:one:</code></th>
+<th><img align="absmiddle" alt=":two:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/0032-20e3.png" title=":two:" width="20px" /> <code>:two:</code></th>
+<th><img align="absmiddle" alt=":three:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/0033-20e3.png" title=":three:" width="20px" /> <code>:three:</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img align="absmiddle" alt=":four:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/0034-20e3.png" title=":four:" width="20px" /> <code>:four:</code></td>
+<td><img align="absmiddle" alt=":five:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/0035-20e3.png" title=":five:" width="20px" /> <code>:five:</code></td>
+<td><img align="absmiddle" alt=":six:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/0036-20e3.png" title=":six:" width="20px" /> <code>:six:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":seven:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/0037-20e3.png" title=":seven:" width="20px" /> <code>:seven:</code></td>
+<td><img align="absmiddle" alt=":eight:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/0038-20e3.png" title=":eight:" width="20px" /> <code>:eight:</code></td>
+<td><img align="absmiddle" alt=":nine:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/0039-20e3.png" title=":nine:" width="20px" /> <code>:nine:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":keycap_ten:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f51f.png" title=":keycap_ten:" width="20px" /> <code>:keycap_ten:</code></td>
+<td><img align="absmiddle" alt=":1234:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f522.png" title=":1234:" width="20px" /> <code>:1234:</code></td>
+<td><img align="absmiddle" alt=":zero:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/0030-20e3.png" title=":zero:" width="20px" /> <code>:zero:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":hash:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/0023-20e3.png" title=":hash:" width="20px" /> <code>:hash:</code></td>
+<td><img align="absmiddle" alt=":symbols:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f523.png" title=":symbols:" width="20px" /> <code>:symbols:</code></td>
+<td><img align="absmiddle" alt=":arrow_backward:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/25c0.png" title=":arrow_backward:" width="20px" /> <code>:arrow_backward:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":arrow_down:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2b07.png" title=":arrow_down:" width="20px" /> <code>:arrow_down:</code></td>
+<td><img align="absmiddle" alt=":arrow_forward:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/25b6.png" title=":arrow_forward:" width="20px" /> <code>:arrow_forward:</code></td>
+<td><img align="absmiddle" alt=":arrow_left:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2b05.png" title=":arrow_left:" width="20px" /> <code>:arrow_left:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":capital_abcd:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f520.png" title=":capital_abcd:" width="20px" /> <code>:capital_abcd:</code></td>
+<td><img align="absmiddle" alt=":abcd:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f521.png" title=":abcd:" width="20px" /> <code>:abcd:</code></td>
+<td><img align="absmiddle" alt=":abc:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f524.png" title=":abc:" width="20px" /> <code>:abc:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":arrow_lower_left:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2199.png" title=":arrow_lower_left:" width="20px" /> <code>:arrow_lower_left:</code></td>
+<td><img align="absmiddle" alt=":arrow_lower_right:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2198.png" title=":arrow_lower_right:" width="20px" /> <code>:arrow_lower_right:</code></td>
+<td><img align="absmiddle" alt=":arrow_right:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/27a1.png" title=":arrow_right:" width="20px" /> <code>:arrow_right:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":arrow_up:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2b06.png" title=":arrow_up:" width="20px" /> <code>:arrow_up:</code></td>
+<td><img align="absmiddle" alt=":arrow_upper_left:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2196.png" title=":arrow_upper_left:" width="20px" /> <code>:arrow_upper_left:</code></td>
+<td><img align="absmiddle" alt=":arrow_upper_right:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2197.png" title=":arrow_upper_right:" width="20px" /> <code>:arrow_upper_right:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":arrow_double_down:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/23ec.png" title=":arrow_double_down:" width="20px" /> <code>:arrow_double_down:</code></td>
+<td><img align="absmiddle" alt=":arrow_double_up:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/23eb.png" title=":arrow_double_up:" width="20px" /> <code>:arrow_double_up:</code></td>
+<td><img align="absmiddle" alt=":arrow_down_small:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f53d.png" title=":arrow_down_small:" width="20px" /> <code>:arrow_down_small:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":arrow_heading_down:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2935.png" title=":arrow_heading_down:" width="20px" /> <code>:arrow_heading_down:</code></td>
+<td><img align="absmiddle" alt=":arrow_heading_up:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2934.png" title=":arrow_heading_up:" width="20px" /> <code>:arrow_heading_up:</code></td>
+<td><img align="absmiddle" alt=":leftwards_arrow_with_hook:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/21a9.png" title=":leftwards_arrow_with_hook:" width="20px" /> <code>:leftwards_arrow_with_hook:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":arrow_right_hook:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/21aa.png" title=":arrow_right_hook:" width="20px" /> <code>:arrow_right_hook:</code></td>
+<td><img align="absmiddle" alt=":left_right_arrow:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2194.png" title=":left_right_arrow:" width="20px" /> <code>:left_right_arrow:</code></td>
+<td><img align="absmiddle" alt=":arrow_up_down:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2195.png" title=":arrow_up_down:" width="20px" /> <code>:arrow_up_down:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":arrow_up_small:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f53c.png" title=":arrow_up_small:" width="20px" /> <code>:arrow_up_small:</code></td>
+<td><img align="absmiddle" alt=":arrows_clockwise:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f503.png" title=":arrows_clockwise:" width="20px" /> <code>:arrows_clockwise:</code></td>
+<td><img align="absmiddle" alt=":arrows_counterclockwise:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f504.png" title=":arrows_counterclockwise:" width="20px" /> <code>:arrows_counterclockwise:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":rewind:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/23ea.png" title=":rewind:" width="20px" /> <code>:rewind:</code></td>
+<td><img align="absmiddle" alt=":fast_forward:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/23e9.png" title=":fast_forward:" width="20px" /> <code>:fast_forward:</code></td>
+<td><img align="absmiddle" alt=":information_source:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2139.png" title=":information_source:" width="20px" /> <code>:information_source:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":ok:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f197.png" title=":ok:" width="20px" /> <code>:ok:</code></td>
+<td><img align="absmiddle" alt=":twisted_rightwards_arrows:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f500.png" title=":twisted_rightwards_arrows:" width="20px" /> <code>:twisted_rightwards_arrows:</code></td>
+<td><img align="absmiddle" alt=":repeat:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f501.png" title=":repeat:" width="20px" /> <code>:repeat:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":repeat_one:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f502.png" title=":repeat_one:" width="20px" /> <code>:repeat_one:</code></td>
+<td><img align="absmiddle" alt=":new:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f195.png" title=":new:" width="20px" /> <code>:new:</code></td>
+<td><img align="absmiddle" alt=":top:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f51d.png" title=":top:" width="20px" /> <code>:top:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":up:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f199.png" title=":up:" width="20px" /> <code>:up:</code></td>
+<td><img align="absmiddle" alt=":cool:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f192.png" title=":cool:" width="20px" /> <code>:cool:</code></td>
+<td><img align="absmiddle" alt=":free:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f193.png" title=":free:" width="20px" /> <code>:free:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":ng:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f196.png" title=":ng:" width="20px" /> <code>:ng:</code></td>
+<td><img align="absmiddle" alt=":cinema:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f3a6.png" title=":cinema:" width="20px" /> <code>:cinema:</code></td>
+<td><img align="absmiddle" alt=":koko:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f201.png" title=":koko:" width="20px" /> <code>:koko:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":signal_strength:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4f6.png" title=":signal_strength:" width="20px" /> <code>:signal_strength:</code></td>
+<td><img align="absmiddle" alt=":u5272:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f239.png" title=":u5272:" width="20px" /> <code>:u5272:</code></td>
+<td><img align="absmiddle" alt=":u5408:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f234.png" title=":u5408:" width="20px" /> <code>:u5408:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":u55b6:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f23a.png" title=":u55b6:" width="20px" /> <code>:u55b6:</code></td>
+<td><img align="absmiddle" alt=":u6307:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f22f.png" title=":u6307:" width="20px" /> <code>:u6307:</code></td>
+<td><img align="absmiddle" alt=":u6708:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f237.png" title=":u6708:" width="20px" /> <code>:u6708:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":u6709:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f236.png" title=":u6709:" width="20px" /> <code>:u6709:</code></td>
+<td><img align="absmiddle" alt=":u6e80:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f235.png" title=":u6e80:" width="20px" /> <code>:u6e80:</code></td>
+<td><img align="absmiddle" alt=":u7121:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f21a.png" title=":u7121:" width="20px" /> <code>:u7121:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":u7533:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f238.png" title=":u7533:" width="20px" /> <code>:u7533:</code></td>
+<td><img align="absmiddle" alt=":u7a7a:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f233.png" title=":u7a7a:" width="20px" /> <code>:u7a7a:</code></td>
+<td><img align="absmiddle" alt=":u7981:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f232.png" title=":u7981:" width="20px" /> <code>:u7981:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":sa:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f202.png" title=":sa:" width="20px" /> <code>:sa:</code></td>
+<td><img align="absmiddle" alt=":restroom:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6bb.png" title=":restroom:" width="20px" /> <code>:restroom:</code></td>
+<td><img align="absmiddle" alt=":mens:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6b9.png" title=":mens:" width="20px" /> <code>:mens:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":womens:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6ba.png" title=":womens:" width="20px" /> <code>:womens:</code></td>
+<td><img align="absmiddle" alt=":baby_symbol:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6bc.png" title=":baby_symbol:" width="20px" /> <code>:baby_symbol:</code></td>
+<td><img align="absmiddle" alt=":no_smoking:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6ad.png" title=":no_smoking:" width="20px" /> <code>:no_smoking:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":parking:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f17f.png" title=":parking:" width="20px" /> <code>:parking:</code></td>
+<td><img align="absmiddle" alt=":wheelchair:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/267f.png" title=":wheelchair:" width="20px" /> <code>:wheelchair:</code></td>
+<td><img align="absmiddle" alt=":metro:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f687.png" title=":metro:" width="20px" /> <code>:metro:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":baggage_claim:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6c4.png" title=":baggage_claim:" width="20px" /> <code>:baggage_claim:</code></td>
+<td><img align="absmiddle" alt=":accept:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f251.png" title=":accept:" width="20px" /> <code>:accept:</code></td>
+<td><img align="absmiddle" alt=":wc:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6be.png" title=":wc:" width="20px" /> <code>:wc:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":potable_water:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6b0.png" title=":potable_water:" width="20px" /> <code>:potable_water:</code></td>
+<td><img align="absmiddle" alt=":put_litter_in_its_place:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6ae.png" title=":put_litter_in_its_place:" width="20px" /> <code>:put_litter_in_its_place:</code></td>
+<td><img align="absmiddle" alt=":secret:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/3299.png" title=":secret:" width="20px" /> <code>:secret:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":congratulations:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/3297.png" title=":congratulations:" width="20px" /> <code>:congratulations:</code></td>
+<td><img align="absmiddle" alt=":m:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/24c2.png" title=":m:" width="20px" /> <code>:m:</code></td>
+<td><img align="absmiddle" alt=":passport_control:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6c2.png" title=":passport_control:" width="20px" /> <code>:passport_control:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":left_luggage:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6c5.png" title=":left_luggage:" width="20px" /> <code>:left_luggage:</code></td>
+<td><img align="absmiddle" alt=":customs:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6c3.png" title=":customs:" width="20px" /> <code>:customs:</code></td>
+<td><img align="absmiddle" alt=":ideograph_advantage:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f250.png" title=":ideograph_advantage:" width="20px" /> <code>:ideograph_advantage:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":cl:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f191.png" title=":cl:" width="20px" /> <code>:cl:</code></td>
+<td><img align="absmiddle" alt=":sos:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f198.png" title=":sos:" width="20px" /> <code>:sos:</code></td>
+<td><img align="absmiddle" alt=":id:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f194.png" title=":id:" width="20px" /> <code>:id:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":no_entry_sign:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6ab.png" title=":no_entry_sign:" width="20px" /> <code>:no_entry_sign:</code></td>
+<td><img align="absmiddle" alt=":underage:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f51e.png" title=":underage:" width="20px" /> <code>:underage:</code></td>
+<td><img align="absmiddle" alt=":no_mobile_phones:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4f5.png" title=":no_mobile_phones:" width="20px" /> <code>:no_mobile_phones:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":do_not_litter:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6af.png" title=":do_not_litter:" width="20px" /> <code>:do_not_litter:</code></td>
+<td><img align="absmiddle" alt=":non-potable_water:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6b1.png" title=":non-potable_water:" width="20px" /> <code>:non-potable_water:</code></td>
+<td><img align="absmiddle" alt=":no_bicycles:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6b3.png" title=":no_bicycles:" width="20px" /> <code>:no_bicycles:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":no_pedestrians:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6b7.png" title=":no_pedestrians:" width="20px" /> <code>:no_pedestrians:</code></td>
+<td><img align="absmiddle" alt=":children_crossing:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f6b8.png" title=":children_crossing:" width="20px" /> <code>:children_crossing:</code></td>
+<td><img align="absmiddle" alt=":no_entry:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26d4.png" title=":no_entry:" width="20px" /> <code>:no_entry:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":eight_spoked_asterisk:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2733.png" title=":eight_spoked_asterisk:" width="20px" /> <code>:eight_spoked_asterisk:</code></td>
+<td><img align="absmiddle" alt=":eight_pointed_black_star:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2734.png" title=":eight_pointed_black_star:" width="20px" /> <code>:eight_pointed_black_star:</code></td>
+<td><img align="absmiddle" alt=":heart_decoration:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f49f.png" title=":heart_decoration:" width="20px" /> <code>:heart_decoration:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":vs:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f19a.png" title=":vs:" width="20px" /> <code>:vs:</code></td>
+<td><img align="absmiddle" alt=":vibration_mode:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4f3.png" title=":vibration_mode:" width="20px" /> <code>:vibration_mode:</code></td>
+<td><img align="absmiddle" alt=":mobile_phone_off:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4f4.png" title=":mobile_phone_off:" width="20px" /> <code>:mobile_phone_off:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":chart:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4b9.png" title=":chart:" width="20px" /> <code>:chart:</code></td>
+<td><img align="absmiddle" alt=":currency_exchange:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4b1.png" title=":currency_exchange:" width="20px" /> <code>:currency_exchange:</code></td>
+<td><img align="absmiddle" alt=":aries:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2648.png" title=":aries:" width="20px" /> <code>:aries:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":taurus:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2649.png" title=":taurus:" width="20px" /> <code>:taurus:</code></td>
+<td><img align="absmiddle" alt=":gemini:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/264a.png" title=":gemini:" width="20px" /> <code>:gemini:</code></td>
+<td><img align="absmiddle" alt=":cancer:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/264b.png" title=":cancer:" width="20px" /> <code>:cancer:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":leo:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/264c.png" title=":leo:" width="20px" /> <code>:leo:</code></td>
+<td><img align="absmiddle" alt=":virgo:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/264d.png" title=":virgo:" width="20px" /> <code>:virgo:</code></td>
+<td><img align="absmiddle" alt=":libra:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/264e.png" title=":libra:" width="20px" /> <code>:libra:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":scorpius:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/264f.png" title=":scorpius:" width="20px" /> <code>:scorpius:</code></td>
+<td><img align="absmiddle" alt=":sagittarius:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2650.png" title=":sagittarius:" width="20px" /> <code>:sagittarius:</code></td>
+<td><img align="absmiddle" alt=":capricorn:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2651.png" title=":capricorn:" width="20px" /> <code>:capricorn:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":aquarius:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2652.png" title=":aquarius:" width="20px" /> <code>:aquarius:</code></td>
+<td><img align="absmiddle" alt=":pisces:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2653.png" title=":pisces:" width="20px" /> <code>:pisces:</code></td>
+<td><img align="absmiddle" alt=":ophiuchus:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26ce.png" title=":ophiuchus:" width="20px" /> <code>:ophiuchus:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":six_pointed_star:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f52f.png" title=":six_pointed_star:" width="20px" /> <code>:six_pointed_star:</code></td>
+<td><img align="absmiddle" alt=":negative_squared_cross_mark:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/274e.png" title=":negative_squared_cross_mark:" width="20px" /> <code>:negative_squared_cross_mark:</code></td>
+<td><img align="absmiddle" alt=":a:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f170.png" title=":a:" width="20px" /> <code>:a:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":b:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f171.png" title=":b:" width="20px" /> <code>:b:</code></td>
+<td><img align="absmiddle" alt=":ab:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f18e.png" title=":ab:" width="20px" /> <code>:ab:</code></td>
+<td><img align="absmiddle" alt=":o2:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f17e.png" title=":o2:" width="20px" /> <code>:o2:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":diamond_shape_with_a_dot_inside:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4a0.png" title=":diamond_shape_with_a_dot_inside:" width="20px" /> <code>:diamond_shape_with_a_dot_inside:</code></td>
+<td><img align="absmiddle" alt=":recycle:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/267b.png" title=":recycle:" width="20px" /> <code>:recycle:</code></td>
+<td><img align="absmiddle" alt=":end:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f51a.png" title=":end:" width="20px" /> <code>:end:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":on:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f51b.png" title=":on:" width="20px" /> <code>:on:</code></td>
+<td><img align="absmiddle" alt=":soon:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f51c.png" title=":soon:" width="20px" /> <code>:soon:</code></td>
+<td><img align="absmiddle" alt=":clock1:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f550.png" title=":clock1:" width="20px" /> <code>:clock1:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":clock130:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f55c.png" title=":clock130:" width="20px" /> <code>:clock130:</code></td>
+<td><img align="absmiddle" alt=":clock10:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f559.png" title=":clock10:" width="20px" /> <code>:clock10:</code></td>
+<td><img align="absmiddle" alt=":clock1030:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f565.png" title=":clock1030:" width="20px" /> <code>:clock1030:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":clock11:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f55a.png" title=":clock11:" width="20px" /> <code>:clock11:</code></td>
+<td><img align="absmiddle" alt=":clock1130:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f566.png" title=":clock1130:" width="20px" /> <code>:clock1130:</code></td>
+<td><img align="absmiddle" alt=":clock12:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f55b.png" title=":clock12:" width="20px" /> <code>:clock12:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":clock1230:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f567.png" title=":clock1230:" width="20px" /> <code>:clock1230:</code></td>
+<td><img align="absmiddle" alt=":clock2:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f551.png" title=":clock2:" width="20px" /> <code>:clock2:</code></td>
+<td><img align="absmiddle" alt=":clock230:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f55d.png" title=":clock230:" width="20px" /> <code>:clock230:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":clock3:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f552.png" title=":clock3:" width="20px" /> <code>:clock3:</code></td>
+<td><img align="absmiddle" alt=":clock330:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f55e.png" title=":clock330:" width="20px" /> <code>:clock330:</code></td>
+<td><img align="absmiddle" alt=":clock4:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f553.png" title=":clock4:" width="20px" /> <code>:clock4:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":clock430:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f55f.png" title=":clock430:" width="20px" /> <code>:clock430:</code></td>
+<td><img align="absmiddle" alt=":clock5:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f554.png" title=":clock5:" width="20px" /> <code>:clock5:</code></td>
+<td><img align="absmiddle" alt=":clock530:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f560.png" title=":clock530:" width="20px" /> <code>:clock530:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":clock6:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f555.png" title=":clock6:" width="20px" /> <code>:clock6:</code></td>
+<td><img align="absmiddle" alt=":clock630:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f561.png" title=":clock630:" width="20px" /> <code>:clock630:</code></td>
+<td><img align="absmiddle" alt=":clock7:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f556.png" title=":clock7:" width="20px" /> <code>:clock7:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":clock730:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f562.png" title=":clock730:" width="20px" /> <code>:clock730:</code></td>
+<td><img align="absmiddle" alt=":clock8:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f557.png" title=":clock8:" width="20px" /> <code>:clock8:</code></td>
+<td><img align="absmiddle" alt=":clock830:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f563.png" title=":clock830:" width="20px" /> <code>:clock830:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":clock9:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f558.png" title=":clock9:" width="20px" /> <code>:clock9:</code></td>
+<td><img align="absmiddle" alt=":clock930:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f564.png" title=":clock930:" width="20px" /> <code>:clock930:</code></td>
+<td><img align="absmiddle" alt=":heavy_dollar_sign:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4b2.png" title=":heavy_dollar_sign:" width="20px" /> <code>:heavy_dollar_sign:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":copyright:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/00a9.png" title=":copyright:" width="20px" /> <code>:copyright:</code></td>
+<td><img align="absmiddle" alt=":registered:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/00ae.png" title=":registered:" width="20px" /> <code>:registered:</code></td>
+<td><img align="absmiddle" alt=":tm:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2122.png" title=":tm:" width="20px" /> <code>:tm:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":x:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/274c.png" title=":x:" width="20px" /> <code>:x:</code></td>
+<td><img align="absmiddle" alt=":heavy_exclamation_mark:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2757.png" title=":heavy_exclamation_mark:" width="20px" /> <code>:heavy_exclamation_mark:</code></td>
+<td><img align="absmiddle" alt=":bangbang:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/203c.png" title=":bangbang:" width="20px" /> <code>:bangbang:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":interrobang:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2049.png" title=":interrobang:" width="20px" /> <code>:interrobang:</code></td>
+<td><img align="absmiddle" alt=":o:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2b55.png" title=":o:" width="20px" /> <code>:o:</code></td>
+<td><img align="absmiddle" alt=":heavy_multiplication_x:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2716.png" title=":heavy_multiplication_x:" width="20px" /> <code>:heavy_multiplication_x:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":heavy_plus_sign:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2795.png" title=":heavy_plus_sign:" width="20px" /> <code>:heavy_plus_sign:</code></td>
+<td><img align="absmiddle" alt=":heavy_minus_sign:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2796.png" title=":heavy_minus_sign:" width="20px" /> <code>:heavy_minus_sign:</code></td>
+<td><img align="absmiddle" alt=":heavy_division_sign:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2797.png" title=":heavy_division_sign:" width="20px" /> <code>:heavy_division_sign:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":white_flower:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4ae.png" title=":white_flower:" width="20px" /> <code>:white_flower:</code></td>
+<td><img align="absmiddle" alt=":100:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f4af.png" title=":100:" width="20px" /> <code>:100:</code></td>
+<td><img align="absmiddle" alt=":heavy_check_mark:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2714.png" title=":heavy_check_mark:" width="20px" /> <code>:heavy_check_mark:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":ballot_box_with_check:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2611.png" title=":ballot_box_with_check:" width="20px" /> <code>:ballot_box_with_check:</code></td>
+<td><img align="absmiddle" alt=":radio_button:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f518.png" title=":radio_button:" width="20px" /> <code>:radio_button:</code></td>
+<td><img align="absmiddle" alt=":link:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f517.png" title=":link:" width="20px" /> <code>:link:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":curly_loop:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/27b0.png" title=":curly_loop:" width="20px" /> <code>:curly_loop:</code></td>
+<td><img align="absmiddle" alt=":wavy_dash:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/3030.png" title=":wavy_dash:" width="20px" /> <code>:wavy_dash:</code></td>
+<td><img align="absmiddle" alt=":part_alternation_mark:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/303d.png" title=":part_alternation_mark:" width="20px" /> <code>:part_alternation_mark:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":trident:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f531.png" title=":trident:" width="20px" /> <code>:trident:</code></td>
+<td>:black_square: <code>:black_square:</code></td>
+<td>:white_square: <code>:white_square:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":white_check_mark:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2705.png" title=":white_check_mark:" width="20px" /> <code>:white_check_mark:</code></td>
+<td><img align="absmiddle" alt=":black_square_button:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f532.png" title=":black_square_button:" width="20px" /> <code>:black_square_button:</code></td>
+<td><img align="absmiddle" alt=":white_square_button:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f533.png" title=":white_square_button:" width="20px" /> <code>:white_square_button:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":black_circle:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26ab.png" title=":black_circle:" width="20px" /> <code>:black_circle:</code></td>
+<td><img align="absmiddle" alt=":white_circle:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/26aa.png" title=":white_circle:" width="20px" /> <code>:white_circle:</code></td>
+<td><img align="absmiddle" alt=":red_circle:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f534.png" title=":red_circle:" width="20px" /> <code>:red_circle:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":large_blue_circle:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f535.png" title=":large_blue_circle:" width="20px" /> <code>:large_blue_circle:</code></td>
+<td><img align="absmiddle" alt=":large_blue_diamond:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f537.png" title=":large_blue_diamond:" width="20px" /> <code>:large_blue_diamond:</code></td>
+<td><img align="absmiddle" alt=":large_orange_diamond:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f536.png" title=":large_orange_diamond:" width="20px" /> <code>:large_orange_diamond:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":small_blue_diamond:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f539.png" title=":small_blue_diamond:" width="20px" /> <code>:small_blue_diamond:</code></td>
+<td><img align="absmiddle" alt=":small_orange_diamond:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f538.png" title=":small_orange_diamond:" width="20px" /> <code>:small_orange_diamond:</code></td>
+<td><img align="absmiddle" alt=":small_red_triangle:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f53a.png" title=":small_red_triangle:" width="20px" /> <code>:small_red_triangle:</code></td>
+</tr>
+<tr>
+<td><img align="absmiddle" alt=":small_red_triangle_down:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f53b.png" title=":small_red_triangle_down:" width="20px" /> <code>:small_red_triangle_down:</code></td>
+<td><img align="absmiddle" alt=":shipit:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/shipit.png" title=":shipit:" width="20px" /> <code>:shipit:</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../PlaceHolder/" title="Algorithms" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Algorithms
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            jchrys &copy;2019~
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.245445c6.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="../js/katex.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

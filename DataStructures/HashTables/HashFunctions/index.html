@@ -236,6 +236,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../Emoji/" title="Emoji" class="md-nav__link">
+      Emoji
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../../../PlaceHolder/" title="Algorithms" class="md-nav__link">
       Algorithms
     </a>
@@ -251,13 +263,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-4">
       DataStructures
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-4">
         DataStructures
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -284,13 +296,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
     
-    <label class="md-nav__link" for="nav-3-2">
+    <label class="md-nav__link" for="nav-4-2">
       Hash Tables
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-2">
+      <label class="md-nav__title" for="nav-4-2">
         Hash Tables
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -471,7 +483,7 @@
                 <h1 id="hash-function">Hash Function</h1>
 <p>A hash function is any function that can be used to map data of arbitrary size onto data of a fixed size.</p>
 <h2 id="hash-functions">Hash Functions</h2>
-<h3 id="1-djb2">1. DJB2 <a href="http://www.cse.yorku.ca/~oz/hash.html"><img alt="🐛" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f41b.svg" title=":bug:" /></a></h3>
+<h3 id="1-djb2">1. DJB2 <a href="http://www.cse.yorku.ca/~oz/hash.html"><img align="absmiddle" alt=":bug:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f41b.png" title=":bug:" width="20px" /></a></h3>
 <blockquote>
 <p>this algorithm (k=33) was first reported by dan bernstein many years ago in comp.lang.c. another version of this algorithm (now favored by bernstein) uses xor: hash(i) = hash(i-1) * 33 ^ str[i]; the magic of number 33 (why it works better than many other constants, prime or not) has never adequately explained</p>
 </blockquote>
@@ -495,7 +507,7 @@
 </pre></div>
 </td></tr></table>
 
-<h3 id="2-sdbm">2. sdbm <a href="http://www.cse.yorku.ca/~oz/hash.html"><img alt="🐛" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f41b.svg" title=":bug:" /></a></h3>
+<h3 id="2-sdbm">2. sdbm <a href="http://www.cse.yorku.ca/~oz/hash.html"><img align="absmiddle" alt=":bug:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f41b.png" title=":bug:" width="20px" /></a></h3>
 <blockquote>
 <p>this algorithm was created for sdbm (a public-domain reimplementation of ndbm) database library. it was found to do well in scrambling bits, causing better distribution of the keys and fewer splits. it also happens to be a good general hashing function with good distribution. the actual function is hash(i) = hash(i - 1) * 65599 + str[i];; what is included below is faster version used in gawk. (there iseven a faster, duff's device version) the magic constant 65599 was picked out of thin air while experimenting with different constants, and turns out to be a prime. this is one of the algorithms used in berkeley db (see sleepy cat) and else where</p>
 </blockquote>
@@ -525,7 +537,7 @@
 </pre></div>
 </td></tr></table>
 
-<h3 id="3-lose-lose">3. lose lose <a href="http://www.cse.yorku.ca/~oz/hash.html"><img alt="🐛" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f41b.svg" title=":bug:" /></a></h3>
+<h3 id="3-lose-lose">3. lose lose <a href="http://www.cse.yorku.ca/~oz/hash.html"><img align="absmiddle" alt=":bug:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f41b.png" title=":bug:" width="20px" /></a></h3>
 <blockquote>
 <p>This hash function appeared in K&amp;R (1st ed) but at least the reader was warned: "This is not the best possible algorithm, but it has the merit of extreme simplicity". This is an understatement; It is a terrible hashing algorithm, and it could have been much better without scarificing its "extreme simplicity." Many C programmers use this function without actually testing it, or checking something like Knuth's Sorting and searching, so it stuck. It is now found mixed with other respectable code, eg.cnews.</p>
 </blockquote>
