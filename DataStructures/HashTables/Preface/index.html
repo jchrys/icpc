@@ -505,11 +505,14 @@ A hash table typically uses an array of size proportional to the number of  keys
 <p>Instead of using the key as an array index directly, the array index is computed from the key</p>
 <h2 id="dealing-with-collisions">Dealing with collisions</h2>
 <blockquote>
-<p>Since a hash table uses array of size relatively small to the number of possible keys, there is a chance to <em>collisions</em> in which more than one key maps to the same array index</p>
+<p>Collision: two keys hash to the same slot. <br />
+Since a hash table uses array of size relatively small to the number of possible keys, there is a chance to <em>collisions</em> in which more than one key maps to the same array index</p>
 </blockquote>
+<table><tr><th></th><th colspan="2">Chaining</th><th colspan="2">OpenAddressing<br></th><th colspan="2">PerfectHashing<br></th></tr><tr><td>OPERATIONS<br></td><td>average</td><td>worst</td><td>average</td><td>worst</td><td>average<br></td><td>worst</td></tr><tr><td>INSERT</td><td>$O(1)$</td><td></td><td></td><td></td><td>-</td><td>-</td></tr><tr><td>SEARCH</td><td>$O(n/m)$</td><td>$O(n)$</td><td></td><td></td><td>$O(1)$</td><td>$O(1)$</td></tr><tr><td>DELETE</td><td>$O(1)$<br></td><td></td><td></td><td></td><td>-</td><td>-</td></tr></table>
+
 <h3 id="1-chaining">1. Chaining</h3>
 <blockquote>
-<p>Resolve Collisions with linked list</p>
+<p>In Chaining, we place all the elements that hash to the same slot in to the same linked llist</p>
 </blockquote>
 <h3 id="2-open-addressing">2. Open Addressing</h3>
 <blockquote>
@@ -517,7 +520,8 @@ A hash table typically uses an array of size proportional to the number of  keys
 </blockquote>
 <h2 id="perfect-hashing">Perfect Hashing</h2>
 <blockquote>
-<p>perfect hashing can support searches in $O(1)\  wosrt-case$ time, when the set is static(!= dynamic)   </p>
+<p>Perfect Hasing uses second level Hashtable that has no collision. 
+perfect hashing can support searches in $O(1)\  wosrt-case$ time, when the set is static(!= dynamic)   </p>
 </blockquote>
                 
                   
