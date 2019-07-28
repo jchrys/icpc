@@ -45,8 +45,18 @@ markdown_extensions:
 # Copyright
 copyright: 'jchrys &copy;2019~'
 
+# disqus
+extra:
+    disqus: 'icpcninja'
+# google analytics
+google_analytics:
+  - 'UA-144755317-1'
+  - 'auto'
+
+
 # dev
 #dev_addr: '172.20.10.2:8080'
+
 
 # TABLE OF CONTENTS
 nav:
