@@ -55,6 +55,7 @@ nav:
     - Language: 
         Preface: Language/Preface.md
         Keywords: Language/Keywords.md
+        Class: Language/Class.md
     - Algorithms: PlaceHolder.md
     - DataStructures: 
         - Basics:
