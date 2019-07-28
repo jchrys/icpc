@@ -6,5 +6,11 @@
 - C++ basic class syntax that are used to implement DataStructures
 - Stack
 - Vector
-- Sortings: Bubble, insert, Quick, Heap, Counting
+- Algorithms:
+    - Sortings:
+        - [x] Bubble
+        - [x] Insertion
+        - [] QuickSort
+        - [] HeapSort
+        - [] CountingSort
 
