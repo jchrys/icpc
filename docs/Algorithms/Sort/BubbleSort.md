@@ -2,7 +2,7 @@
 > Bubble Sort
 
 ## C++
-```
+```cpp
 template<typename It>
 void BubbleSort(It begin, It end) {
     if (begin == end) return; //return if container is empty
