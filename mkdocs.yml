@@ -51,7 +51,12 @@ copyright: 'jchrys &copy;2019~'
 # TABLE OF CONTENTS
 nav:
     - Home: index.md
-    - Emoji: Emoji.md
+    - Contribute:
+        - HowToContribute: Contribute/HowToContribute.md
+        - Emoji: Contribute/Emoji.md
+        - Templates:
+            - Algorithm: PlaceHolder.md
+            - Problems: Placeholder.md
     - Language: 
         Preface: Language/Preface.md
         Keywords: Language/Keywords.md
