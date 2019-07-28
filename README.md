@@ -4,8 +4,18 @@
 
 # TODOS
 - C++ basic class syntax that are used to implement DataStructures
-- Stack
-- Vector
+
+- DataStructures:
+    - [ ] Stack
+    - [ ] Vector
+    - [ ] HashTable
+    - [ ] BinarySearchTree
+    - [ ] RedBlackTree
+    - [ ] B-Trees 
+    - [ ] Heap 
+    - [ ] FibonacciHeaps
+    - [ ] van Emde Boas Trees
+    - [ ] Graphs
 - Algorithms:
     - Sortings:
         - [x] Bubble
