@@ -2,67 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://icpc.ninja/</loc>
-     <lastmod>2019-07-28</lastmod>
+     <lastmod>2019-07-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Contribute/HowToContribute/</loc>
-     <lastmod>2019-07-28</lastmod>
+     <lastmod>2019-07-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Contribute/Emoji/</loc>
-     <lastmod>2019-07-28</lastmod>
+     <lastmod>2019-07-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/PlaceHolder/</loc>
-     <lastmod>2019-07-28</lastmod>
+     <lastmod>2019-07-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://icpc.ninja/PlaceHolder/</loc>
+     <lastmod>2019-07-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Language/Preface/</loc>
-     <lastmod>2019-07-28</lastmod>
+     <lastmod>2019-07-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Language/Keywords/</loc>
-     <lastmod>2019-07-28</lastmod>
+     <lastmod>2019-07-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Language/Class/</loc>
-     <lastmod>2019-07-28</lastmod>
+     <lastmod>2019-07-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Sort/InsertionSort/</loc>
-     <lastmod>2019-07-28</lastmod>
+     <lastmod>2019-07-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Sort/BubbleSort/</loc>
-     <lastmod>2019-07-28</lastmod>
+     <lastmod>2019-07-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/Basics/Stack/</loc>
-     <lastmod>2019-07-28</lastmod>
+     <lastmod>2019-07-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/HashTables/Preface/</loc>
-     <lastmod>2019-07-28</lastmod>
+     <lastmod>2019-07-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/HashTables/HashFunctions/</loc>
-     <lastmod>2019-07-28</lastmod>
+     <lastmod>2019-07-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
