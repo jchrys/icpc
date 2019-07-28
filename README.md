@@ -10,7 +10,7 @@
     - Sortings:
         - [x] Bubble
         - [x] Insertion
-        - [] QuickSort
-        - [] HeapSort
-        - [] CountingSort
+        - [  ] QuickSort
+        - [  ] HeapSort
+        - [  ] CountingSort
 
