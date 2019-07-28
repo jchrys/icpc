@@ -1,5 +1,8 @@
+#THIS SITE IS UNDER CONSTRUCTING
+
 # Welcome to ICPC.NINJA
 SHARE & GET useful problem solving techniques
+All Articles in this site is implemented on c++17
 
 ## Why I created this site? 
 Ipsum nemo veritatis illum nulla veniam. Aut esse blanditiis placeat omnis culpa. Odit iusto repudiandae dolorem molestiae labore. Sed a dolores iusto esse placeat officia Obcaecati corporis perspiciatis sequi consequatur.

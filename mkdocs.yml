@@ -45,14 +45,20 @@ markdown_extensions:
 # Copyright
 copyright: 'jchrys &copy;2019~'
 
+# dev
+#dev_addr: '172.20.10.2:8080'
 
 # TABLE OF CONTENTS
 nav:
     - Home: index.md
     - Emoji: Emoji.md
+    - Language: 
+        Preface: Language/Preface.md
+        Keywords: Language/Keywords.md
     - Algorithms: PlaceHolder.md
     - DataStructures: 
-        - Stack: DataStructures/Stack.md
+        - Basics:
+            - Stack: DataStructures/Basics/Stack.md
         - Hash Tables:
             - Preface: DataStructures/HashTables/Preface.md
             - Hash Functions: DataStructures/HashTables/HashFunctions.md
