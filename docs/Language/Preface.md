@@ -2,24 +2,24 @@
 
 ## What You Should Know Before..
 > you should be able to write C++ programs using components such as IOstreams and containers from C++ STL.
-> You Should be also be familiar with the basic features of "Modern c++", such as auto, decltype, move semantics, and lambdas.
+> You Should be also be familiar with the basic features of "Modern C++", such as auto, decltype, move semantics, and lambdas.
 > c++17
 
 
 
-## modern c++
-> We will use number of these new features in this site.
-### 1. c++11
+## modern C++
+> We will use number of these new features of modern C++
+### 1. C++11
 - Variadic templates
 - Alias templates
 - Move semantics, rvalue references, and perfect forwarding
 - Standard type traits
 
-### 2. c++14
+### 2. C++14
 - Variable templates
 - Generic Lambdas
 
-### 3. c++17
+### 3. C++17
 - Class template argument deduction
 - Compile-time `if`
 - Fold expressions
