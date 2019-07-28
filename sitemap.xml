@@ -6,8 +6,23 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://icpc.ninja/Emoji/</loc>
+     <loc>https://icpc.ninja/Contribute/HowToContribute/</loc>
      <lastmod>2019-07-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://icpc.ninja/Contribute/Emoji/</loc>
+     <lastmod>2019-07-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://icpc.ninja/PlaceHolder/</loc>
+     <lastmod>2019-07-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc></loc>
+     
      <changefreq>daily</changefreq>
     </url>
     <url>
@@ -21,7 +36,17 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://icpc.ninja/PlaceHolder/</loc>
+     <loc>https://icpc.ninja/Language/Class/</loc>
+     <lastmod>2019-07-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://icpc.ninja/Algorithms/Sort/InsertionSort/</loc>
+     <lastmod>2019-07-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://icpc.ninja/Algorithms/Sort/BubbleSort/</loc>
      <lastmod>2019-07-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
