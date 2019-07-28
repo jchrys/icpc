@@ -61,7 +61,10 @@ nav:
         Preface: Language/Preface.md
         Keywords: Language/Keywords.md
         Class: Language/Class.md
-    - Algorithms: PlaceHolder.md
+    - Algorithms: 
+        - Sort:
+            - InsertionSort: Algorithms/Sort/InsertionSort.md
+            - BubbleSort: Algorithms/Sort/BubbleSort.md
     - DataStructures: 
         - Basics:
             - Stack: DataStructures/Basics/Stack.md
