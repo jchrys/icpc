@@ -1,4 +1,4 @@
-#THIS SITE IS UNDER CONSTRUCTING
+#THIS SITE IS UNDER CONSTRUCTION
 
 # Welcome to ICPC.NINJA
 SHARE & GET useful problem solving techniques
