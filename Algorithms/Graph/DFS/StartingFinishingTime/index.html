@@ -13,7 +13,7 @@
         <meta name="description" content="Solutions to Competitive Programming Problems">
       
       
-        <link rel="canonical" href="https://icpc.ninja/DataStructures/Basics/Stack/">
+        <link rel="canonical" href="https://icpc.ninja/Algorithms/Graph/DFS/StartingFinishingTime/">
       
       
         <meta name="author" content="JCHRYS">
@@ -37,21 +37,21 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
     
     
       
-        <title>Stack - ICPC.NINJA</title>
+        <title>StartingFinishingTime - ICPC.NINJA</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.0284f74d.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.0284f74d.css">
       
       
     
     
-      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
@@ -60,10 +60,10 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
     
     
-      <link rel="stylesheet" href="../../../css/katex.css">
+      <link rel="stylesheet" href="../../../../css/katex.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css">
     
@@ -112,7 +112,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#stack" tabindex="1" class="md-skip">
+      <a href="#starting-time-finishing-time" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -138,7 +138,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Stack
+                StartingFinishingTime
               
             </span>
           
@@ -249,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." title="Home" class="md-nav__link">
+    <a href="../../../.." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -280,7 +280,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Contribute/HowToContribute/" title="HowToContribute" class="md-nav__link">
+    <a href="../../../../Contribute/HowToContribute/" title="HowToContribute" class="md-nav__link">
       HowToContribute
     </a>
   </li>
@@ -292,7 +292,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Contribute/Emoji/" title="Emoji" class="md-nav__link">
+    <a href="../../../../Contribute/Emoji/" title="Emoji" class="md-nav__link">
       Emoji
     </a>
   </li>
@@ -323,7 +323,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../PlaceHolder/" title="Algorithm" class="md-nav__link">
+    <a href="../../../../PlaceHolder/" title="Algorithm" class="md-nav__link">
       Algorithm
     </a>
   </li>
@@ -335,7 +335,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../PlaceHolder/" title="Problems" class="md-nav__link">
+    <a href="../../../../PlaceHolder/" title="Problems" class="md-nav__link">
       Problems
     </a>
   </li>
@@ -376,7 +376,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Language/Preface/" title="Preface" class="md-nav__link">
+    <a href="../../../../Language/Preface/" title="Preface" class="md-nav__link">
       Preface
     </a>
   </li>
@@ -388,7 +388,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Language/Keywords/" title="Keywords" class="md-nav__link">
+    <a href="../../../../Language/Keywords/" title="Keywords" class="md-nav__link">
       Keywords
     </a>
   </li>
@@ -400,7 +400,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Language/Class/" title="Class" class="md-nav__link">
+    <a href="../../../../Language/Class/" title="Class" class="md-nav__link">
       Class
     </a>
   </li>
@@ -415,10 +415,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Algorithms
@@ -434,10 +436,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1" checked>
     
     <label class="md-nav__link" for="nav-4-1">
       Graph
@@ -453,10 +457,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1-1" type="checkbox" id="nav-4-1-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-1-1" type="checkbox" id="nav-4-1-1" checked>
     
     <label class="md-nav__link" for="nav-4-1-1">
       DFS
@@ -474,7 +480,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Algorithms/Graph/DFS/Preface/" title="Preface" class="md-nav__link">
+    <a href="../Preface/" title="Preface" class="md-nav__link">
       Preface
     </a>
   </li>
@@ -486,7 +492,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Algorithms/Graph/DFS/Tree.md" title="DFSTree" class="md-nav__link">
+    <a href="../Tree.md" title="DFSTree" class="md-nav__link">
       DFSTree
     </a>
   </li>
@@ -496,11 +502,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../Algorithms/Graph/DFS/StartingFinishingTime/" title="StartingFinishingTime" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="StartingFinishingTime" class="md-nav__link md-nav__link--active">
       StartingFinishingTime
     </a>
+    
   </li>
 
         
@@ -539,7 +554,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Algorithms/Sort/InsertionSort/" title="InsertionSort" class="md-nav__link">
+    <a href="../../../Sort/InsertionSort/" title="InsertionSort" class="md-nav__link">
       InsertionSort
     </a>
   </li>
@@ -551,7 +566,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Algorithms/Sort/BubbleSort/" title="BubbleSort" class="md-nav__link">
+    <a href="../../../Sort/BubbleSort/" title="BubbleSort" class="md-nav__link">
       BubbleSort
     </a>
   </li>
@@ -571,12 +586,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       DataStructures
@@ -592,12 +605,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
     
     <label class="md-nav__link" for="nav-5-1">
       Basics
@@ -613,82 +624,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Stack
-      </label>
-    
-    <a href="./" title="Stack" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../../../DataStructures/Basics/Stack/" title="Stack" class="md-nav__link">
       Stack
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#supported-operations" title="supported operations" class="md-nav__link">
-    supported operations
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-push" title="1. PUSH()" class="md-nav__link">
-    1. PUSH()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-pop" title="2. POP()" class="md-nav__link">
-    2. POP()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-empty" title="3. EMPTY()" class="md-nav__link">
-    3. EMPTY()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
-          </a>
-        </li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -722,7 +662,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../HashTables/Preface/" title="Preface" class="md-nav__link">
+    <a href="../../../../DataStructures/HashTables/Preface/" title="Preface" class="md-nav__link">
       Preface
     </a>
   </li>
@@ -734,7 +674,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../HashTables/HashFunctions/" title="Hash Functions" class="md-nav__link">
+    <a href="../../../../DataStructures/HashTables/HashFunctions/" title="Hash Functions" class="md-nav__link">
       Hash Functions
     </a>
   </li>
@@ -767,55 +707,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#supported-operations" title="supported operations" class="md-nav__link">
-    supported operations
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-push" title="1. PUSH()" class="md-nav__link">
-    1. PUSH()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-pop" title="2. POP()" class="md-nav__link">
-    2. POP()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-empty" title="3. EMPTY()" class="md-nav__link">
-    3. EMPTY()
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
-          </a>
-        </li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -826,24 +717,34 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/jchrys/icpc/edit/master/docs/DataStructures/Basics/Stack.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/jchrys/icpc/edit/master/docs/Algorithms/Graph/DFS/StartingFinishingTime.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="stack">Stack</h1>
-<blockquote>
-<p>Element deleted from the set is the one most recently inserted;<br />
-Stack implements <em>last-in, first out</em> or <em>LIFO</em> policy<br />
-You can use array to implement Stack</p>
-</blockquote>
-<h2 id="supported-operations">supported operations</h2>
-<blockquote>
-<p>The INSERT operation on a stack is often called PUSH,<br />
-and the DELETE operation, which does not take an argument,<br />
-is often called POP.</p>
-</blockquote>
-<h3 id="1-push">1. PUSH()</h3>
-<h3 id="2-pop">2. POP()</h3>
-<h3 id="3-empty">3. EMPTY()</h3>
+                <h1 id="starting-time-finishing-time">Starting time, finishing time</h1>
+<p>Starting time of a vertex is the time we enter it (the order we enter it) and its finishing time is the time we leave it. Calculating these are easy</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">TIME</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">dfs</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="n">st</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">TIME</span><span class="o">++</span>
+    <span class="n">color</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">gray</span>
+    <span class="k">for</span> <span class="n">u</span> <span class="ow">in</span> <span class="n">adj</span><span class="p">[</span><span class="n">v</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">color</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">==</span> <span class="n">white</span><span class="p">:</span>
+            <span class="n">then</span> <span class="n">dfs</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+    <span class="n">color</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">black</span>
+    <span class="n">ft</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">TIME</span> <span class="c1"># or we can use TIME ++</span>
+</pre></div>
+</td></tr></table>
+
+<p>It is useable in specially data structure problems (convert the tree into an array).</p>
+<p><em>Lemma</em>: if we run $dfs(root)$ in a rooted tree, then v is an ancestor of $u$ if and only if $st_v\leq st_u\leq ft_u\leq ft_v$.</p>
+<p>So, given arrays $st$ and $ft$ we can rebuild the tree.</p>
                 
                   
                 
@@ -856,9 +757,9 @@ is often called POP.</p>
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://icpc.ninja/DataStructures/Basics/Stack/";
+      this.page.url = "https://icpc.ninja/Algorithms/Graph/DFS/StartingFinishingTime/";
       this.page.identifier =
-        "/DataStructures/Basics/Stack/";
+        "/Algorithms/Graph/DFS/StartingFinishingTime/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -880,7 +781,7 @@ is often called POP.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../../Algorithms/Sort/BubbleSort/" title="BubbleSort" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Preface/" title="Preface" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -889,19 +790,19 @@ is often called POP.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                BubbleSort
+                Preface
               </span>
             </div>
           </a>
         
         
-          <a href="../../HashTables/Preface/" title="Preface" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../../Sort/InsertionSort/" title="InsertionSort" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Preface
+                InsertionSort
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -933,11 +834,11 @@ is often called POP.</p>
       
     </div>
     
-      <script src="../../../assets/javascripts/application.245445c6.js"></script>
+      <script src="../../../../assets/javascripts/application.245445c6.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
       
-        <script src="../../../js/katex.js"></script>
+        <script src="../../../../js/katex.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js"></script>
       
