@@ -72,6 +72,10 @@ nav:
         Keywords: Language/Keywords.md
         Class: Language/Class.md
     - Algorithms: 
+        - Graph: 
+            - DFS: 
+                - Preface: Algorithms/Graph/DFS/Preface.md
+                - DFSTree: Algorithms/Graph/DFS/Tree.md
         - Sort:
             - InsertionSort: Algorithms/Sort/InsertionSort.md
             - BubbleSort: Algorithms/Sort/BubbleSort.md
