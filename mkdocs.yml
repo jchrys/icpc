@@ -86,3 +86,5 @@ nav:
         - Hash Tables:
             - Preface: DataStructures/HashTables/Preface.md
             - Hash Functions: DataStructures/HashTables/HashFunctions.md
+    - MISC:
+        Lemma: MISC/Lemma.md
