@@ -1,7 +1,7 @@
 #Finding Cut Edges
-The code below works properly because of the lemma above(first lemma)
-
-_Lemma-1_
+The code below works properly because of the lemma above(first lemma)[^1]
+[^1]:
+    First lemma will be placed here
 
 ```python
 h[root] = 0

@@ -77,6 +77,8 @@ nav:
                 - Preface: Algorithms/Graph/DFS/Preface.md
                 - DFSTree: Algorithms/Graph/DFS/Tree.md
                 - StartingFinishingTime: Algorithms/Graph/DFS/StartingFinishingTime.md
+                - FindingCutEdges: Algorithms/Graph/DFS/FindingCutEdges.md
+
         - Sort:
             - InsertionSort: Algorithms/Sort/InsertionSort.md
             - BubbleSort: Algorithms/Sort/BubbleSort.md
