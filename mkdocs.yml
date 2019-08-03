@@ -88,5 +88,9 @@ nav:
         - Hash Tables:
             - Preface: DataStructures/HashTables/Preface.md
             - Hash Functions: DataStructures/HashTables/HashFunctions.md
+        - Trees:
+            - SearchTree: SearchTree.md
+            - AVL: AVL.md
+            - BST: BST.md 
     - MISC:
         Lemma: MISC/Lemma.md
