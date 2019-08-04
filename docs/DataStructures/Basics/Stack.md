@@ -4,12 +4,50 @@
 > You can use array to implement Stack
 
 ## supported operations
-> The INSERT operation on a stack is often called PUSH,  
-> and the DELETE operation, which does not take an argument,  
-> is often called POP.
-### 1. PUSH()
+insert, delete, empty, top, size
 
-### 2. POP()
+```cpp
+template<typename T>
+class Stack {
+    public:
+        struct Node {
+            T val;
+            Node *next;
+            Node() {};
+            Node(T val) : val(val), next(0){};
+        };
+        Node *head;
+        int _size;
+        Stack() {
+            head = 0;
+            _size = 0;
+        }
+        void push(T val) {
+            Node* temp = new Node(val);
+            if (head == 0) {
+                head = temp;
+            } else {
+                temp->next = head;
+                head = temp;
+            }
+            _size++;
+        }
+        void pop() {
+            if (empty()) return;
+            Node* temp = head;
+            head = head->next;
+            delete temp;
+            _size--;
+        }
 
-### 3. EMPTY()
-
+        bool empty() const {
+            return _size == 0;
+        }
+        T top() const {
+            return head->val;
+        }
+        int size() const {
+            return _size;
+        }
+};
+```
