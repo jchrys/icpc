@@ -91,6 +91,6 @@ nav:
         - Trees:
             - SearchTree: DataStructures/Trees/SearchTree.md
             - AVL: DataStructures/Trees/AVL.md
-            - BST: DataStructures/TRees/BST.md 
+            - BST: DataStructures/Trees/BST.md 
     - MISC:
         Lemma: MISC/Lemma.md
