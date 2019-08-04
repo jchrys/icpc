@@ -13,7 +13,7 @@
         <meta name="description" content="Solutions to Competitive Programming Problems">
       
       
-        <link rel="canonical" href="https://icpc.ninja/Algorithms/Graph/DFS/Tree/">
+        <link rel="canonical" href="https://icpc.ninja/Algorithms/Graph/DFS/FindingCutEdges/">
       
       
         <meta name="author" content="JCHRYS">
@@ -42,7 +42,7 @@
     
     
       
-        <title>DFSTree - ICPC.NINJA</title>
+        <title>FindingCutEdges - ICPC.NINJA</title>
       
     
     
@@ -112,7 +112,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#dfs-tree" tabindex="1" class="md-skip">
+      <a href="#finding-cut-edges" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -138,7 +138,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                DFSTree
+                FindingCutEdges
               
             </span>
           
@@ -490,20 +490,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="DFSTree" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../Tree/" title="DFSTree" class="md-nav__link">
       DFSTree
     </a>
-    
   </li>
 
         
@@ -523,11 +514,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../FindingCutEdges/" title="FindingCutEdges" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="FindingCutEdges" class="md-nav__link md-nav__link--active">
       FindingCutEdges
     </a>
+    
   </li>
 
         
@@ -825,28 +825,50 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/jchrys/icpc/edit/master/docs/Algorithms/Graph/DFS/Tree.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/jchrys/icpc/edit/master/docs/Algorithms/Graph/DFS/FindingCutEdges.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="dfs-tree">DFS tree</h1>
-<p>DFS Tree is a rooted tree that is built like this</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">let</span> <span class="n">T</span> <span class="n">be</span> <span class="n">a</span> <span class="n">new</span> <span class="n">tree</span>
+                <h1 id="finding-cut-edges">Finding Cut Edges</h1>
+<p>The code below works properly because of the lemma above(first lemma)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">h</span><span class="p">[</span><span class="n">root</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">par</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
 <span class="n">dfs</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
+    <span class="n">d</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">h</span><span class="p">[</span><span class="n">v</span><span class="p">]</span>
     <span class="n">color</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">gray</span>
     <span class="k">for</span> <span class="n">u</span> <span class="ow">in</span> <span class="n">adj</span><span class="p">[</span><span class="n">v</span><span class="p">]:</span>
         <span class="k">if</span> <span class="n">color</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">==</span> <span class="n">white</span><span class="p">:</span>
-            <span class="n">then</span> <span class="n">dfs</span><span class="p">(</span><span class="n">u</span><span class="p">)</span> <span class="ow">and</span> <span class="n">par</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span> <span class="p">(</span><span class="ow">in</span> <span class="n">T</span><span class="p">)</span>
+            <span class="n">then</span> <span class="n">par</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span> <span class="ow">and</span> <span class="n">dfs</span><span class="p">(</span><span class="n">u</span><span class="p">)</span> <span class="ow">and</span> <span class="n">d</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">v</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="n">u</span><span class="p">])</span>
+
+            <span class="k">if</span> <span class="n">d</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">h</span><span class="p">[</span><span class="n">v</span><span class="p">]</span>
+                <span class="n">then</span> <span class="n">the</span> <span class="n">edge</span> <span class="n">v</span><span class="o">-</span><span class="n">u</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">cut</span> <span class="n">edge</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="n">u</span> <span class="o">!=</span> <span class="n">par</span><span class="p">[</span><span class="n">v</span><span class="p">]:</span>
+            <span class="n">then</span> <span class="n">d</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">v</span><span class="p">],</span> <span class="n">h</span><span class="p">[</span><span class="n">u</span><span class="p">])</span>
     <span class="n">color</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">black</span>
 </pre></div>
 </td></tr></table>
 
-<p><em>Lemma</em>: There is no cross edges, it means if there is an edge between $V$ and $u$, then $v=par[u]$ or $u=par[v]$</p>
+<p>in this code, h[v] = height of vertex v in the DFS tree and d[v] = min(h[w] where there is at least vertex u in subtree of v in the DFS tree where there is an edge between $u$ and $w$)</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>First lemma will be placed here&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
                   
                 
@@ -859,9 +881,9 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://icpc.ninja/Algorithms/Graph/DFS/Tree/";
+      this.page.url = "https://icpc.ninja/Algorithms/Graph/DFS/FindingCutEdges/";
       this.page.identifier =
-        "/Algorithms/Graph/DFS/Tree/";
+        "/Algorithms/Graph/DFS/FindingCutEdges/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -883,7 +905,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../Preface/" title="Preface" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../StartingFinishingTime/" title="StartingFinishingTime" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -892,19 +914,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Preface
+                StartingFinishingTime
               </span>
             </div>
           </a>
         
         
-          <a href="../StartingFinishingTime/" title="StartingFinishingTime" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../../Sort/InsertionSort/" title="InsertionSort" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                StartingFinishingTime
+                InsertionSort
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
