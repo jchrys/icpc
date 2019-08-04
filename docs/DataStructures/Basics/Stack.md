@@ -5,7 +5,7 @@
 
 ## supported operations
 insert, delete, empty, top, size
-
+[:link:](./Stack.cpp)
 ```cpp
 template<typename T>
 class Stack {
