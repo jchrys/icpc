@@ -6,8 +6,8 @@
 - C++ basic class syntax that are used to implement DataStructures
 
 - DataStructures:
-    - [ ] Stack
-    - [ ] Vector
+    - [x] Stack
+    - [x] Vector
     - [ ] HashTable
     - [ ] BinarySearchTree
     - [ ] RedBlackTree
