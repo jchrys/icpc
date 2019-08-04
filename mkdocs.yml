@@ -63,10 +63,9 @@ nav:
     - Home: index.md
     - Contribute:
         - HowToContribute: Contribute/HowToContribute.md
+        - CodeOfConduct: Contribute/CodeOfConduct.md
+        - Template: Contribute/Template.md
         - Emoji: Contribute/Emoji.md
-        - Templates:
-            - Algorithm: PlaceHolder.md
-            - Problems: PlaceHolder.md
     - Language: 
         Preface: Language/Preface.md
         Keywords: Language/Keywords.md
