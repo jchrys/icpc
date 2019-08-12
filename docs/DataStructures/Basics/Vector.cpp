@@ -1,23 +1,41 @@
+using size_t = unsigned int;
+
 template<typename T>
 class Vector {
-    unsigned int _size;
-    unsigned int _capacity;
+    size_t _size;
+    size_t _capacity;
     T* _buf;
     public:
+    // constructors
+    // TODO 
     // capacity: 
-    unsigned int size() {
+    size_t size() {
         return _size;
     }
 
-    void resize(unsigned int size) {
-        //TODO
-        _size = size;
+    void resize(size_t n) {
+        _size = n;
     }
-
-    unsigned int capacity();
-    bool empty();
+    
+    size_t capacity() {
+        return _capacity;
+    };
+    bool empty() {
+        return _size == 0;
+    };
     // unsigned int max_size();
-    // reverse()
+    void reserve(size_t n) {
+        //Requests that the vector capacity be at least enough to contain n elements.
+        if (_size >= n) return;
+        T* _temp = new T[n];
+        
+        for (size_t i = 0; i < _size; i++) {
+            _temp[i] = _buf[i];
+        }
+        _capacity = n;
+        delete[] _buf;
+        _buf = _temp;
+    }
     // shrink_to_fit()
    
 
@@ -26,12 +44,18 @@ class Vector {
     // operator[]()
     // at()
     // front()
-    // data()
-   
+    // data() 
 
     //Modifiers
-    void clear();
-    void push_back(T val);
+    void clear() {
+        resize(0);
+    };
+    void push_back(T const &val) {
+        if (_size == _capacity) {
+            reserve(_capacity << 1);
+        }
+        _buf[_size++] = val;
+    };
     void pop_back();
     // assign()
     // insert()
