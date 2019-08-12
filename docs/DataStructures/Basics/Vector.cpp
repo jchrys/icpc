@@ -56,7 +56,9 @@ class Vector {
         }
         _buf[_size++] = val;
     };
-    void pop_back();
+    void pop_back() {
+        _size--;
+    };
     // assign()
     // insert()
     // erase()
