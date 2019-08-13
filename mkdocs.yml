@@ -84,6 +84,7 @@ nav:
     - DataStructures: 
         - Basics:
             - Stack: DataStructures/Basics/Stack.md
+            - Vector: DataStructures/Basics/Vector.md
         - Hash Tables:
             - Preface: DataStructures/HashTables/Preface.md
             - Hash Functions: DataStructures/HashTables/HashFunctions.md

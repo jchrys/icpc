@@ -1,4 +1,4 @@
-using size_t = unsigned int;
+using size_t = unsigned long;
 
 template<typename T>
 class Vector {
@@ -7,7 +7,28 @@ class Vector {
     T* _buf;
     public:
     // constructors
-    // TODO 
+    
+    // Vector(SomeType); //"ordinary constructor"
+    Vector(int k) {
+       _size = k;
+       _capacity = k;
+       _buf = new T[_capacity];
+    }
+    // Vector(); //default constructor
+    Vector() {
+        _size = 0;
+        _capacity = 0;
+        _buf = new T[_capacity];
+    }
+    // Vector(const &X); // copy constructor
+    // Vector(&&X); //move constructor
+    // &Vector operator=(const Vector&); //copy assignment: cleanup target and copy
+    // &Vector operator=(Vector&&); // move assignment: cleanup target and move
+    //~Vector(); //destructor: cleanup
+    ~Vector() {
+        delete[] _buf;
+    }
+    
     // capacity: 
     size_t size() {
         return _size;
@@ -42,6 +63,12 @@ class Vector {
     //element access:
     T back();
     // operator[]()
+    T& operator[](int idx) {
+        return _buf[idx];
+    }
+    T operator[](int idx) const{
+        return _buf[idx];
+    }
     // at()
     // front()
     // data() 
@@ -52,7 +79,11 @@ class Vector {
     };
     void push_back(T const &val) {
         if (_size == _capacity) {
+            if (_capacity) {
             reserve(_capacity << 1);
+            } else {
+                reserve(1);
+            }
         }
         _buf[_size++] = val;
     };
@@ -67,8 +98,12 @@ class Vector {
    
     
     //Iterators 
-    T* begin();
-    T* end();
+    T* begin() {
+        return &_buf[0];
+    }
+    T* end() {
+        return &_buf[0] + _size;
+    };
     //T* rbegin();
     //T* rend();
     //T* const cbegin();
