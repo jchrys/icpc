@@ -4,11 +4,11 @@
 ## Operations & time complexity
 |  Member Function |  Running Time |
 |:----------------:|:-------------:|
-| $insert_front()$ | $\Omicron(1)$ |
-|  $insert_back()$ | $\Omicron(1)$ |
-| $insert_after()$ | $\Omicron(1)$ |
-|      $erase$     | $\Omicron(1)$ |
-|    $search()$    | $\Omicron(n)$ |
+| insert_front()   | $\Omicron(1)$ |
+| insert_back()    | $\Omicron(1)$ |
+| insert_after()   | $\Omicron(1)$ |
+|      erase       | $\Omicron(1)$ |
+|    search()      | $\Omicron(n)$ |
 
 ## Implementation
 

@@ -90,7 +90,7 @@ nav:
         - Basics:
             - Stack: DataStructures/Basics/Stack.md
             - Vector: DataStructures/Basics/Vector.md
-            - Linked List: DataStructures/Baiscs/LinkedList.md
+            - Linked List: DataStructures/Basics/LinkedList.md
         - Hash Tables:
             - Preface: DataStructures/HashTables/Preface.md
             - Hash Functions: DataStructures/HashTables/HashFunctions.md
