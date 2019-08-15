@@ -1,11 +1,9 @@
-/**
- * File              : binarysearchtree.cpp
+/** File              : bst.cpp
  * Author            : JCHRYS <jchrys@me.com>
  * Date              : 14.08.2019
- * Last Modified Date: 14.08.2019
+ * Last Modified Date: 15.08.2019
  * Last Modified By  : JCHRYS <jchrys@me.com>
  */
-
 
 #include <iostream>
 using namespace std;
@@ -27,14 +25,15 @@ class Set{
     Node* root;
     unsigned int _size;
     public:
-    Set(): root(0), _size(0) {
+
+    Set(): root(0), _size(0) { //default constructor
     }
 
     void insert(T key) {
-        _insert(new Node(key));
+        _insert(new Node(key)); //insert a key in to set (helper function)
     }
 
-    void _insert(Node* &&node) {
+    void _insert(Node* &&node) { // 
         Node* y = 0;
         Node* x = this->root;
         while (x != 0) {
@@ -49,7 +48,7 @@ class Set{
         }
         node->parent = y;
         if (y == 0)  // when tree is empty -> you could check with _size;
-            this->root = node;
+        this->root = node;
         else if(node->key < y->key) {
             y->left = node;
             node->parent = y;
@@ -59,7 +58,7 @@ class Set{
         }
         this->_size++;
     }
-    
+
     Node* find(T key) {
         Node* x = this->root;
         while (x != 0 && x->key != key) {
@@ -76,24 +75,24 @@ class Set{
         _minimum(this->root);
     }
 
-    Node* _minimum(Node* &x) {
+    Node* _minimum(Node* x) {
         while (x->left != 0) {
             x = x -> left;
         }
         return x;
     }
 
-    Node* maximum() {
+    Node* maximum() { //returns Node* that with maximum key
         return _maximum(this->root);
 
     }
-    Node* _maximum(Node* &x) {
+    Node* _maximum(Node* &x) { 
         while (x->right != 0) {
             x = x -> right;
         }
         return x;
     }
-    
+
     Node* successor(Node* x) {
         if (x->right != 0) {
             return _minimum(x->right);
@@ -118,8 +117,6 @@ class Set{
         return y;
     }
 
-
-
     unsigned int size() {
         return _size;
     }
@@ -136,19 +133,80 @@ class Set{
     void inorder_tree_travel() {
         _inorder_tree_travel(this->root);
     }
+    void transplant(Node* u, Node* v) {
+        if (u->parent == 0) {
+            this->root = v;
+        } else if (u == u->parent->left) {
+            u->parent->left = v;
+        } else {
+            u->parent->right = v;
+        }
+        if (v != 0) {
+            v->parent = u->parent;
+        }
+    }
 
+    void erase(T key) {
+        _erase(find(key)); 
+    }
+
+    void _erase(Node* target) {
+        if (target == 0) return;
+        if (target->left == 0) 
+            transplant(target, target->right);
+        else if (target->right == 0)
+            transplant(target, target->left);
+        else {
+            Node* y = _minimum(target->right);
+            if (y->parent != target) {
+                transplant(y, y->right);
+                y->right = target->right;
+                y->right->parent = y;
+            }
+            transplant(target, y);
+            y->left = target->left;
+            y->left->parent = y;
+        }
+        delete target;
+        _size--;
+    }
+
+    unsigned int height(Node* node) {
+        if (node == 0)
+            return 0;
+        unsigned int lDepth = height(node->left);
+        unsigned int rDepth = height(node->right);
+
+        if (lDepth > rDepth)
+            return lDepth + 1;
+        return rDepth +1;
+    }
+    unsigned int tree_height() {
+        return height(this->root);
+    }
 };
 
 
 
 int main() {
     Set<int> s;
-    for (int i = 0; i < 1000; i++) {
-        s.insert(rand()%100000);
+    // if input's are random;
+    cout << "Naive Binary Search Tree implementation" << endl;
+    cout << "-------BEST-CASE(random inputs)--------" << endl;
+    cout << "input: 10,000 random integers" << endl;
+    for (int i = 0; i < 10000; i++) {
+        s.insert(rand()%1000000);
     }
-    s.inorder_tree_travel();
-    cout << endl;
-    cout << s.predecessor(s.find(97972))->key << endl;
-    cout << s.successor(s.find(99505))->key << endl;
+    cout << "-----------------results----------------" << endl;
+    cout << "tree_height: " << s.tree_height() << endl;
+    cout << endl << endl <<endl;
+    cout << "------WORST-CASE(sorted_inputs)---------" << endl;
+    cout << "input: [1, 2, 3, ..., 10000]" << endl;
+    Set<int> worst;
+    for (int i = 1; i <= 10000; i++) {
+        worst.insert(i);
+    }
+    cout << "-----------------results----------------" << endl;
+    cout << "tree_height: " << worst.tree_height() <<endl;
     return 0;
 }
