@@ -6,41 +6,6 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://icpc.ninja/Contribute/HowToContribute/</loc>
-     <lastmod>2019-08-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://icpc.ninja/Contribute/CodeOfConduct/</loc>
-     <lastmod>2019-08-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://icpc.ninja/Contribute/Template/</loc>
-     <lastmod>2019-08-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://icpc.ninja/Contribute/Emoji/</loc>
-     <lastmod>2019-08-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://icpc.ninja/Language/Preface/</loc>
-     <lastmod>2019-08-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://icpc.ninja/Language/Keywords/</loc>
-     <lastmod>2019-08-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://icpc.ninja/Language/Class/</loc>
-     <lastmod>2019-08-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>https://icpc.ninja/Algorithms/Graph/DFS/Preface/</loc>
      <lastmod>2019-08-18</lastmod>
      <changefreq>daily</changefreq>
@@ -112,6 +77,41 @@
     </url>
     <url>
      <loc>https://icpc.ninja/MISC/Lemma/</loc>
+     <lastmod>2019-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://icpc.ninja/Language/Preface/</loc>
+     <lastmod>2019-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://icpc.ninja/Language/Keywords/</loc>
+     <lastmod>2019-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://icpc.ninja/Language/Class/</loc>
+     <lastmod>2019-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://icpc.ninja/Contribute/HowToContribute/</loc>
+     <lastmod>2019-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://icpc.ninja/Contribute/CodeOfConduct/</loc>
+     <lastmod>2019-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://icpc.ninja/Contribute/Template/</loc>
+     <lastmod>2019-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://icpc.ninja/Contribute/Emoji/</loc>
      <lastmod>2019-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
