@@ -66,15 +66,6 @@ google_analytics:
 # TABLE OF CONTENTS
 nav:
     - Home: index.md
-    - Contribute:
-        - HowToContribute: Contribute/HowToContribute.md
-        - CodeOfConduct: Contribute/CodeOfConduct.md
-        - Template: Contribute/Template.md
-        - Emoji: Contribute/Emoji.md
-    - Language: 
-        Preface: Language/Preface.md
-        Keywords: Language/Keywords.md
-        Class: Language/Class.md
     - Algorithms: 
         - Graph: 
             - DFS: 
@@ -100,3 +91,12 @@ nav:
             - RedBlackTree: DataStructures/Trees/RedBlackTree.md
     - MISC:
         Lemma: MISC/Lemma.md
+    - Language: 
+        Preface: Language/Preface.md
+        Keywords: Language/Keywords.md
+        Class: Language/Class.md
+    - Contribute:
+        - HowToContribute: Contribute/HowToContribute.md
+        - CodeOfConduct: Contribute/CodeOfConduct.md
+        - Template: Contribute/Template.md
+        - Emoji: Contribute/Emoji.md
