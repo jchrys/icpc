@@ -17,7 +17,7 @@ Let $x$ be a node in a binary search tree. If $y$ is a node in the left subtree 
 |:-----------------:|:-------------:|
 |      insert()     | $\Omicron(h)$ |
 |      erase()      | $\Omicron(h)$ |
-| inorder_tree_walk |  $\Theta(h)$  |
+| inorder_tree_walk |  $\Theta(n)$  |
 |       find()      | $\Omicron(h)$ |
 |     minimum()     | $\Omicron(h)$ |
 |     maximum()     | $\Omicron(h)$ |
