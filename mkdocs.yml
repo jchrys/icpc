@@ -69,6 +69,7 @@ nav:
     - Algorithms: 
         - Graph: 
             - Basics: Algorithms/Graph/Basics.md
+            - Graph Traversal: Algorithms/Graph/GraphTraversal.md
             - DFS: 
                 - Preface: Algorithms/Graph/DFS/Preface.md
                 - DFSTree: Algorithms/Graph/DFS/Tree.md
