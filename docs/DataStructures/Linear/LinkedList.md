@@ -122,7 +122,7 @@ int main() {
 
 
 ## Related Topics
-[NOT_YET](/DataStructures/Basics/Stack/)
+[NOT_YET](/DataStructures/Linear/Stack/)
 
 ## Analysis (Later..)
 You can add some mathematical things here using [KaTex](https://katex.org/docs/supported.html)

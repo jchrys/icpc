@@ -87,10 +87,10 @@ nav:
             - InsertionSort: Algorithms/Sort/InsertionSort.md
             - BubbleSort: Algorithms/Sort/BubbleSort.md
     - DataStructures: 
-        - Basics:
-            - Stack: DataStructures/Basics/Stack.md
-            - Vector: DataStructures/Basics/Vector.md
-            - Linked List: DataStructures/Basics/LinkedList.md
+        - Linear:
+            - Stack: DataStructures/Linear/Stack.md
+            - Vector: DataStructures/Linear/Vector.md
+            - Linked List: DataStructures/Linear/LinkedList.md
         - Hash Tables:
             - Preface: DataStructures/HashTables/Preface.md
             - Hash Functions: DataStructures/HashTables/HashFunctions.md
