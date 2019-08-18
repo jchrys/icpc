@@ -10,13 +10,13 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Solutions to Competitive Programming Problems">
+        <meta name="description" content="Graphs">
       
       
-        <link rel="canonical" href="https://icpc.ninja/Algorithms/Graph/DFS/Preface/">
+        <link rel="canonical" href="https://icpc.ninja/Algorithms/Graph/Basics/">
       
       
-        <meta name="author" content="JCHRYS">
+        <meta name="author" content="j">
       
       
         <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -37,21 +37,21 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
     
     
       
-        <title>Preface - ICPC.NINJA</title>
+        <title>Basics of Grpahs</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/application.0284f74d.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.0284f74d.css">
       
       
     
     
-      <script src="../../../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
@@ -60,10 +60,10 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
     
     
-      <link rel="stylesheet" href="../../../../css/katex.css">
+      <link rel="stylesheet" href="../../../css/katex.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css">
     
@@ -112,7 +112,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#dfs" tabindex="1" class="md-skip">
+      <a href="#graph" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -138,7 +138,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Preface
+                Basics of Grpahs
               
             </span>
           
@@ -202,6 +202,17 @@
     <div class="md-container">
       
         
+          
+
+
+  
+
+<div class="md-hero md-hero--expand" data-md-component="hero">
+  <div class="md-hero__inner md-grid">
+    Basics of Graphs
+  </div>
+</div>
+        
       
       
       <main class="md-main">
@@ -249,7 +260,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../.." title="Home" class="md-nav__link">
+    <a href="../../.." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -301,11 +312,137 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../Basics/" title="Basics" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Basics
+      </label>
+    
+    <a href="./" title="Basics" class="md-nav__link md-nav__link--active">
       Basics
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#terminologies" title="Terminologies" class="md-nav__link">
+    Terminologies
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-connectivity" title="1. Connectivity" class="md-nav__link">
+    1. Connectivity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-edge-directions" title="2. Edge directions" class="md-nav__link">
+    2. Edge directions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-edge-weights" title="3. Edge weights" class="md-nav__link">
+    3. Edge weights
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-neighbors-and-degrees" title="4. Neighbors and degrees" class="md-nav__link">
+    4. Neighbors and degrees
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorings" title="Colorings" class="md-nav__link">
+    Colorings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simplicity" title="Simplicity" class="md-nav__link">
+    Simplicity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-representation" title="Graph representation" class="md-nav__link">
+    Graph representation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-adjacency-list-representation" title="1. Adjacency list representation" class="md-nav__link">
+    1. Adjacency list representation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-adjacency-matrix-representation" title="2. Adjacency matrix representation" class="md-nav__link">
+    2. Adjacency matrix representation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-edge-list-representation" title="3. Edge list representation" class="md-nav__link">
+    3. Edge list representation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -315,7 +452,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../GraphTraversal/" title="Graph Traversal" class="md-nav__link">
+    <a href="../GraphTraversal/" title="Graph Traversal" class="md-nav__link">
       Graph Traversal
     </a>
   </li>
@@ -325,12 +462,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-3" type="checkbox" id="nav-2-1-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-3" type="checkbox" id="nav-2-1-3">
     
     <label class="md-nav__link" for="nav-2-1-3">
       DFS
@@ -346,20 +481,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Preface" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../DFS/Preface/" title="Preface" class="md-nav__link">
       Preface
     </a>
-    
   </li>
 
         
@@ -369,7 +495,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Tree/" title="DFSTree" class="md-nav__link">
+    <a href="../DFS/Tree/" title="DFSTree" class="md-nav__link">
       DFSTree
     </a>
   </li>
@@ -381,7 +507,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../StartingFinishingTime/" title="StartingFinishingTime" class="md-nav__link">
+    <a href="../DFS/StartingFinishingTime/" title="StartingFinishingTime" class="md-nav__link">
       StartingFinishingTime
     </a>
   </li>
@@ -393,7 +519,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../FindingCutEdges/" title="FindingCutEdges" class="md-nav__link">
+    <a href="../DFS/FindingCutEdges/" title="FindingCutEdges" class="md-nav__link">
       FindingCutEdges
     </a>
   </li>
@@ -434,7 +560,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Sort/InsertionSort/" title="InsertionSort" class="md-nav__link">
+    <a href="../../Sort/InsertionSort/" title="InsertionSort" class="md-nav__link">
       InsertionSort
     </a>
   </li>
@@ -446,7 +572,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Sort/BubbleSort/" title="BubbleSort" class="md-nav__link">
+    <a href="../../Sort/BubbleSort/" title="BubbleSort" class="md-nav__link">
       BubbleSort
     </a>
   </li>
@@ -506,7 +632,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../DataStructures/Linear/Stack/" title="Stack" class="md-nav__link">
+    <a href="../../../DataStructures/Linear/Stack/" title="Stack" class="md-nav__link">
       Stack
     </a>
   </li>
@@ -518,7 +644,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../DataStructures/Linear/Vector/" title="Vector" class="md-nav__link">
+    <a href="../../../DataStructures/Linear/Vector/" title="Vector" class="md-nav__link">
       Vector
     </a>
   </li>
@@ -530,7 +656,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../DataStructures/Linear/LinkedList/" title="Linked List" class="md-nav__link">
+    <a href="../../../DataStructures/Linear/LinkedList/" title="Linked List" class="md-nav__link">
       Linked List
     </a>
   </li>
@@ -566,7 +692,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../DataStructures/HashTables/Preface/" title="Preface" class="md-nav__link">
+    <a href="../../../DataStructures/HashTables/Preface/" title="Preface" class="md-nav__link">
       Preface
     </a>
   </li>
@@ -578,7 +704,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../DataStructures/HashTables/HashFunctions/" title="Hash Functions" class="md-nav__link">
+    <a href="../../../DataStructures/HashTables/HashFunctions/" title="Hash Functions" class="md-nav__link">
       Hash Functions
     </a>
   </li>
@@ -614,7 +740,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../DataStructures/Trees/SearchTree/" title="SearchTree" class="md-nav__link">
+    <a href="../../../DataStructures/Trees/SearchTree/" title="SearchTree" class="md-nav__link">
       SearchTree
     </a>
   </li>
@@ -626,7 +752,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../DataStructures/Trees/BST/" title="BST" class="md-nav__link">
+    <a href="../../../DataStructures/Trees/BST/" title="BST" class="md-nav__link">
       BST
     </a>
   </li>
@@ -638,7 +764,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../DataStructures/Trees/RedBlackTree/" title="RedBlackTree" class="md-nav__link">
+    <a href="../../../DataStructures/Trees/RedBlackTree/" title="RedBlackTree" class="md-nav__link">
       RedBlackTree
     </a>
   </li>
@@ -679,7 +805,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../MISC/Lemma/" title="Lemma" class="md-nav__link">
+    <a href="../../../MISC/Lemma/" title="Lemma" class="md-nav__link">
       Lemma
     </a>
   </li>
@@ -715,7 +841,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../Language/Preface/" title="Preface" class="md-nav__link">
+    <a href="../../../Language/Preface/" title="Preface" class="md-nav__link">
       Preface
     </a>
   </li>
@@ -727,7 +853,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../Language/Keywords/" title="Keywords" class="md-nav__link">
+    <a href="../../../Language/Keywords/" title="Keywords" class="md-nav__link">
       Keywords
     </a>
   </li>
@@ -739,7 +865,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../Language/Class/" title="Class" class="md-nav__link">
+    <a href="../../../Language/Class/" title="Class" class="md-nav__link">
       Class
     </a>
   </li>
@@ -775,7 +901,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../Contribute/HowToContribute/" title="HowToContribute" class="md-nav__link">
+    <a href="../../../Contribute/HowToContribute/" title="HowToContribute" class="md-nav__link">
       HowToContribute
     </a>
   </li>
@@ -787,7 +913,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../Contribute/CodeOfConduct/" title="CodeOfConduct" class="md-nav__link">
+    <a href="../../../Contribute/CodeOfConduct/" title="CodeOfConduct" class="md-nav__link">
       CodeOfConduct
     </a>
   </li>
@@ -799,7 +925,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../Contribute/Template/" title="Template" class="md-nav__link">
+    <a href="../../../Contribute/Template/" title="Template" class="md-nav__link">
       Template
     </a>
   </li>
@@ -811,7 +937,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../Contribute/Emoji/" title="Emoji" class="md-nav__link">
+    <a href="../../../Contribute/Emoji/" title="Emoji" class="md-nav__link">
       Emoji
     </a>
   </li>
@@ -839,6 +965,110 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#terminologies" title="Terminologies" class="md-nav__link">
+    Terminologies
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-connectivity" title="1. Connectivity" class="md-nav__link">
+    1. Connectivity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-edge-directions" title="2. Edge directions" class="md-nav__link">
+    2. Edge directions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-edge-weights" title="3. Edge weights" class="md-nav__link">
+    3. Edge weights
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-neighbors-and-degrees" title="4. Neighbors and degrees" class="md-nav__link">
+    4. Neighbors and degrees
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#colorings" title="Colorings" class="md-nav__link">
+    Colorings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simplicity" title="Simplicity" class="md-nav__link">
+    Simplicity
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-representation" title="Graph representation" class="md-nav__link">
+    Graph representation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-adjacency-list-representation" title="1. Adjacency list representation" class="md-nav__link">
+    1. Adjacency list representation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-adjacency-matrix-representation" title="2. Adjacency matrix representation" class="md-nav__link">
+    2. Adjacency matrix representation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-edge-list-representation" title="3. Edge list representation" class="md-nav__link">
+    3. Edge list representation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -849,28 +1079,80 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/jchrys/icpc/edit/master/docs/Algorithms/Graph/DFS/Preface.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/jchrys/icpc/edit/master/docs/Algorithms/Graph/Basics.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="dfs">DFS <a href="https://codeforces.com/blog/entry/16221"><img align="absmiddle" alt=":link:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f517.png" title=":link:" width="20px" /></a></h1>
-<p>The most useful graph algorithms are search algorithms. DFS(Depth First Search) is one of them.</p>
-<p>While running DFS, we assign colors to the vertices (initially white) Algorithm itself is really simple</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">dfs</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
-    <span class="n">color</span> <span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">gray</span>
-    <span class="k">for</span> <span class="n">u</span> <span class="ow">in</span> <span class="n">adj</span><span class="p">[</span><span class="n">v</span><span class="p">]:</span>
-        <span class="k">if</span> <span class="n">color</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">==</span> <span class="n">white</span><span class="p">:</span>
-            <span class="n">then</span> <span class="n">dfs</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
-    <span class="n">color</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">black</span>
-</pre></div>
-</td></tr></table>
-
-<p>Black color here is not used, but you can use it sometimes.</p>
-<p>Time complexity: $O(n + m)$</p>
+                <h1 id="graph">Graph</h1>
+<blockquote>
+<p>A graph is consists of nodes and edges</p>
+</blockquote>
+<h2 id="terminologies">Terminologies</h2>
+<h3 id="1-connectivity">1. Connectivity</h3>
+<blockquote>
+<p>A graph is connected if there is a path between any two nodes.    </p>
+</blockquote>
+<ul>
+<li>Components: Connected parts of its grpah.</li>
+<li>Tree: a tree is a connected graph that consists of $n$ nodes and $n-1$ edges.</li>
+</ul>
+<h3 id="2-edge-directions">2. Edge directions</h3>
+<blockquote>
+<p>A graph is directed if the edges can be traversed in one direction only</p>
+</blockquote>
+<h3 id="3-edge-weights">3. Edge weights</h3>
+<blockquote>
+<p>In a weighted graph, each edge is assigned a weight. often interpreted as edge length</p>
+</blockquote>
+<h3 id="4-neighbors-and-degrees">4. Neighbors and degrees</h3>
+<blockquote>
+<p>Two nodes are $neighbors$ or $adjacent$ if there is an edge between them</p>
+</blockquote>
+<ul>
+<li>Degree: The degrege of a node is number of its neighbors<ul>
+<li>Indegree: The indegree of a node is the number of edges that end at the node</li>
+<li>Outdegree: The outdegree of a node is the number of edges that start at the node</li>
+</ul>
+</li>
+<li>Regular graph: A graph is regular if the degree of every node is a constant d</li>
+<li>Complete graph: A graph is complete if the degree of every node is $n-1$</li>
+</ul>
+<h3 id="colorings">Colorings</h3>
+<blockquote>
+<p>In a coloring of a graph, each node is assigned a color so that no adjacent nodes have the same color</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It turns out that a graph is bipartite exactly when it does not contain a cycle with an odd number of edges</p>
+</div>
+<h3 id="simplicity">Simplicity</h3>
+<blockquote>
+<p>A graph is simple if no edge starts and ends at the same node(loop), and there are no multiple edges between two nodes.</p>
+</blockquote>
+<p><img alt="loop&amp;multiple edges" src="https://user-images.githubusercontent.com/45776091/63223944-0b786300-c1f8-11e9-94c2-3dbd0389202b.jpeg" /></p>
+<h2 id="graph-representation">Graph representation</h2>
+<blockquote>
+<p>There are several ways to represent graphs in algorithms.
+The choice of a data structure depends on the size of graph and the way the algorithm processes it</p>
+</blockquote>
+<h3 id="1-adjacency-list-representation">1. Adjacency list representation</h3>
+<blockquote>
+<p>In the adjacency list representation, each node x in the graph is assigned an <em>adjacency list</em> that consists of nodes to which there is an edge from x
+- we can efficiently find the nodes to which we can move from a given node through an edge</p>
+</blockquote>
+<h3 id="2-adjacency-matrix-representation">2. Adjacency matrix representation</h3>
+<blockquote>
+<p>An adjacency matrix is two dimensional array that indicates which edges the graph contains.</p>
+</blockquote>
+<ul>
+<li>we can efficiently check from an adjacency matrix if there is an edge between two nodes.</li>
+</ul>
+<h3 id="3-edge-list-representation">3. Edge list representation</h3>
+<blockquote>
+<p>An edge list contains all edges of a graph in some order.</p>
+</blockquote>
+<ul>
+<li>This is convenient way to represent a graph if the algorithm proesses all edges of the graph and it is not needed to find edges that start at a given node.</li>
+</ul>
                 
                   
                 
@@ -883,9 +1165,9 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://icpc.ninja/Algorithms/Graph/DFS/Preface/";
+      this.page.url = "https://icpc.ninja/Algorithms/Graph/Basics/";
       this.page.identifier =
-        "/Algorithms/Graph/DFS/Preface/";
+        "/Algorithms/Graph/Basics/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -907,7 +1189,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../GraphTraversal/" title="Graph Traversal" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../.." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -916,19 +1198,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Graph Traversal
+                Home
               </span>
             </div>
           </a>
         
         
-          <a href="../Tree/" title="DFSTree" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../GraphTraversal/" title="Graph Traversal" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                DFSTree
+                Graph Traversal
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -960,11 +1242,11 @@
       
     </div>
     
-      <script src="../../../../assets/javascripts/application.245445c6.js"></script>
+      <script src="../../../assets/javascripts/application.245445c6.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
-        <script src="../../../../js/katex.js"></script>
+        <script src="../../../js/katex.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js"></script>
       
