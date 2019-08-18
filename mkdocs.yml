@@ -68,6 +68,7 @@ nav:
     - Home: index.md
     - Algorithms: 
         - Graph: 
+            - Basics: Algorithms/Graph/Basics.md
             - DFS: 
                 - Preface: Algorithms/Graph/DFS/Preface.md
                 - DFSTree: Algorithms/Graph/DFS/Tree.md
