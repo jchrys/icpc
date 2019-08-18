@@ -9,8 +9,8 @@
     - [x] Stack
     - [x] Vector
     - [ ] HashTable
-    - [ ] BinarySearchTree
-    - [ ] RedBlackTree
+    - [x] BinarySearchTree
+    - [x] RedBlackTree
     - [ ] B-Trees 
     - [ ] Heap 
     - [ ] FibonacciHeaps
