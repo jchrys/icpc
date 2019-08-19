@@ -7,6 +7,10 @@ author: jchrys
 # Graph
 > A graph is consists of nodes and edges
 
+- Path: A path leads from node a to node b through edges of the graph.
+- Length: The length of a path is the number of edges in it.
+- Cycle: A path is a cycle if the first and last node is the same.
+- Simple: A path is simple if each node appears at most once in the path.
 ## Terminologies
 
 ### 1. Connectivity
@@ -49,6 +53,7 @@ author: jchrys
 
 ### 1. Adjacency list representation
 > In the adjacency list representation, each node x in the graph is assigned an *adjacency list* that consists of nodes to which there is an edge from x
+
 - we can efficiently find the nodes to which we can move from a given node through an edge
 
 ### 2. Adjacency matrix representation
@@ -60,4 +65,3 @@ author: jchrys
 > An edge list contains all edges of a graph in some order.
 
 - This is convenient way to represent a graph if the algorithm proesses all edges of the graph and it is not needed to find edges that start at a given node.
-
