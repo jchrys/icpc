@@ -4,21 +4,21 @@ description: DFS, BFS and others
 author: jchrys
 
 # Graph Traversal
-> we will cover two fundamental graph algorithms. depth-first search & breadth-first search.
+> We will cover two fundamental graph algorithms. depth-first search & breadth-first search.
 
 !!!note "BFS vs DFS"
     Both algorithms are given starting node in the graph and they visit all nodes that can be reached from the starting node. The difference in algorithms is the order in which they visit the nodes.
 
-## Depth-first search
-> Depth-first search ($DFS$) begins at a starting node, and proceeds to all other nodes that are reachable from the starting node using the edges of the graph
+## Depth-first search($\text{DFS}$)
+> Depth-first search always follows a single path in the graph as long as it find new nodes. After this, it returns to previous nodes and begin to explore other parts of the graph.
 
 > The algorithm keeps track of visited nodes, so that it processes each node only once
 
-### implementation
-> using adjacency lists in an array   
+### Implementation
+> Using adjacency lists in an array   
 > maintain an array visited[N]
 ```cpp
-vector<int> adj[N];
+vector<int> adj[N]; //adjacency lists
 bool visited[N];
 
 void dfs(int s) { //starting node s
@@ -31,8 +31,8 @@ void dfs(int s) { //starting node s
 }
 ```
 
-## Breadth-first search
-> Breadth-first search($BFS$) visits the nodes in increasing order of their distance from the starting node.
+## Breadth-first search($\text{BFS}$)
+> Breadth-first search visits the nodes in increasing order of their distance from the starting node.
 
 > Thus, we can calculate the distance from the starting node to all other nodes using $BFS$.
 
@@ -63,7 +63,7 @@ while (!q.empty()) {
 
 
 ## Applications
-> you can use any of both to check properties of graph  
+> You can use any of both to check properties of graph  
 > but in practice,  depth-first search  is a better choice, because of ease of implementation
 
 
@@ -77,9 +77,9 @@ while (!q.empty()) {
 ### 2. Finding cycles
 
 #### Implementation
-- way1: A graph contains a cycle if during a graph traversal, we find a node whose neighbor (other than the previous node in the current path) has already been visited
+- Way1: A graph contains a cycle if during a graph traversal, we find a node whose neighbor (other than the previous node in the current path) has already been visited
 
-- way2(math): if a component contains c nodes and no cycle, it must contain exactly c-1 edges. if there are c or more edges, the component surely contains a cycle
+- Way2(math): if a component contains c nodes and no cycle, it must contain exactly c-1 edges. if there are c or more edges, the component surely contains a cycle
 
 ### 3. Bipartiteness check
 > A graph is bipartite if its nodes can be colored using two colors so that there are no adjacent nodes with the same color
