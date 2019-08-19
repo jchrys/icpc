@@ -34,7 +34,7 @@ int main() {
         }
 }
 ```
-:point_right: keep your implementation is self-contained.
+:point_right: keep your implementation self-contained.
 
 ## Related Problems
 1. title of easy problem :star: [:link:](https://codeforces.com/problemset/problem/1199/A)
