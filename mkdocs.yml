@@ -1,7 +1,7 @@
 # File              : mkdocs.yml
 # Author            : JCHRYS <jchrys@me.com>
 # Date              : 15.08.2019
-# Last Modified Date: 19.08.2019
+# Last Modified Date: 20.08.2019
 # Last Modified By  : JCHRYS <jchrys@me.com>
 # Main
 site_name: ICPC.NINJA
@@ -30,6 +30,9 @@ extra_javascript:
 
 # pymdownx
 markdown_extensions:
+  - toc:
+      permalink: true
+      separator: _
   - codehilite:
       linenums: true
   - pymdownx.emoji:
@@ -70,6 +73,11 @@ nav:
         - Graph: 
             - Basics: Algorithms/Graph/Basics.md
             - Graph Traversal: Algorithms/Graph/GraphTraversal.md
+            - Shortest Paths: 
+                - Preface: Algorithms/Graph/ShortestPaths/Preface.md
+                - Bellman-Ford: Algorithms/Graph/ShortestPaths/Bellman-Ford.md
+                - Dijkstra: Algorithms/Graph/ShortestPaths/Dijkstra.md
+                - Floyd-Warshall: Algorithms/Graph/ShortestPaths/Floyd-Warshall.md
             - DFS: 
                 - Preface: Algorithms/Graph/DFS/Preface.md
                 - DFSTree: Algorithms/Graph/DFS/Tree.md
