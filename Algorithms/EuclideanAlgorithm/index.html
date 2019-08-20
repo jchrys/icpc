@@ -112,7 +112,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#euclidean-algorithm" tabindex="1" class="md-skip">
+      <a href="#euclidean_algorithm" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -340,10 +340,82 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-3" type="checkbox" id="nav-2-1-3">
     
     <label class="md-nav__link" for="nav-2-1-3">
-      DFS
+      Shortest Paths
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-2-1-3">
+        Shortest Paths
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Graph/ShortestPaths/Preface/" title="Preface" class="md-nav__link">
+      Preface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Graph/ShortestPaths/Bellman-Ford/" title="Bellman-Ford" class="md-nav__link">
+      Bellman-Ford
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Graph/ShortestPaths/Dijkstra/" title="Dijkstra" class="md-nav__link">
+      Dijkstra
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Graph/ShortestPaths/Floyd-Warshall/" title="Floyd-Warshall" class="md-nav__link">
+      Floyd-Warshall
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-4" type="checkbox" id="nav-2-1-4">
+    
+    <label class="md-nav__link" for="nav-2-1-4">
+      DFS
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-4">
         DFS
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -522,7 +594,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#extended-euclidean-algorithm" title="Extended Euclidean Algorithm" class="md-nav__link">
+  <a href="#extended_euclidean_algorithm" title="Extended Euclidean Algorithm" class="md-nav__link">
     Extended Euclidean Algorithm
   </a>
   
@@ -544,7 +616,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#this-article-is-from-cot3100euclid01" title="This article is from 'COT3100Euclid01'" class="md-nav__link">
+  <a href="#this_article_is_from_cot3100euclid01" title="This article is from 'COT3100Euclid01'" class="md-nav__link">
     This article is from 'COT3100Euclid01'
   </a>
   
@@ -1004,7 +1076,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#extended-euclidean-algorithm" title="Extended Euclidean Algorithm" class="md-nav__link">
+  <a href="#extended_euclidean_algorithm" title="Extended Euclidean Algorithm" class="md-nav__link">
     Extended Euclidean Algorithm
   </a>
   
@@ -1026,7 +1098,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#this-article-is-from-cot3100euclid01" title="This article is from 'COT3100Euclid01'" class="md-nav__link">
+  <a href="#this_article_is_from_cot3100euclid01" title="This article is from 'COT3100Euclid01'" class="md-nav__link">
     This article is from 'COT3100Euclid01'
   </a>
   
@@ -1062,11 +1134,11 @@
                   <a href="https://github.com/jchrys/icpc/edit/master/docs/Algorithms/EuclideanAlgorithm.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="euclidean-algorithm">Euclidean Algorithm</h1>
+                <h1 id="euclidean_algorithm">Euclidean Algorithm<a class="headerlink" href="#euclidean_algorithm" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p>Euclidean algorithm, or Euclid's algorithm, is an efficient method for computing the GCD(greatest common divisor)</p>
 </blockquote>
-<h2 id="implementation">Implementation</h2>
+<h2 id="implementation">Implementation<a class="headerlink" href="#implementation" title="Permanent link">&para;</a></h2>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -1077,13 +1149,13 @@
 </pre></div>
 </td></tr></table>
 
-<h2 id="proof">Proof</h2>
+<h2 id="proof">Proof<a class="headerlink" href="#proof" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>This proof consists of two parts. <br />
 - part 1: proves that Euclidean Algorithm gives us a common factor of two integers. <br />
 - part 2: proves that the common divisor that Euclidean Algorithm produces is the largest possible</p>
 </blockquote>
-<h3 id="part1">Part1</h3>
+<h3 id="part1">Part1<a class="headerlink" href="#part1" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>Euclidean Algorithm gives us a common factor of two integers($a, b$).</p>
 </blockquote>
@@ -1117,7 +1189,7 @@ $$
 From here, since $r_{k} | r_{k-1}$ and $r_{k}| r{k-2}$, using our rules of divisibility we have that $r_{k} | r_{k-3}$. 
 As you can see, we can continue this process, considering each previous equation until we get to the last two, where we will find that $r_{k} | a$ and $r_{k} | b$.
 Thus, we find that Euclids algorithm gives us a common factor of a and b.</p>
-<h3 id="part2">Part2</h3>
+<h3 id="part2">Part2<a class="headerlink" href="#part2" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>The common divisor Euclidean Algorithm produces is the largest possible.</p>
 </blockquote>
@@ -1157,7 +1229,7 @@ $$
 Thus, $d| r_k$</p>
 <p>But this says that any arbitrary common factor of $a$ and $b$ that we originally picked divides into $r_{k}$, the value that Euclidean algorithm produced.
 Since we know that $r_{k}$ is a common factor to both $a$ and $b$, this shows that is must be the largest possible common factor, or $gcd(a, b)$   $\blacksquare$</p>
-<h2 id="extended-euclidean-algorithm">Extended Euclidean Algorithm</h2>
+<h2 id="extended_euclidean_algorithm">Extended Euclidean Algorithm<a class="headerlink" href="#extended_euclidean_algorithm" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Given integers $a$ and $b$, there is always an integral solution to the equation
 $$
@@ -1165,11 +1237,11 @@ ax + by = gcd(a, b)
 $$
 and we can find the values of $x$ and $y$.</p>
 </blockquote>
-<h3 id="implementation_1">implementation</h3>
+<h3 id="implementation_1">implementation<a class="headerlink" href="#implementation_1" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>not yet</p>
 </blockquote>
-<h3 id="proof_1">Proof</h3>
+<h3 id="proof_1">Proof<a class="headerlink" href="#proof_1" title="Permanent link">&para;</a></h3>
 <p>Consider writing down the steps of Euclidean Algorithm</p>
 <p>$$
 \begin{aligned}
@@ -1248,7 +1320,7 @@ $$</p>
 \end{aligned}
 $$</p>
 <p>So, a set of solutions to the equation is $x=3, y = -8$</p>
-<h3 id="this-article-is-from-cot3100euclid01">This article is from 'COT3100Euclid01'</h3>
+<h3 id="this_article_is_from_cot3100euclid01">This article is from 'COT3100Euclid01'<a class="headerlink" href="#this_article_is_from_cot3100euclid01" title="Permanent link">&para;</a></h3>
                 
                   
                 

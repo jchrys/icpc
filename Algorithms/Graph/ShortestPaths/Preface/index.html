@@ -10,13 +10,13 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Solutions to Competitive Programming Problems">
+        <meta name="description" content="short description on algorithms on shortest paths, comparison">
       
       
-        <link rel="canonical" href="https://icpc.ninja/Algorithms/Graph/DFS/StartingFinishingTime/">
+        <link rel="canonical" href="https://icpc.ninja/Algorithms/Graph/ShortestPaths/Preface/">
       
       
-        <meta name="author" content="JCHRYS">
+        <meta name="author" content="j">
       
       
         <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -42,7 +42,7 @@
     
     
       
-        <title>StartingFinishingTime - ICPC.NINJA</title>
+        <title>Preface</title>
       
     
     
@@ -112,7 +112,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#starting_time_finishing_time" tabindex="1" class="md-skip">
+      <a href="#shortest_paths" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -138,7 +138,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                StartingFinishingTime
+                Preface
               
             </span>
           
@@ -201,6 +201,17 @@
     
     <div class="md-container">
       
+        
+          
+
+
+  
+
+<div class="md-hero md-hero--expand" data-md-component="hero">
+  <div class="md-hero__inner md-grid">
+    Shortest Paths
+  </div>
+</div>
         
       
       
@@ -325,10 +336,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-3" type="checkbox" id="nav-2-1-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-3" type="checkbox" id="nav-2-1-3" checked>
     
     <label class="md-nav__link" for="nav-2-1-3">
       Shortest Paths
@@ -344,11 +357,55 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../ShortestPaths/Preface/" title="Preface" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Preface
+      </label>
+    
+    <a href="./" title="Preface" class="md-nav__link md-nav__link--active">
       Preface
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#diff" title="Diff" class="md-nav__link">
+    Diff
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -358,7 +415,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../ShortestPaths/Bellman-Ford/" title="Bellman-Ford" class="md-nav__link">
+    <a href="../Bellman-Ford/" title="Bellman-Ford" class="md-nav__link">
       Bellman-Ford
     </a>
   </li>
@@ -370,7 +427,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../ShortestPaths/Dijkstra/" title="Dijkstra" class="md-nav__link">
+    <a href="../Dijkstra/" title="Dijkstra" class="md-nav__link">
       Dijkstra
     </a>
   </li>
@@ -382,7 +439,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../ShortestPaths/Floyd-Warshall/" title="Floyd-Warshall" class="md-nav__link">
+    <a href="../Floyd-Warshall/" title="Floyd-Warshall" class="md-nav__link">
       Floyd-Warshall
     </a>
   </li>
@@ -397,12 +454,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-4" type="checkbox" id="nav-2-1-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-4" type="checkbox" id="nav-2-1-4">
     
     <label class="md-nav__link" for="nav-2-1-4">
       DFS
@@ -420,7 +475,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Preface/" title="Preface" class="md-nav__link">
+    <a href="../../DFS/Preface/" title="Preface" class="md-nav__link">
       Preface
     </a>
   </li>
@@ -432,7 +487,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Tree/" title="DFSTree" class="md-nav__link">
+    <a href="../../DFS/Tree/" title="DFSTree" class="md-nav__link">
       DFSTree
     </a>
   </li>
@@ -442,20 +497,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="StartingFinishingTime" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../DFS/StartingFinishingTime/" title="StartingFinishingTime" class="md-nav__link">
       StartingFinishingTime
     </a>
-    
   </li>
 
         
@@ -465,7 +511,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../FindingCutEdges/" title="FindingCutEdges" class="md-nav__link">
+    <a href="../../DFS/FindingCutEdges/" title="FindingCutEdges" class="md-nav__link">
       FindingCutEdges
     </a>
   </li>
@@ -935,6 +981,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#diff" title="Diff" class="md-nav__link">
+    Diff
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -945,34 +1013,54 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/jchrys/icpc/edit/master/docs/Algorithms/Graph/DFS/StartingFinishingTime.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/jchrys/icpc/edit/master/docs/Algorithms/Graph/ShortestPaths/Preface.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="starting_time_finishing_time">Starting time, finishing time<a class="headerlink" href="#starting_time_finishing_time" title="Permanent link">&para;</a></h1>
-<p>Starting time of a vertex is the time we enter it (the order we enter it) and its finishing time is the time we leave it. Calculating these are easy</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">TIME</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">dfs</span><span class="p">(</span><span class="n">v</span><span class="p">):</span>
-    <span class="n">st</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">TIME</span><span class="o">++</span>
-    <span class="n">color</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">gray</span>
-    <span class="k">for</span> <span class="n">u</span> <span class="ow">in</span> <span class="n">adj</span><span class="p">[</span><span class="n">v</span><span class="p">]:</span>
-        <span class="k">if</span> <span class="n">color</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">==</span> <span class="n">white</span><span class="p">:</span>
-            <span class="n">then</span> <span class="n">dfs</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
-    <span class="n">color</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">black</span>
-    <span class="n">ft</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">TIME</span> <span class="c1"># or we can use TIME ++</span>
-</pre></div>
-</td></tr></table>
-
-<p>It is useable in specially data structure problems (convert the tree into an array).</p>
-<p><em>Lemma-1</em>: if we run $dfs(root)$ in a rooted tree, then v is an ancestor of $u$ if and only if $st_v\leq st_u\leq ft_u\leq ft_v$.</p>
-<p>So, given arrays $st$ and $ft$ we can rebuild the tree.</p>
+                <h1 id="shortest_paths">Shortest Paths<a class="headerlink" href="#shortest_paths" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>Finding a shortest path between two nodes of a graph is an important problem that has many practical applications.</p>
+<p>In an uweighted graph, the length of a path equals the number of its edges, and we can simply use breath-first search to find a shortest path. However, in this chapter we focus on weighted graphs where more sophisticated algorithms are needed for shortest paths.</p>
+</blockquote>
+<h2 id="diff">Diff<a class="headerlink" href="#diff" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>$n = \text{number of nodes}$, $m = \text{number of edges}$</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">TimeComplexity</th>
+<th align="center">DS</th>
+<th align="center">-</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Bellman-Ford</td>
+<td align="center">$\Omicron(nm)$</td>
+<td align="center">edge list</td>
+<td align="center">neg-cycle detection</td>
+</tr>
+<tr>
+<td align="center">SPFA</td>
+<td align="center">$\Omicron(nm)$</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Dijkstra</td>
+<td align="center">$\Omicron(n + m\lg(m))$</td>
+<td align="center">adjacency lists</td>
+<td align="center">no neg edges</td>
+</tr>
+<tr>
+<td align="center">Floyd-Warshall</td>
+<td align="center">$\Omicron(n^3)$</td>
+<td align="center">adjacency matrix</td>
+<td align="center">finds all shortest paths between the nodes</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
@@ -985,9 +1073,9 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://icpc.ninja/Algorithms/Graph/DFS/StartingFinishingTime/";
+      this.page.url = "https://icpc.ninja/Algorithms/Graph/ShortestPaths/Preface/";
       this.page.identifier =
-        "/Algorithms/Graph/DFS/StartingFinishingTime/";
+        "/Algorithms/Graph/ShortestPaths/Preface/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -1009,7 +1097,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../Tree/" title="DFSTree" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../GraphTraversal/" title="Graph Traversal" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1018,19 +1106,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                DFSTree
+                Graph Traversal
               </span>
             </div>
           </a>
         
         
-          <a href="../FindingCutEdges/" title="FindingCutEdges" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../Bellman-Ford/" title="Bellman-Ford" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                FindingCutEdges
+                Bellman-Ford
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
