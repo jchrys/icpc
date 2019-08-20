@@ -48,3 +48,6 @@ for (int k = 1; k <= n; k++) { // k == intermediate node
 
 ## Time Complexity
 > $\Omicron(n^3)$
+
+## Related Problems
+1. K-th Path :star::star::star::star::star: [:link:](https://codeforces.com/contest/1196/problem/F)
