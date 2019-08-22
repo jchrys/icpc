@@ -86,6 +86,7 @@ nav:
         - Tree: 
             - Basics: Algorithms/Tree/Basics.md
             - Traversal : Algorithms/Tree/Traversal.md
+            - DP: Algorithms/Tree/DP.md
         - Sort:
             - InsertionSort: Algorithms/Sort/InsertionSort.md
             - BubbleSort: Algorithms/Sort/BubbleSort.md
