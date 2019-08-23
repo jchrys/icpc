@@ -136,7 +136,7 @@ class Vector {
 
 
 ## Related Topics
-[Stack](/DataStructures/Linear/Stack/)
+[Stack](/DataStructures/Linear/Stack)
 
 ## Analysis (Later..)
 You can add some mathematical things here using [KaTex](https://katex.org/docs/supported.html)
