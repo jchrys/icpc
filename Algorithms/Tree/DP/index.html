@@ -10,10 +10,10 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Graphs">
+        <meta name="description" content="Dynamic Programming on Tree">
       
       
-        <link rel="canonical" href="https://icpc.ninja/Algorithms/Graph/Basics/">
+        <link rel="canonical" href="https://icpc.ninja/Algorithms/Tree/DP/">
       
       
         <meta name="author" content="j">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Basics of Grpahs</title>
+        <title>Tree Dynamic Programming</title>
       
     
     
@@ -112,7 +112,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#graph" tabindex="1" class="md-skip">
+      <a href="#tree_dynamic_programming" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -138,7 +138,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Basics of Grpahs
+                Tree Dynamic Programming
               
             </span>
           
@@ -209,7 +209,7 @@
 
 <div class="md-hero md-hero--expand" data-md-component="hero">
   <div class="md-hero__inner md-grid">
-    Basics of Graphs
+    Tree Dynamic Programming
   </div>
 </div>
         
@@ -291,12 +291,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
     
     <label class="md-nav__link" for="nav-2-1">
       Graph
@@ -312,137 +310,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Basics
-      </label>
-    
-    <a href="./" title="Basics" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../Graph/Basics/" title="Basics" class="md-nav__link">
       Basics
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#terminologies" title="Terminologies" class="md-nav__link">
-    Terminologies
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1_connectivity" title="1. Connectivity" class="md-nav__link">
-    1. Connectivity
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2_edge_directions" title="2. Edge directions" class="md-nav__link">
-    2. Edge directions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3_edge_weights" title="3. Edge weights" class="md-nav__link">
-    3. Edge weights
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4_neighbors_and_degrees" title="4. Neighbors and degrees" class="md-nav__link">
-    4. Neighbors and degrees
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#colorings" title="Colorings" class="md-nav__link">
-    Colorings
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#simplicity" title="Simplicity" class="md-nav__link">
-    Simplicity
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#graph_representation" title="Graph representation" class="md-nav__link">
-    Graph representation
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1_adjacency_list_representation" title="1. Adjacency list representation" class="md-nav__link">
-    1. Adjacency list representation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2_adjacency_matrix_representation" title="2. Adjacency matrix representation" class="md-nav__link">
-    2. Adjacency matrix representation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3_edge_list_representation" title="3. Edge list representation" class="md-nav__link">
-    3. Edge list representation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
-          </a>
-        </li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -452,7 +324,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../GraphTraversal/" title="Graph Traversal" class="md-nav__link">
+    <a href="../../Graph/GraphTraversal/" title="Graph Traversal" class="md-nav__link">
       Graph Traversal
     </a>
   </li>
@@ -483,7 +355,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ShortestPaths/Preface/" title="Preface" class="md-nav__link">
+    <a href="../../Graph/ShortestPaths/Preface/" title="Preface" class="md-nav__link">
       Preface
     </a>
   </li>
@@ -495,7 +367,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ShortestPaths/Bellman-Ford/" title="Bellman-Ford" class="md-nav__link">
+    <a href="../../Graph/ShortestPaths/Bellman-Ford/" title="Bellman-Ford" class="md-nav__link">
       Bellman-Ford
     </a>
   </li>
@@ -507,7 +379,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ShortestPaths/Dijkstra/" title="Dijkstra" class="md-nav__link">
+    <a href="../../Graph/ShortestPaths/Dijkstra/" title="Dijkstra" class="md-nav__link">
       Dijkstra
     </a>
   </li>
@@ -519,7 +391,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ShortestPaths/Floyd-Warshall/" title="Floyd-Warshall" class="md-nav__link">
+    <a href="../../Graph/ShortestPaths/Floyd-Warshall/" title="Floyd-Warshall" class="md-nav__link">
       Floyd-Warshall
     </a>
   </li>
@@ -560,7 +432,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../DFS/Preface/" title="Preface" class="md-nav__link">
+    <a href="../../Graph/DFS/Preface/" title="Preface" class="md-nav__link">
       Preface
     </a>
   </li>
@@ -572,7 +444,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../DFS/Tree/" title="DFSTree" class="md-nav__link">
+    <a href="../../Graph/DFS/Tree/" title="DFSTree" class="md-nav__link">
       DFSTree
     </a>
   </li>
@@ -584,7 +456,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../DFS/StartingFinishingTime/" title="StartingFinishingTime" class="md-nav__link">
+    <a href="../../Graph/DFS/StartingFinishingTime/" title="StartingFinishingTime" class="md-nav__link">
       StartingFinishingTime
     </a>
   </li>
@@ -596,7 +468,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../DFS/FindingCutEdges/" title="FindingCutEdges" class="md-nav__link">
+    <a href="../../Graph/DFS/FindingCutEdges/" title="FindingCutEdges" class="md-nav__link">
       FindingCutEdges
     </a>
   </li>
@@ -611,10 +483,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3" checked>
     
     <label class="md-nav__link" for="nav-2-3">
       Tree
@@ -632,7 +506,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Tree/Basics/" title="Basics" class="md-nav__link">
+    <a href="../Basics/" title="Basics" class="md-nav__link">
       Basics
     </a>
   </li>
@@ -644,7 +518,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Tree/Traversal/" title="Traversal" class="md-nav__link">
+    <a href="../Traversal/" title="Traversal" class="md-nav__link">
       Traversal
     </a>
   </li>
@@ -654,11 +528,142 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../Tree/DP/" title="DP" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        DP
+      </label>
+    
+    <a href="./" title="DP" class="md-nav__link md-nav__link--active">
       DP
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#time_complexities" title="Time Complexities" class="md-nav__link">
+    Time Complexities
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the_number_of_nodes_in_its_subtree" title="The number of nodes in its subtree" class="md-nav__link">
+    The number of nodes in its subtree
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diameter" title="Diameter" class="md-nav__link">
+    Diameter
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#algorithm_1_based_on_dp" title="Algorithm 1 (based on DP)" class="md-nav__link">
+    Algorithm 1 (based on DP)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementation" title="Implementation" class="md-nav__link">
+    Implementation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more_general_implementation" title="More General Implementation" class="md-nav__link">
+    More General Implementation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algorithm_2_based_on_dfs" title="Algorithm 2 (based on DFS)" class="md-nav__link">
+    Algorithm 2 (based on DFS)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how_this_works" title="How this works?" class="md-nav__link">
+    How this works?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation_1" title="implementation" class="md-nav__link">
+    implementation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" title="resources" class="md-nav__link">
+    resources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -668,7 +673,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Tree/SpanningTree/" title="SpanningTree" class="md-nav__link">
+    <a href="../SpanningTree/" title="SpanningTree" class="md-nav__link">
       SpanningTree
     </a>
   </li>
@@ -1137,51 +1142,16 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#terminologies" title="Terminologies" class="md-nav__link">
-    Terminologies
+  <a href="#time_complexities" title="Time Complexities" class="md-nav__link">
+    Time Complexities
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_connectivity" title="1. Connectivity" class="md-nav__link">
-    1. Connectivity
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2_edge_directions" title="2. Edge directions" class="md-nav__link">
-    2. Edge directions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3_edge_weights" title="3. Edge weights" class="md-nav__link">
-    3. Edge weights
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4_neighbors_and_degrees" title="4. Neighbors and degrees" class="md-nav__link">
-    4. Neighbors and degrees
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#colorings" title="Colorings" class="md-nav__link">
-    Colorings
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#simplicity" title="Simplicity" class="md-nav__link">
-    Simplicity
+  <a href="#the_number_of_nodes_in_its_subtree" title="The number of nodes in its subtree" class="md-nav__link">
+    The number of nodes in its subtree
   </a>
   
 </li>
@@ -1192,31 +1162,71 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#graph_representation" title="Graph representation" class="md-nav__link">
-    Graph representation
+  <a href="#diameter" title="Diameter" class="md-nav__link">
+    Diameter
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_adjacency_list_representation" title="1. Adjacency list representation" class="md-nav__link">
-    1. Adjacency list representation
+  <a href="#algorithm_1_based_on_dp" title="Algorithm 1 (based on DP)" class="md-nav__link">
+    Algorithm 1 (based on DP)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementation" title="Implementation" class="md-nav__link">
+    Implementation
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2_adjacency_matrix_representation" title="2. Adjacency matrix representation" class="md-nav__link">
-    2. Adjacency matrix representation
+  <a href="#more_general_implementation" title="More General Implementation" class="md-nav__link">
+    More General Implementation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algorithm_2_based_on_dfs" title="Algorithm 2 (based on DFS)" class="md-nav__link">
+    Algorithm 2 (based on DFS)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how_this_works" title="How this works?" class="md-nav__link">
+    How this works?
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3_edge_list_representation" title="3. Edge list representation" class="md-nav__link">
-    3. Edge list representation
+  <a href="#implementation_1" title="implementation" class="md-nav__link">
+    implementation
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" title="resources" class="md-nav__link">
+    resources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1247,88 +1257,254 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/jchrys/icpc/edit/master/docs/Algorithms/Graph/Basics.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/jchrys/icpc/edit/master/docs/Algorithms/Tree/DP.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="graph">Graph<a class="headerlink" href="#graph" title="Permanent link">&para;</a></h1>
+                <h1 id="tree_dynamic_programming">Tree Dynamic Programming<a class="headerlink" href="#tree_dynamic_programming" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p>A graph is consists of nodes and edges</p>
+<p>Dynamic programming can be used to calculate some information during a tree traversal.</p>
 </blockquote>
+<h2 id="time_complexities">Time Complexities<a class="headerlink" href="#time_complexities" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Not yet added</p>
+</blockquote>
+<h3 id="the_number_of_nodes_in_its_subtree">The number of nodes in its subtree<a class="headerlink" href="#the_number_of_nodes_in_its_subtree" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>The subtree contains the node itself and all nodes in the subtrees of its children. 
+so we can calculate the number of nodes recursively using the following code</p>
+<p>Time complexity: $\Omicron(n)$</p>
+</blockquote>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">count</span><span class="p">[</span><span class="err">#</span><span class="n">nodes</span><span class="p">];</span>
+
+<span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//current node s, previous node e;</span>
+    <span class="n">count</span><span class="p">[</span><span class="n">s</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="nl">u</span> <span class="p">:</span> <span class="n">adj</span><span class="p">[</span><span class="n">s</span><span class="p">])</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">u</span> <span class="o">==</span> <span class="n">e</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+        <span class="n">dfs</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">s</span><span class="p">);</span>
+        <span class="n">count</span><span class="p">[</span><span class="n">s</span><span class="p">]</span> <span class="o">+=</span> <span class="n">count</span><span class="p">[</span><span class="n">u</span><span class="p">];</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="diameter">Diameter<a class="headerlink" href="#diameter" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>The Diameter of a tree is the maximum length of a path between two nodes.</p>
+</blockquote>
+<h3 id="algorithm_1_based_on_dp">Algorithm 1 (based on DP)<a class="headerlink" href="#algorithm_1_based_on_dp" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><em>A general way to approach many tree problems is to first root the tree arbitrarily</em>.
+After this, we can try to solve the problem separately for each subtree.
+Our first algorithm for calculating the diameter is based on this idea.</p>
+</blockquote>
+<p><del> An important observation is that every path in a rooted tree has a <em>highest point</em>: the highest node that belongs to the path. Thus we can calculate for each node the length of the longest path whose heighest point is the node. One of those path corresponds to the diameter of the tree.
+</del></p>
+<blockquote>
+<p>We calculate for each node $x$ two values:</p>
+</blockquote>
+<p><del> - toLeaf(x): the maximum length of a path from x to any leaf</del><br />
+<del> - maxLength(x): the maximum length of a path whose highest point is $x$</del>  </p>
 <ul>
-<li>Path: A path leads from node a to node b through edges of the graph.</li>
-<li>Length: The length of a path is the number of edges in it.</li>
-<li>Cycle: A path is a cycle if the first and last node is the same.</li>
-<li>Simple: A path is simple if each node appears at most once in the path.</li>
-</ul>
-<h2 id="terminologies">Terminologies<a class="headerlink" href="#terminologies" title="Permanent link">&para;</a></h2>
-<h3 id="1_connectivity">1. Connectivity<a class="headerlink" href="#1_connectivity" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>A graph is connected if there is a path between any two nodes.    </p>
-</blockquote>
-<ul>
-<li>Components: Connected parts of its grpah.</li>
-<li>Tree: a tree is a connected graph that consists of $n$ nodes and $n-1$ edges.</li>
-</ul>
-<h3 id="2_edge_directions">2. Edge directions<a class="headerlink" href="#2_edge_directions" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>A graph is directed if the edges can be traversed in one direction only</p>
-</blockquote>
-<h3 id="3_edge_weights">3. Edge weights<a class="headerlink" href="#3_edge_weights" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>In a weighted graph, each edge is assigned a weight. often interpreted as edge length</p>
-</blockquote>
-<h3 id="4_neighbors_and_degrees">4. Neighbors and degrees<a class="headerlink" href="#4_neighbors_and_degrees" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>Two nodes are $neighbors$ or $adjacent$ if there is an edge between them</p>
-</blockquote>
-<ul>
-<li>Degree: The degrege of a node is number of its neighbors<ul>
-<li>Indegree: The indegree of a node is the number of edges that end at the node</li>
-<li>Outdegree: The outdegree of a node is the number of edges that start at the node</li>
-</ul>
+<li>
+<p>$f(x)$: Longest path starts from node $x$ and goes into its subtree.</p>
 </li>
-<li>Regular graph: A graph is regular if the degree of every node is a constant d</li>
-<li>Complete graph: A graph is complete if the degree of every node is $n-1$</li>
+<li>
+<p>$g(x)$: Longest path starts in subtree of $x$, passes through $x$ and ends in subtree of $x$</p>
+</li>
 </ul>
-<h3 id="colorings">Colorings<a class="headerlink" href="#colorings" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p>In a coloring of a graph, each node is assigned a color so that no adjacent nodes have the same color</p>
+<p>If for all nodes $x$, we take maximum of $f(x), g(x)$, then we can get the diameter.</p>
+<p>Dynamic programming can be used to calculate the above values for all nodes in $\Omicron(n)$ time. </p>
 </blockquote>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>It turns out that a graph is bipartite exactly when it does not contain a cycle with an odd number of edges</p>
-</div>
-<h3 id="simplicity">Simplicity<a class="headerlink" href="#simplicity" title="Permanent link">&para;</a></h3>
+<h4 id="implementation">Implementation<a class="headerlink" href="#implementation" title="Permanent link">&para;</a></h4>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">//adjacency list</span>
+<span class="c1">//adj[i] contains all neighbors of i</span>
+<span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">adj</span><span class="p">[</span><span class="n">N</span><span class="p">];</span>
+
+<span class="c1">//functions as defined above</span>
+<span class="kt">int</span> <span class="n">f</span><span class="p">[</span><span class="n">N</span><span class="p">],</span> <span class="n">g</span><span class="p">[</span><span class="n">N</span><span class="p">],</span> <span class="n">diameter</span><span class="p">;</span>
+
+<span class="c1">// pV is parent of node V</span>
+<span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">V</span><span class="p">,</span> <span class="kt">int</span> <span class="n">pV</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//this vector will store f for all children of V</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">fValues</span><span class="p">;</span>
+
+    <span class="c1">//traverse over all children</span>
+    <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="nl">v</span><span class="p">:</span> <span class="n">adj</span><span class="p">[</span><span class="n">V</span><span class="p">])</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">v</span> <span class="o">==</span> <span class="n">pV</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+        <span class="n">dfs</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">V</span><span class="p">);</span>
+        <span class="n">fValues</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="n">v</span><span class="p">]);</span>
+    <span class="p">}</span>
+
+    <span class="c1">//sort to get top two values</span>
+    <span class="c1">// you can also get top two values without sorting in O(N)</span>
+    <span class="c1">// current complexity is n lg n</span>
+    <span class="n">sort</span><span class="p">(</span><span class="n">fValues</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">fValues</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+
+    <span class="n">f</span><span class="p">[</span><span class="n">V</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span> <span class="n">fValues</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span> <span class="n">f</span><span class="p">[</span><span class="n">V</span><span class="p">]</span> <span class="o">+=</span> <span class="n">fValues</span><span class="p">.</span><span class="n">back</span><span class="p">();</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">fValues</span><span class="p">.</span><span class="n">size</span><span class="p">()</span><span class="o">&gt;=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">g</span><span class="p">[</span><span class="n">V</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">fValues</span><span class="p">.</span><span class="n">back</span><span class="p">()</span> <span class="o">+</span> <span class="n">fValues</span><span class="p">[</span><span class="n">fValues</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">-</span><span class="mi">2</span><span class="p">];</span>
+    <span class="n">diameter</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">diameter</span><span class="p">,</span> <span class="n">max</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="n">V</span><span class="p">],</span> <span class="n">g</span><span class="p">[</span><span class="n">V</span><span class="p">]));</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<h4 id="more_general_implementation">More General Implementation<a class="headerlink" href="#more_general_implementation" title="Permanent link">&para;</a></h4>
 <blockquote>
-<p>A graph is simple if no edge starts and ends at the same node(loop), and there are no multiple edges between two nodes.</p>
+<p>with weighted edges</p>
 </blockquote>
-<p><img alt="loop&amp;multiple edges" src="https://user-images.githubusercontent.com/45776091/63223944-0b786300-c1f8-11e9-94c2-3dbd0389202b.jpeg" /></p>
-<h2 id="graph_representation">Graph representation<a class="headerlink" href="#graph_representation" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">//adjacency list </span>
+<span class="c1">//adj[i] contains all neighbors of i, and weights to i -&gt; its neighbor</span>
+<span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;&gt;&gt;</span> <span class="n">adj</span><span class="p">[</span><span class="n">N</span><span class="p">];</span>
+<span class="kt">int</span> <span class="n">diameter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">V</span><span class="p">,</span> <span class="kt">int</span> <span class="n">pV</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">fValues</span><span class="p">;</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="nl">v</span> <span class="p">:</span> <span class="n">adj</span><span class="p">[</span><span class="n">V</span><span class="p">])</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">first</span> <span class="o">==</span> <span class="n">pV</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+        <span class="n">dfs</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">first</span><span class="p">,</span> <span class="n">V</span><span class="p">);</span>
+        <span class="n">fValues</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="n">v</span><span class="p">.</span><span class="n">first</span><span class="p">]</span> <span class="o">+</span> <span class="n">v</span><span class="p">.</span><span class="n">second</span><span class="p">);</span> <span class="c1">// fvalue of child + weight of edge;</span>
+    <span class="p">}</span>
+
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// a is biggest, b is second to biggest</span>
+    <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="nl">x</span><span class="p">:</span> <span class="n">fValues</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="n">a</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
+            <span class="n">a</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">b</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">f</span><span class="p">[</span><span class="n">V</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="n">f</span><span class="p">[</span><span class="n">V</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">g</span><span class="p">[</span><span class="n">V</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+    <span class="n">diameter</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">diameter</span><span class="p">,</span> <span class="n">max</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="n">V</span><span class="p">],</span> <span class="n">g</span><span class="p">[</span><span class="n">V</span><span class="p">]));</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<h3 id="algorithm_2_based_on_dfs">Algorithm 2 (based on DFS)<a class="headerlink" href="#algorithm_2_based_on_dfs" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p>There are several ways to represent graphs in algorithms.
-The choice of a data structure depends on the size of graph and the way the algorithm processes it</p>
+<p>Another efficient way to calculate the diameter of a tree is based on two depth-first searches.
+First, we choose an arbitrary node $a$ in the tree and find the farthest node $b$ from $a$.
+Then, we find the farthest node $c$ from $b$. The diameter of the tree is the distance between $b$ and $c$.</p>
 </blockquote>
-<h3 id="1_adjacency_list_representation">1. Adjacency list representation<a class="headerlink" href="#1_adjacency_list_representation" title="Permanent link">&para;</a></h3>
+<h4 id="how_this_works">How this works?<a class="headerlink" href="#how_this_works" title="Permanent link">&para;</a></h4>
 <blockquote>
-<p>In the adjacency list representation, each node x in the graph is assigned an <em>adjacency list</em> that consists of nodes to which there is an edge from x</p>
+<p>Not yet added</p>
 </blockquote>
-<ul>
-<li>we can efficiently find the nodes to which we can move from a given node through an edge</li>
-</ul>
-<h3 id="2_adjacency_matrix_representation">2. Adjacency matrix representation<a class="headerlink" href="#2_adjacency_matrix_representation" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>An adjacency matrix is two dimensional array that indicates which edges the graph contains.</p>
-</blockquote>
-<ul>
-<li>we can efficiently check from an adjacency matrix if there is an edge between two nodes.</li>
-</ul>
-<h3 id="3_edge_list_representation">3. Edge list representation<a class="headerlink" href="#3_edge_list_representation" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>An edge list contains all edges of a graph in some order.</p>
-</blockquote>
-<ul>
-<li>This is convenient way to represent a graph if the algorithm proesses all edges of the graph and it is not needed to find edges that start at a given node.</li>
-</ul>
+<h4 id="implementation_1">implementation<a class="headerlink" href="#implementation_1" title="Permanent link">&para;</a></h4>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">firstFar</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">diameter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">V</span><span class="p">,</span> <span class="kt">int</span> <span class="n">pV</span><span class="p">,</span> <span class="kt">int</span> <span class="n">dis</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">diameter</span> <span class="o">&lt;</span> <span class="n">dis</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">diameter</span> <span class="o">=</span> <span class="n">dis</span><span class="p">;</span>
+        <span class="n">firstFar</span> <span class="o">=</span> <span class="n">V</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="nl">v</span> <span class="p">:</span> <span class="n">adj</span><span class="p">[</span><span class="n">V</span><span class="p">])</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">first</span> <span class="o">==</span> <span class="n">pV</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+        <span class="n">dfs</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">first</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">dis</span> <span class="o">+</span> <span class="n">v</span><span class="p">.</span><span class="n">second</span><span class="p">);</span> <span class="c1">// v.first == neighbor node, v.second weight of edge</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">dfs</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1">//initial call</span>
+<span class="c1">// diameter = 0; // not necessary;</span>
+<span class="n">dfs</span><span class="p">(</span><span class="n">firstFar</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="c1">// now diameter is diameter of tree</span>
+</pre></div>
+</td></tr></table>
+
+<h4 id="resources">resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h4>
+<p>https://codeforces.com/blog/entry/20935</p>
                 
                   
                 
@@ -1341,9 +1517,9 @@ The choice of a data structure depends on the size of graph and the way the algo
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://icpc.ninja/Algorithms/Graph/Basics/";
+      this.page.url = "https://icpc.ninja/Algorithms/Tree/DP/";
       this.page.identifier =
-        "/Algorithms/Graph/Basics/";
+        "/Algorithms/Tree/DP/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -1365,7 +1541,7 @@ The choice of a data structure depends on the size of graph and the way the algo
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../.." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Traversal/" title="Traversal" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1374,19 +1550,19 @@ The choice of a data structure depends on the size of graph and the way the algo
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Home
+                Traversal
               </span>
             </div>
           </a>
         
         
-          <a href="../GraphTraversal/" title="Graph Traversal" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../SpanningTree/" title="SpanningTree" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Graph Traversal
+                SpanningTree
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
