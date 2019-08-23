@@ -91,6 +91,7 @@ nav:
         - Sort:
             - InsertionSort: Algorithms/Sort/InsertionSort.md
             - BubbleSort: Algorithms/Sort/BubbleSort.md
+            - HeapSort: Algorithms/Sort/HeapSort.md
         - Euclidean: Algorithms/EuclideanAlgorithm.md
         - FastPower: Algorithms/FastPower.md
     - DataStructures: 
