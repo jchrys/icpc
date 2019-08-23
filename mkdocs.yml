@@ -78,15 +78,16 @@ nav:
                 - Bellman-Ford: Algorithms/Graph/ShortestPaths/Bellman-Ford.md
                 - Dijkstra: Algorithms/Graph/ShortestPaths/Dijkstra.md
                 - Floyd-Warshall: Algorithms/Graph/ShortestPaths/Floyd-Warshall.md
-            - DFS: 
-                - Preface: Algorithms/Graph/DFS/Preface.md
-                - DFSTree: Algorithms/Graph/DFS/Tree.md
-                - StartingFinishingTime: Algorithms/Graph/DFS/StartingFinishingTime.md
-                - FindingCutEdges: Algorithms/Graph/DFS/FindingCutEdges.md
+        - DFS: 
+            - Preface: Algorithms/Graph/DFS/Preface.md
+            - DFSTree: Algorithms/Graph/DFS/Tree.md
+            - StartingFinishingTime: Algorithms/Graph/DFS/StartingFinishingTime.md
+            - FindingCutEdges: Algorithms/Graph/DFS/FindingCutEdges.md
         - Tree: 
             - Basics: Algorithms/Tree/Basics.md
             - Traversal : Algorithms/Tree/Traversal.md
             - DP: Algorithms/Tree/DP.md
+            - SpanningTree: Algorithms/Tree/SpanningTree.md
         - Sort:
             - InsertionSort: Algorithms/Sort/InsertionSort.md
             - BubbleSort: Algorithms/Sort/BubbleSort.md
