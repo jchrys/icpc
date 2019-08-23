@@ -25,6 +25,11 @@
 | heap_increase_key() | $\Omicron(lg(n))$ |
 |    heap_maximum()   | $\Omicron(lg(n))$ |
 
+### Applications
+1. [HeapSort](/Algorithms/Sort/HeapSort)
+2. Priority queue: A priority queue is an abstract concept like "a list" or " map"; just as a list can be implemented with a linked list or an array, a priority queue can be implemented with heap or a variety of other methods.
+3. Graph algorithms
+4. Selection algorithms
 
 ## Implementation
 
@@ -179,6 +184,3 @@ int main() {
 }
 
 ```
-
-
-
