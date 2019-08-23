@@ -19,8 +19,8 @@
 |   Member Function   |    Running Time   |
 |:-------------------:|:-----------------:|
 |    max_heapify()    | $\Omicron(lg(n))$ |
-|   build_max_heap()  | $\Omicron(lg(n))$ |
-|      heapsort()     | $\Omicron(lg(n))$ |
+|   build_max_heap()  | $\Omicron(n)$     |
+|      heapsort()     | $\Omicron(nlg(n))$|
 |  max_heap_insert()  | $\Omicron(lg(n))$ |
 | heap_increase_key() | $\Omicron(lg(n))$ |
 |    heap_maximum()   | $\Omicron(lg(n))$ |
