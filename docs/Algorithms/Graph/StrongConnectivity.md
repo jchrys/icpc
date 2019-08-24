@@ -123,6 +123,16 @@ $$
 > The process continues until each variable has been assigned a value.
 
 
+!!! note "this method works"
+    because the graph has a special structure:
+    if there are paths from node $x_i$ to node $x_j$ and from node $x_j$ to
+    node $\neg x_j$, then node $x_i$ never becomes true. The reason for this is that there is also a path from node $\neg x_j$ to node $\neg x_j$, and both $x_i$ and $x_j$ become false.
+
+
+!!! info 3SAT problem
+    A more difficult problem is *3SAT problem*, where each part of the formula is form $(a_i \lor b_i \lor c_i)$. This problem is NP-hard, so no efficient algorithm for solving the problem is known. 
+
+
 ### Implementation
 ```cpp
 int const MAXN; // maximum number of variables
@@ -194,11 +204,8 @@ int main() {
 }
 ```
 
-!!! note "this method works"
-    because the graph has a special structure:
-    if there are paths from node $x_i$ to node $x_j$ and from node $x_j$ to
-    node $\neg x_j$, then node $x_i$ never becomes true. The reason for this is that there is also a path from node $\neg x_j$ to node $\neg x_j$, and both $x_i$ and $x_j$ become false.
-
-
-!!! info 3SAT problem
-    A more difficult problem is *3SAT problem*, where each part of the formula is form $(a_i \lor b_i \lor c_i)$. This problem is NP-hard, so no efficient algorithm for solving the problem is known. 
+### Related Problems
+1. [2-SAT 1](https://www.acmicpc.net/problem/11277) :star::star:
+2. [2-SAT 2](https://www.acmicpc.net/problem/11278) :star::star:
+3. [2-SAT 3](https://www.acmicpc.net/problem/11280) :star::star:
+4. [2-SAT 4](https://www.acmicpc.net/problem/11281) :star::star::star:
