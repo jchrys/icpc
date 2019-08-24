@@ -1,7 +1,7 @@
 # File              : mkdocs.yml
 # Author            : JCHRYS <jchrys@me.com>
 # Date              : 15.08.2019
-# Last Modified Date: 23.08.2019
+# Last Modified Date: 24.08.2019
 # Last Modified By  : JCHRYS <jchrys@me.com>
 # Main
 site_name: ICPC.NINJA
@@ -73,6 +73,7 @@ nav:
         - Graph: 
             - Basics: Algorithms/Graph/Basics.md
             - Graph Traversal: Algorithms/Graph/GraphTraversal.md
+            - Directed Graphs: Algorithms/Graph/DirectedGraphs.md
             - Shortest Paths: 
                 - Preface: Algorithms/Graph/ShortestPaths/Preface.md
                 - Bellman-Ford: Algorithms/Graph/ShortestPaths/Bellman-Ford.md
