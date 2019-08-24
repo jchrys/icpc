@@ -74,6 +74,7 @@ nav:
             - Basics: Algorithms/Graph/Basics.md
             - Graph Traversal: Algorithms/Graph/GraphTraversal.md
             - Directed Graphs: Algorithms/Graph/DirectedGraphs.md
+            - Strong Connectivity: Algorithms/Graph/StrongConnectivity.md
             - Shortest Paths: 
                 - Preface: Algorithms/Graph/ShortestPaths/Preface.md
                 - Bellman-Ford: Algorithms/Graph/ShortestPaths/Bellman-Ford.md
