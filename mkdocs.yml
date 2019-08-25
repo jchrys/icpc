@@ -83,6 +83,7 @@ nav:
             - Eulerian Paths: Algorithms/Graph/EulerianPaths.md
             - Hamiltonian Paths: Algorithms/Graph/HamiltonianPaths.md
             - De Bruijn sequences: Algorithms/Graph/DeBruijnSequences.md
+            - Knight's tours: Algorithms/Graph/KnightsTours.md
             
         - DFS: 
             - Preface: Algorithms/Graph/DFS/Preface.md
