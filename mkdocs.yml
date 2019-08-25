@@ -81,6 +81,7 @@ nav:
                 - Dijkstra: Algorithms/Graph/ShortestPaths/Dijkstra.md
                 - Floyd-Warshall: Algorithms/Graph/ShortestPaths/Floyd-Warshall.md
             - EulerianPaths: Algorithms/Graph/EulerianPaths.md
+            - HamiltonianPaths: Algorithms/Graph/HamiltonianPaths.md
             
         - DFS: 
             - Preface: Algorithms/Graph/DFS/Preface.md
