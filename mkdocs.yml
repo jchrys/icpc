@@ -84,6 +84,7 @@ nav:
             - Hamiltonian Paths: Algorithms/Graph/HamiltonianPaths.md
             - De Bruijn sequences: Algorithms/Graph/DeBruijnSequences.md
             - Knight's tours: Algorithms/Graph/KnightsTours.md
+            - Maximum flow: Algorithms/Graph/MaximumFlow.md
             
         - DFS: 
             - Preface: Algorithms/Graph/DFS/Preface.md
