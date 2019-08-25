@@ -80,8 +80,9 @@ nav:
                 - Bellman-Ford: Algorithms/Graph/ShortestPaths/Bellman-Ford.md
                 - Dijkstra: Algorithms/Graph/ShortestPaths/Dijkstra.md
                 - Floyd-Warshall: Algorithms/Graph/ShortestPaths/Floyd-Warshall.md
-            - EulerianPaths: Algorithms/Graph/EulerianPaths.md
-            - HamiltonianPaths: Algorithms/Graph/HamiltonianPaths.md
+            - Eulerian Paths: Algorithms/Graph/EulerianPaths.md
+            - Hamiltonian Paths: Algorithms/Graph/HamiltonianPaths.md
+            - De Bruijn sequences: Algorithms/Graph/DeBruijnSequences.md
             
         - DFS: 
             - Preface: Algorithms/Graph/DFS/Preface.md
