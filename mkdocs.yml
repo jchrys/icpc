@@ -46,6 +46,7 @@ markdown_extensions:
               width: 20px
           image_path: 'https://github.com/images/icons/emoji/unicode/'
           non_standard_image_path: 'https://github.com/images/icons/emoji/'
+  - pymdownx.mark
   - admonition
   - footnotes
   - meta
@@ -86,6 +87,7 @@ nav:
             - Knight's tours: Algorithms/Graph/KnightsTours.md
             - Maximum flow: Algorithms/Graph/MaximumFlow.md
             - Minimum cut: Algorithms/Graph/MinimumCut.md
+            - Ford-Fulkerson: Algorithms/Graph/FordFulkerson.md
             
         - DFS: 
             - Preface: Algorithms/Graph/DFS/Preface.md
