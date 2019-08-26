@@ -90,6 +90,7 @@ nav:
             - Ford-Fulkerson: Algorithms/Graph/FordFulkerson.md
             - Disjoint Paths: Algorithms/Graph/DisjointPaths.md
             - Maximum Matchings: Algorithms/Graph/MaximumMatchings.md
+            - Konig's Theorem: Algorithms/Graph/KonigsTheorem.md
             
         - DFS: 
             - Preface: Algorithms/Graph/DFS/Preface.md
