@@ -89,6 +89,7 @@ nav:
             - Minimum cut: Algorithms/Graph/MinimumCut.md
             - Ford-Fulkerson: Algorithms/Graph/FordFulkerson.md
             - Disjoint Paths: Algorithms/Graph/DisjointPaths.md
+            - Maximum Matchings: Algorithms/Graph/MaximumMatchings.md
             
         - DFS: 
             - Preface: Algorithms/Graph/DFS/Preface.md
