@@ -71,7 +71,7 @@ google_analytics:
 nav:
     - Home: index.md
     - Algorithms: 
-        - Graph: 
+        - Graph:
             - Basics: Algorithms/Graph/Basics.md
             - Graph Traversal: Algorithms/Graph/GraphTraversal.md
             - Directed Graphs: Algorithms/Graph/DirectedGraphs.md
@@ -91,6 +91,7 @@ nav:
             - Disjoint Paths: Algorithms/Graph/DisjointPaths.md
             - Maximum Matchings: Algorithms/Graph/MaximumMatchings.md
             - Konig's Theorem: Algorithms/Graph/KonigsTheorem.md
+            - Path Covers: Algorithms/Graph/PathCovers.md
             
         - DFS: 
             - Preface: Algorithms/Graph/DFS/Preface.md
