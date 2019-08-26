@@ -66,9 +66,13 @@
 
 > ==The time complexity of the algorithm is $\Omicron(m^2lgc)$==, where $c$ is the initial threshold value.
 
-
+## Problems
+1. [최대 유량](https://www.acmicpc.net/problem/6086):star::star::star:
 
 
 ## Related topics
-[Maximum flow]
-[Minimum cut]
+- [Maximum flow](/Algorithms/Graph/MaximumFlow)
+
+- [Minimum cut](/Algorithms/Graph/MinimumCut)
+
+
