@@ -8,5 +8,8 @@
 > The weight of each edge is a capacity that restricts the flow that can go through the edge.
 > In each intermediate node, the incoming and outgoing flow has to be equal.
 
+## Problems
+1. [최대 유량](https://www.acmicpc.net/problem/6086):star::star::star:
+
 ## Related topiccs
-[Ford-Fulkerson algorithm]
+[Ford-Fulkerson algorithm](/Algorithms/Graph/FordFulkerson)
