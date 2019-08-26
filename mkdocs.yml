@@ -88,6 +88,7 @@ nav:
             - Maximum flow: Algorithms/Graph/MaximumFlow.md
             - Minimum cut: Algorithms/Graph/MinimumCut.md
             - Ford-Fulkerson: Algorithms/Graph/FordFulkerson.md
+            - Disjoint Paths: Algorithms/Graph/DisjointPaths.md
             
         - DFS: 
             - Preface: Algorithms/Graph/DFS/Preface.md
