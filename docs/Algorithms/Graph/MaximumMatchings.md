@@ -29,3 +29,6 @@
 > If the condition of Hall's theorem does not hold, the set $X$ provides an explanation why we cannot form such a matching.
 
 > Since $X$ contains more nodes than $f(X)$, there are no pairs for all nodes in $X$.
+
+## Problems
+1. [축사 배정](https://www.acmicpc.net/problem/2188) :star::star:
