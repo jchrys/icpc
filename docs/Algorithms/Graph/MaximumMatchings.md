@@ -128,3 +128,5 @@ int main()
 
 ## Problems
 1. [축사 배정](https://www.acmicpc.net/problem/2188) :star::star:
+2. [열혈강호](https://www.acmicpc.net/problem/11376) :star::star:
+
