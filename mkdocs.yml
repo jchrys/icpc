@@ -125,6 +125,7 @@ nav:
             - BST: DataStructures/Trees/BST.md 
             - RedBlackTree: DataStructures/Trees/RedBlackTree.md
             - BinaryIndexedTree: DataStructures/Trees/BinaryIndexedTree.md
+            - Trie: DataStructures/Trees/Trie.md
     - MISC:
         Lemma: MISC/Lemma.md
     - Language: 
