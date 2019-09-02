@@ -115,6 +115,7 @@ nav:
             - Preface: Algorithms/String/Preface.md
             - String Hashing: Algorithms/String/StringHashing.md
             - Trie: Algorithms/String/Trie.md
+            - Z-Algorithm: Algorithms/String/Z-Algorithm.md
     - DataStructures: 
         - Linear:
             - Stack: DataStructures/Linear/Stack.md
