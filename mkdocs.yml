@@ -113,7 +113,7 @@ nav:
         - FastPower: Algorithms/FastPower.md
         - String: 
             - Preface: Algorithms/String/Preface.md
-            - Hash: Algorithms/String/Hash.md
+            - String Hashing: Algorithms/String/StringHashing.md
             - Trie: Algorithms/String/Trie.md
     - DataStructures: 
         - Linear:
