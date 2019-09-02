@@ -1,7 +1,7 @@
 # File              : mkdocs.yml
 # Author            : JCHRYS <jchrys@me.com>
 # Date              : 15.08.2019
-# Last Modified Date: 01.09.2019
+# Last Modified Date: 02.09.2019
 # Last Modified By  : JCHRYS <jchrys@me.com>
 # Main
 site_name: ICPC.NINJA
@@ -111,6 +111,10 @@ nav:
             - QuickSort: Algorithms/Sort/QuickSort.md
         - Euclidean: Algorithms/EuclideanAlgorithm.md
         - FastPower: Algorithms/FastPower.md
+        - String: 
+            - Preface: Algorithms/String/Preface.md
+            - Hash: Algorithms/String/Hash.md
+            - Trie: Algorithms/String/Trie.md
     - DataStructures: 
         - Linear:
             - Stack: DataStructures/Linear/Stack.md
@@ -125,7 +129,6 @@ nav:
             - BST: DataStructures/Trees/BST.md 
             - RedBlackTree: DataStructures/Trees/RedBlackTree.md
             - BinaryIndexedTree: DataStructures/Trees/BinaryIndexedTree.md
-            - Trie: DataStructures/Trees/Trie.md
     - MISC:
         Lemma: MISC/Lemma.md
     - Language: 
