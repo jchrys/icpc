@@ -80,5 +80,32 @@ void add(int k, int x) {
 }
 ```
 
+
+## Implementation (0-indexed)
+```cpp
+#include <bits/stdc++.h>
+int N = 10000;
+int f[N]{};
+
+void upd(int k, int x) {
+    for (; k < N; k |= k + 1)
+        f[k] += x;
+}
+
+int get(int pos) {
+    int res = 0;
+    for (; pos >= 0; pos = (pos & (pos + 1)) - 1)
+        res += f[pos];
+    return res;
+}
+
+int get(int l, int r) {
+    return get(r) - get(l - 1);
+}
+
+
+
+```
+
 ## Problems
 1. [구간 합 구하기](https://www.acmicpc.net/problem/2042) :star::star::star:
