@@ -120,6 +120,7 @@ nav:
             - Z-Algorithm: Algorithms/String/Z-Algorithm.md
         - Range Queries: 
             - Preface: Algorithms/RangeQueries/Preface.md
+            - StaticArrayQueries: Algorithms/RangeQueries/StaticArrayQueries.md
 
     - DataStructures: 
         - Linear:
