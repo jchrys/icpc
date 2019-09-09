@@ -922,6 +922,54 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-9" type="checkbox" id="nav-2-9">
+    
+    <label class="md-nav__link" for="nav-2-9">
+      Range Queries
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-9">
+        Range Queries
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms/RangeQueries/Preface/" title="Preface" class="md-nav__link">
+      Preface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Algorithms/RangeQueries/StaticArrayQueries/" title="StaticArrayQueries" class="md-nav__link">
+      StaticArrayQueries
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1211,6 +1259,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#implementation_0-indexed" title="Implementation (0-indexed)" class="md-nav__link">
+    Implementation (0-indexed)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#problems" title="Problems" class="md-nav__link">
     Problems
   </a>
@@ -1474,6 +1529,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#implementation_0-indexed" title="Implementation (0-indexed)" class="md-nav__link">
+    Implementation (0-indexed)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#problems" title="Problems" class="md-nav__link">
     Problems
   </a>
@@ -1599,6 +1661,47 @@ $$</p>
         <span class="n">tree</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">+=</span> <span class="n">x</span><span class="p">;</span>
         <span class="n">k</span> <span class="o">+=</span> <span class="n">k</span><span class="o">&amp;-</span><span class="n">k</span><span class="p">;</span>
     <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="implementation_0-indexed">Implementation (0-indexed)<a class="headerlink" href="#implementation_0-indexed" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
+<span class="kt">int</span> <span class="n">N</span> <span class="o">=</span> <span class="mi">10000</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">f</span><span class="p">[</span><span class="n">N</span><span class="p">]{};</span>
+
+<span class="kt">void</span> <span class="nf">upd</span><span class="p">(</span><span class="kt">int</span> <span class="n">k</span><span class="p">,</span> <span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">k</span> <span class="o">|=</span> <span class="n">k</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">f</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">+=</span> <span class="n">x</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">get</span><span class="p">(</span><span class="kt">int</span> <span class="n">pos</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">res</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(;</span> <span class="n">pos</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">pos</span> <span class="o">=</span> <span class="p">(</span><span class="n">pos</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">pos</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">res</span> <span class="o">+=</span> <span class="n">f</span><span class="p">[</span><span class="n">pos</span><span class="p">];</span>
+    <span class="k">return</span> <span class="n">res</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">get</span><span class="p">(</span><span class="kt">int</span> <span class="n">l</span><span class="p">,</span> <span class="kt">int</span> <span class="n">r</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">get</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="o">-</span> <span class="n">get</span><span class="p">(</span><span class="n">l</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 </td></tr></table>

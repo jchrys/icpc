@@ -206,6 +206,16 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://icpc.ninja/Algorithms/RangeQueries/Preface/</loc>
+     <lastmod>2019-09-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://icpc.ninja/Algorithms/RangeQueries/StaticArrayQueries/</loc>
+     <lastmod>2019-09-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://icpc.ninja/DataStructures/Linear/Stack/</loc>
      <lastmod>2019-09-09</lastmod>
      <changefreq>daily</changefreq>
