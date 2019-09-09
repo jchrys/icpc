@@ -112,6 +112,7 @@ nav:
         - FastPower: Algorithms/FastPower.md
         - Linear:
             BinarySearch: Algorithms/Linear/BinarySearch.md
+            Lower and Upper Bounds: Algorithms/Linear/LowerAndUpperBounds.md
         - String: 
             - Preface: Algorithms/String/Preface.md
             - String Hashing: Algorithms/String/StringHashing.md
