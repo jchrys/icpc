@@ -92,7 +92,6 @@ nav:
             - Maximum Matchings: Algorithms/Graph/MaximumMatchings.md
             - Konig's Theorem: Algorithms/Graph/KonigsTheorem.md
             - Path Covers: Algorithms/Graph/PathCovers.md
-            
         - DFS: 
             - Preface: Algorithms/Graph/DFS/Preface.md
             - DFSTree: Algorithms/Graph/DFS/Tree.md
@@ -111,6 +110,8 @@ nav:
             - QuickSort: Algorithms/Sort/QuickSort.md
         - Euclidean: Algorithms/EuclideanAlgorithm.md
         - FastPower: Algorithms/FastPower.md
+        - Linear:
+            BinarySearch: Algorithms/Linear/BinarySearch.md
         - String: 
             - Preface: Algorithms/String/Preface.md
             - String Hashing: Algorithms/String/StringHashing.md
