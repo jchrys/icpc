@@ -2,312 +2,317 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://icpc.ninja/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/Basics/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/GraphTraversal/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/DirectedGraphs/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/StrongConnectivity/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/ShortestPaths/Preface/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/ShortestPaths/Bellman-Ford/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/ShortestPaths/Dijkstra/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/ShortestPaths/Floyd-Warshall/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/EulerianPaths/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/HamiltonianPaths/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/DeBruijnSequences/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/KnightsTours/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/MaximumFlow/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/MinimumCut/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/FordFulkerson/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/DisjointPaths/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/MaximumMatchings/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/KonigsTheorem/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/PathCovers/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/DFS/Preface/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/DFS/Tree/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/DFS/StartingFinishingTime/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Graph/DFS/FindingCutEdges/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Tree/Basics/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Tree/Traversal/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Tree/DP/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Tree/SpanningTree/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Tree/TreeQueries/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Sort/InsertionSort/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Sort/BubbleSort/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Sort/HeapSort/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Sort/QuickSort/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/EuclideanAlgorithm/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/FastPower/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Linear/BinarySearch/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/Linear/LowerAndUpperBounds/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/String/Preface/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/String/StringHashing/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/String/Trie/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/String/Z-Algorithm/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/RangeQueries/Preface/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Algorithms/RangeQueries/StaticArrayQueries/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/Linear/Stack/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/Linear/Vector/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/Linear/Heap/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/Linear/LinkedList/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/Linear/Pair/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/HashTables/Preface/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/HashTables/HashFunctions/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/Trees/SearchTree/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/Trees/BST/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/Trees/RedBlackTree/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/Trees/BinaryIndexedTree/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://icpc.ninja/DataStructures/Trees/SegmentTree/</loc>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/MISC/Lemma/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Language/Preface/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Language/Keywords/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Language/Class/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Contribute/HowToContribute/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Contribute/CodeOfConduct/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Contribute/Template/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://icpc.ninja/Contribute/Emoji/</loc>
-     <lastmod>2019-09-09</lastmod>
+     <lastmod>2019-09-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
