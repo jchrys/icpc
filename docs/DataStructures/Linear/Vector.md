@@ -28,7 +28,7 @@ class Vector {
     
     // Vector(SomeType); //"ordinary constructor"
     Vector(int k) {
-       _size = k;
+       _size = 0;
        _capacity = k;
        _buf = new T[_capacity];
     }
