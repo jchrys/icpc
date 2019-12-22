@@ -12,15 +12,15 @@
     - [x] BinarySearchTree
     - [x] RedBlackTree
     - [ ] B-Trees 
-    - [ ] Heap 
+    - [x] Heap 
     - [ ] FibonacciHeaps
     - [ ] van Emde Boas Trees
-    - [ ] Graphs
+    - [x] Graphs
 - Algorithms:
     - Sortings:
         - [x] Bubble
         - [x] Insertion
-        - [ ] QuickSort
-        - [ ] HeapSort
+        - [x] QuickSort
+        - [x] HeapSort
         - [ ] CountingSort
 
