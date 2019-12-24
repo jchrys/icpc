@@ -28,7 +28,7 @@ priority_queue<int, int> q; // (-dis, node)
 for (int i = 1; i <= n; i++) distance[i] = INF;
 
 distance[s] = 0; // starting node s
-q.push({0, x});
+q.push({0, s});
 while (!q.empty()) {
     int a = q.top().second; q.pop();
     if (processed[a]) continue;
