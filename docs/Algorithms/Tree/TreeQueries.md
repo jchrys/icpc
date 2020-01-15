@@ -142,7 +142,7 @@ int query(int u, int v) {
     query implementation
     */
 
-    // make depth[u] is always larger than or equal depth[u];
+    // make depth[u] is always larger than or equal to depth[u];
     if (depth[u] < depth[v])
        swap(u, v)
 
@@ -151,13 +151,13 @@ int query(int u, int v) {
         if (par[u][i] != -1 && depth[par[u][i]] >= h[v])
             u = par[u][i];
 
-    // if one of given node is parent of the other or given sane nodes u, v;
+    // if one of given node is parent of the other or given the same nodes u, v;
     // return one of them.
     if (u == v)
         return u;
 
-    // make par[u][0] and par[v][0] target same node
-    for (int i = MAXLOG -1; i >= 0; --i)
+    // make par[u][0] and par[v][0] target the same node
+    for (int i = MAXLOG - 1; i >= 0; --i)
         if (par[u][i] != par[v][i])
             v = par[v][i], u = par[u][i];
     
