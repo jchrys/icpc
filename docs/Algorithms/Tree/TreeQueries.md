@@ -1,3 +1,8 @@
+ File              : TreeQueries.md
+ Author            : JCHRYS <jchrys@me.com>
+ Date              : 15.01.2020
+ Last Modified Date: 15.01.2020
+ Last Modified By  : JCHRYS <jchrys@me.com>
 # Tree Queries
 - What is the $k$th ancester of a node?
 - What is the sum of values in the subtree of a node?
@@ -96,47 +101,64 @@ not yet added
 #### Implementation
 ```cpp
 
-//preprocess
+
+
 int log(int x) {
-    int ans = 0;
-    while (x) {
-        x>>=1;
-        ans++;
-    }
-    return ans;
+    return sizeof(int) * 8 - __builtin_clz(x);
 }
 
+int const MAXN = 2e5;
 int MAXLOG = log(MAXN);
+vector<vector<int>> par(MAXN, vector<int>(MAXN, -1)) // initially all -1 which represents that the node has no parent
+vector<int> depth(MAXN, 0);
 
-int par[MAXN][MAXLOG]; // initially all -1
-int h[MAXN];
 
-void dfs(int v, int p = -1) {
-    if (p + 1)
-        h[v] = h[p] + 1;
-    par[v][0] = p;
-    for (int i = 1; i < MAXLOG; i++) {
-        if (par[v][i - 1] + 1)
-            par[v][i] = par[par[v][i - 1]][i - 1];
-    }
-    for (auto u : adj[v])
-        if(p - u) // equivalent to u != v
-            dfs(u, v);
+void dfs(int u, int p = -1) {
+    /*
+     preprocessing
+     make sparse table
+    */
+
+    if (p != -1)
+        depth[u] = depth[p] + 1;
+
+    par[u][0] = p;
+
+    for (int i = 0; i < MAXLOG - 1; i++)
+        if (par[u][i] != -1)
+            par[u][i + 1] = par[par[u][i]][i];
+
+    for (auto v : adj[u])
+        if(u != p)
+            dfs(v, u);
 }
-//query
-int LCA(int v, int u) {
-    if (h[v] < h[u])
-       swap(v, u) //v is bigger 
-    for (int i = MAXLOG - 1; i >=0; i--) 
-        if (par[v][i] + 1 && h[par[v][i]] >= h[u])
-            v = par[v][i];
-    //now h[v] == h[u]
-    if (v==u)
-        return v;
-    for (int i = MAXLOG -1; i >= 0; i--)
-        if (par[v][i] - par[u][i]) // par != par
+
+int query(int u, int v) {
+    /*
+    query implementation
+    */
+
+    // make depth[u] is always larger than or equal depth[u];
+    if (depth[u] < depth[v])
+       swap(u, v)
+
+    // make depth[v] == depth[u]
+    for (int i = MAXLOG - 1; i >= 0; --i)
+        if (par[u][i] != -1 && depth[par[u][i]] >= h[v])
+            u = par[u][i];
+
+    // if one of given node is parent of the other or given sane nodes u, v;
+    // return one of them.
+    if (u == v)
+        return u;
+
+    // make par[u][0] and par[v][0] target same node
+    for (int i = MAXLOG -1; i >= 0; --i)
+        if (par[u][i] != par[v][i])
             v = par[v][i], u = par[u][i];
-    return par[v][0];
+    
+    // return parent node which is common ancester of givens.
+    return par[u][0];
 }
 
 ```
