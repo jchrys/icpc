@@ -101,7 +101,11 @@ not yet added
 #### Implementation
 ```cpp
 
-
+/*
+    n: number of nodes
+    preprocess: O(nlgn)
+    query: O(lgn)
+*/
 
 int log(int x) {
     return sizeof(int) * 8 - __builtin_clz(x);
