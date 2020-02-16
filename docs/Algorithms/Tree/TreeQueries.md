@@ -1,8 +1,10 @@
+---
  File              : TreeQueries.md
  Author            : JCHRYS <jchrys@me.com>
  Date              : 15.01.2020
- Last Modified Date: 15.01.2020
+ Last Modified Date: 16.02.2020
  Last Modified By  : JCHRYS <jchrys@me.com>
+---
 # Tree Queries
 - What is the $k$th ancester of a node?
 - What is the sum of values in the subtree of a node?
@@ -182,8 +184,83 @@ int query(int u, int v) {
 
 ### Implementation
 ```cpp
-will be added after RMQ is added
-https://codeforces.com/blog/entry/16221
+#include <bits/stdc++.h>
+using namespace std;
+inline int  log(int x) {
+    return sizeof(int) * 8 - __builtin_clz(x);
+}
+int const MAXN = 5e4;
+int const MAXLOG = log(2*MAXN); // cautious!!! size is doubled!
+int n;
+vector<vector<int>> adj(MAXN);
+vector<int> depth(MAXN);
+vector<int> pos(MAXN, -1);
+vector<vector<int>> dp(MAXLOG);
+
+
+void euler(int u, int p) {
+    depth[u] = p == -1 ? 0 : depth[p] + 1;
+    if (pos[u] == -1)
+        pos[u] = dp[0].size();
+    dp[0].push_back(u);
+    for (auto v: adj[u]) {
+        if (v == p) continue;
+        euler(v, u);
+        dp[0].push_back(u);
+    }
+}
+
+void build() {
+    for (int i = 1; i < MAXLOG; i++) {
+        for (int j = 0; j + (1 << (i - 1)) < (int) dp[i-1].size(); j++) {
+            if (depth[dp[i - 1][j]] <= depth[dp[i - 1][j + (1 << (i - 1))]]) {
+                dp[i].push_back(dp[i - 1][j]);
+            } else {
+                dp[i].push_back(dp[i - 1][j + (1 << (i - 1))]);
+            }
+        }
+    }
+}
+
+int rmq(int l, int r) {
+    int lg = log(r - l) - 1;
+    int w = 2 << lg;
+    if (depth[dp[lg][l]] <= depth[dp[lg][r - w + 1] ])
+        return dp[lg][l];
+    return dp[lg][r - w + 1];
+}
+
+int query(int u, int v) {
+    if (pos[u] > pos[v])
+        swap(u, v);
+    return rmq(pos[u], pos[v]);
+}
+
+int main() {
+    cin >> n;
+    for (int u, v, i = 0; i < n - 1; i++) {
+        cin >> u >> v;
+        u--;v--;
+        adj[u].push_back(v);
+        adj[v].push_back(u);
+    }
+    dp[0].reserve(2*n);
+    int root = 0;
+    euler(root, -1);
+    build();
+
+
+    int m;
+    cin >> m;
+    while (m--) {
+        int u, v;
+        cin >> u >> v;
+        u--;v--;
+        cout << query(u, v) + 1 << '\n';
+    }
+    return 0;
+}
+
 ```
 
 
