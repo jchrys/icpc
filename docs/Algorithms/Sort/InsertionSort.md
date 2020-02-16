@@ -13,7 +13,7 @@
 
 |                 |  Worst case  |    Best case   |
 |:---------------:|:------------:|:--------------:|
-| Time complexity | $Omicron(N)$ | $Omicron(N^2)$ |
+| Time complexity | $\Omicron(N)$ | $\Omicron(N^2)$ |
 
 ## C++
 ```cpp
