@@ -1791,7 +1791,12 @@
                   <a href="https://github.com/jchrys/icpc/edit/master/docs/Algorithms/Tree/TreeQueries.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="tree_queries">Tree Queries<a class="headerlink" href="#tree_queries" title="Permanent link">&para;</a></h1>
+                <p>File              : TreeQueries.md
+ Author            : JCHRYS <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#99;&#104;&#114;&#121;&#115;&#64;&#109;&#101;&#46;&#99;&#111;&#109;">&#106;&#99;&#104;&#114;&#121;&#115;&#64;&#109;&#101;&#46;&#99;&#111;&#109;</a>
+ Date              : 15.01.2020
+ Last Modified Date: 15.01.2020
+ Last Modified By  : JCHRYS <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#99;&#104;&#114;&#121;&#115;&#64;&#109;&#101;&#46;&#99;&#111;&#109;">&#106;&#99;&#104;&#114;&#121;&#115;&#64;&#109;&#101;&#46;&#99;&#111;&#109;</a></p>
+<h1 id="tree_queries">Tree Queries<a class="headerlink" href="#tree_queries" title="Permanent link">&para;</a></h1>
 <ul>
 <li>What is the $k$th ancester of a node?</li>
 <li>What is the sum of values in the subtree of a node?</li>
@@ -1923,47 +1928,89 @@ After this, we determine the minimum number of steps needed to move both pointer
 39
 40
 41
-42</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">//preprocess</span>
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">    n: number of nodes</span>
+<span class="cm">    preprocess: O(nlgn)</span>
+<span class="cm">    query: O(lgn)</span>
+<span class="cm">*/</span>
+
 <span class="kt">int</span> <span class="nf">log</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">while</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">x</span><span class="o">&gt;&gt;=</span><span class="mi">1</span><span class="p">;</span>
-        <span class="n">ans</span><span class="o">++</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="n">ans</span><span class="p">;</span>
+    <span class="k">return</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="o">*</span> <span class="mi">8</span> <span class="o">-</span> <span class="n">__builtin_clz</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
 <span class="p">}</span>
 
+<span class="kt">int</span> <span class="k">const</span> <span class="n">MAXN</span> <span class="o">=</span> <span class="mf">2e5</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">MAXLOG</span> <span class="o">=</span> <span class="n">log</span><span class="p">(</span><span class="n">MAXN</span><span class="p">);</span>
+<span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">par</span><span class="p">(</span><span class="n">MAXN</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">MAXN</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="c1">// initially all -1 which represents that the node has no parent</span>
+<span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">depth</span><span class="p">(</span><span class="n">MAXN</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
 
-<span class="kt">int</span> <span class="n">par</span><span class="p">[</span><span class="n">MAXN</span><span class="p">][</span><span class="n">MAXLOG</span><span class="p">];</span> <span class="c1">// initially all -1</span>
-<span class="kt">int</span> <span class="n">h</span><span class="p">[</span><span class="n">MAXN</span><span class="p">];</span>
 
-<span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">v</span><span class="p">,</span> <span class="kt">int</span> <span class="n">p</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">p</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-        <span class="n">h</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="n">h</span><span class="p">[</span><span class="n">p</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="n">par</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">p</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">MAXLOG</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">par</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-            <span class="n">par</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">par</span><span class="p">[</span><span class="n">par</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]][</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">];</span>
-    <span class="p">}</span>
-    <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="nl">u</span> <span class="p">:</span> <span class="n">adj</span><span class="p">[</span><span class="n">v</span><span class="p">])</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">p</span> <span class="o">-</span> <span class="n">u</span><span class="p">)</span> <span class="c1">// equivalent to u != v</span>
-            <span class="n">dfs</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">u</span><span class="p">,</span> <span class="kt">int</span> <span class="n">p</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="cm">/*</span>
+<span class="cm">     preprocessing</span>
+<span class="cm">     make sparse table</span>
+<span class="cm">    */</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">depth</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">=</span> <span class="n">depth</span><span class="p">[</span><span class="n">p</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+
+    <span class="n">par</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">p</span><span class="p">;</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">MAXLOG</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">par</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+            <span class="n">par</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">par</span><span class="p">[</span><span class="n">par</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="p">]][</span><span class="n">i</span><span class="p">];</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="nl">v</span> <span class="p">:</span> <span class="n">adj</span><span class="p">[</span><span class="n">u</span><span class="p">])</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">u</span> <span class="o">!=</span> <span class="n">p</span><span class="p">)</span>
+            <span class="n">dfs</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">u</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="c1">//query</span>
-<span class="kt">int</span> <span class="nf">LCA</span><span class="p">(</span><span class="kt">int</span> <span class="n">v</span><span class="p">,</span> <span class="kt">int</span> <span class="n">u</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">h</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">h</span><span class="p">[</span><span class="n">u</span><span class="p">])</span>
-       <span class="n">swap</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">u</span><span class="p">)</span> <span class="c1">//v is bigger </span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">MAXLOG</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">)</span> 
-        <span class="k">if</span> <span class="p">(</span><span class="n">par</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">h</span><span class="p">[</span><span class="n">par</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="n">i</span><span class="p">]]</span> <span class="o">&gt;=</span> <span class="n">h</span><span class="p">[</span><span class="n">u</span><span class="p">])</span>
-            <span class="n">v</span> <span class="o">=</span> <span class="n">par</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="n">i</span><span class="p">];</span>
-    <span class="c1">//now h[v] == h[u]</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">v</span><span class="o">==</span><span class="n">u</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">v</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">MAXLOG</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">)</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">par</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">par</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="p">])</span> <span class="c1">// par != par</span>
+
+<span class="kt">int</span> <span class="nf">query</span><span class="p">(</span><span class="kt">int</span> <span class="n">u</span><span class="p">,</span> <span class="kt">int</span> <span class="n">v</span><span class="p">)</span> <span class="p">{</span>
+    <span class="cm">/*</span>
+<span class="cm">    query implementation</span>
+<span class="cm">    */</span>
+
+    <span class="c1">// make depth[u] is always larger than or equal to depth[u];</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">depth</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">depth</span><span class="p">[</span><span class="n">v</span><span class="p">])</span>
+       <span class="n">swap</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+
+    <span class="c1">// make depth[v] == depth[u]</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">MAXLOG</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="o">--</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">par</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">depth</span><span class="p">[</span><span class="n">par</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="p">]]</span> <span class="o">&gt;=</span> <span class="n">h</span><span class="p">[</span><span class="n">v</span><span class="p">])</span>
+            <span class="n">u</span> <span class="o">=</span> <span class="n">par</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="p">];</span>
+
+    <span class="c1">// if one of given node is parent of the other or given the same nodes u, v;</span>
+    <span class="c1">// return one of them.</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">u</span> <span class="o">==</span> <span class="n">v</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">u</span><span class="p">;</span>
+
+    <span class="c1">// make par[u][0] and par[v][0] target the same node</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">MAXLOG</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="o">--</span><span class="n">i</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">par</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">par</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="n">i</span><span class="p">])</span>
             <span class="n">v</span> <span class="o">=</span> <span class="n">par</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="n">i</span><span class="p">],</span> <span class="n">u</span> <span class="o">=</span> <span class="n">par</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="p">];</span>
-    <span class="k">return</span> <span class="n">par</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="mi">0</span><span class="p">];</span>
+
+    <span class="c1">// return parent node which is common ancester of givens.</span>
+    <span class="k">return</span> <span class="n">par</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="mi">0</span><span class="p">];</span>
 <span class="p">}</span>
 </pre></div>
 </td></tr></table>
