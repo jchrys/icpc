@@ -14,9 +14,9 @@ WIP
 ## Time Complexity
 |  Time complexity |  Worst case  |   Best case  |
 |:----------------:|:------------:|:------------:|
-| Failure Function | $Omicron(m)$ | $Omicron(m)$ |
-|   Find Function  | $Omicron(n)$ | $Omicron(n)$ |
-|      Overall     | $Omicron(n)$ | $Omicron(n)$ |
+| Failure Function | $\Omicron(m)$ | $\Omicron(m)$ |
+|   Find Function  | $\Omicron(n)$ | $\Omicron(n)$ |
+|      Overall     | $\Omicron(n)$ | $\Omicron(n)$ |
 
 ## Implementation
 
