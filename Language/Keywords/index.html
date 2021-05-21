@@ -1512,15 +1512,15 @@
 - note that naming a type after its representation than its purpose is not neccessarily a good idea.</p>
 <h2 id="1_typedef">1. typedef<a class="headerlink" href="#1_typedef" title="Permanent link">&para;</a></h2>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">cpp</span>
-<span class="n">typedef</span> <span class="n">double</span> <span class="n">decimal_places</span><span class="p">;</span> <span class="o">//</span> <span class="k">is</span> <span class="n">equivalent</span> <span class="k">to</span> <span class="ss">&quot;using decimal_places = double;&quot;</span>
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">cpp</span>
+<span class="err">typedef double decimal_places; // is equivalent to &quot;using decimal_places = double;&quot;</span>
 </pre></div>
 </td></tr></table>
 
 <h2 id="2_using">2. using<a class="headerlink" href="#2_using" title="Permanent link">&para;</a></h2>
 <p>the using keyword can also be used to introduce a template alias.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span>
     <span class="k">using</span> <span class="n">Vector</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span> <span class="n">my_allocator</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span>
 </pre></div>
 </td></tr></table>

@@ -1688,12 +1688,12 @@ consider following example</p>
 5
 6
 7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">typedef</span> <span class="nb">char</span><span class="o">*</span> <span class="n">CHARS</span><span class="p">;</span>
-<span class="n">typedef</span> <span class="n">CHARS</span> <span class="n">const</span> <span class="n">CPTR</span><span class="p">;</span> <span class="o">//</span> <span class="n">constant</span> <span class="n">pointer</span> <span class="k">to</span> <span class="n">chars</span>
-<span class="o">//</span> <span class="o">=&gt;</span> <span class="n">typedef</span> <span class="nb">char</span><span class="o">*</span> <span class="n">const</span> <span class="n">CPTR</span><span class="p">;</span>
+<span class="n">typedef</span> <span class="n">CHARS</span> <span class="k">const</span> <span class="n">CPTR</span><span class="p">;</span> <span class="o">//</span> <span class="n">constant</span> <span class="n">pointer</span> <span class="n">to</span> <span class="n">chars</span>
+<span class="o">//</span> <span class="o">=&gt;</span> <span class="n">typedef</span> <span class="nb">char</span><span class="o">*</span> <span class="k">const</span> <span class="n">CPTR</span><span class="p">;</span>
 
-<span class="k">using</span> <span class="n">CHARS</span> <span class="o">=</span> <span class="nb">char</span><span class="o">*</span><span class="p">:</span>
-<span class="k">using</span> <span class="n">CPTR</span> <span class="o">=</span> <span class="n">CHARS</span> <span class="n">const</span><span class="p">;</span> <span class="o">//</span> <span class="n">constant</span> <span class="n">pointer</span> <span class="k">to</span> <span class="n">chars</span>
-<span class="o">//</span> <span class="o">=&gt;</span> <span class="k">using</span> <span class="n">CPTR</span> <span class="o">=</span> <span class="nb">char</span><span class="o">*</span> <span class="n">const</span><span class="p">;</span>
+<span class="n">using</span> <span class="n">CHARS</span> <span class="o">=</span> <span class="nb">char</span><span class="o">*</span><span class="p">:</span>
+<span class="n">using</span> <span class="n">CPTR</span> <span class="o">=</span> <span class="n">CHARS</span> <span class="k">const</span><span class="p">;</span> <span class="o">//</span> <span class="n">constant</span> <span class="n">pointer</span> <span class="n">to</span> <span class="n">chars</span>
+<span class="o">//</span> <span class="o">=&gt;</span> <span class="n">using</span> <span class="n">CPTR</span> <span class="o">=</span> <span class="nb">char</span><span class="o">*</span> <span class="k">const</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
 

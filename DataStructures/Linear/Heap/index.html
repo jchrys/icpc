@@ -1745,29 +1745,29 @@ space complexity: $\Omicron(n)$</p>
 148</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
-<span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span>
 <span class="kt">void</span> <span class="n">_swap</span><span class="p">(</span><span class="n">T</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="n">T</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">T</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
     <span class="n">a</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
     <span class="n">b</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+<span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span>
 <span class="k">class</span> <span class="nc">heap</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">_size</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">_capacity</span><span class="p">;</span>
     <span class="n">T</span><span class="o">*</span> <span class="n">_buf</span><span class="p">;</span>
-    <span class="kr">inline</span> <span class="kt">int</span> <span class="nf">parent</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">inline</span> <span class="kt">int</span> <span class="n">parent</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">return</span> <span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="kr">inline</span> <span class="kt">int</span> <span class="nf">left</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">inline</span> <span class="kt">int</span> <span class="n">left</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">return</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="kr">inline</span> <span class="kt">int</span> <span class="nf">right</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">inline</span> <span class="kt">int</span> <span class="n">right</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">return</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="mi">2</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="kt">void</span> <span class="nf">max_heapify</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">void</span> <span class="n">max_heapify</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
         <span class="kt">int</span> <span class="n">largest</span><span class="p">;</span>
         <span class="kt">int</span> <span class="n">l</span> <span class="o">=</span> <span class="n">left</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
         <span class="kt">int</span> <span class="n">r</span> <span class="o">=</span> <span class="n">right</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
@@ -1785,7 +1785,7 @@ space complexity: $\Omicron(n)$</p>
         <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="kt">void</span> <span class="nf">reserve</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">void</span> <span class="n">reserve</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;=</span> <span class="n">_size</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
         <span class="n">T</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="k">new</span> <span class="n">T</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
         <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">_size</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
@@ -1807,13 +1807,13 @@ space complexity: $\Omicron(n)$</p>
     <span class="p">}</span>
 
     <span class="kt">void</span> <span class="n">build_max_heap</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">parent</span><span class="p">(</span><span class="n">_size</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">)</span> 
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">parent</span><span class="p">(</span><span class="n">_size</span> <span class="mi">-1</span><span class="p">);</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">)</span> 
             <span class="n">max_heapify</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
     <span class="p">}</span>
     <span class="kt">void</span> <span class="n">heapsort</span><span class="p">()</span> <span class="p">{</span>
         <span class="n">build_max_heap</span><span class="p">();</span>
         <span class="kt">int</span> <span class="n">original_size</span> <span class="o">=</span> <span class="n">_size</span><span class="p">;</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">_size</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">_size</span><span class="mi">-1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">swap</span><span class="p">(</span><span class="n">_buf</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">_buf</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
             <span class="n">_size</span><span class="o">--</span><span class="p">;</span> 
             <span class="n">max_heapify</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
@@ -1828,7 +1828,7 @@ space complexity: $\Omicron(n)$</p>
     <span class="n">T</span> <span class="n">extract_max</span><span class="p">()</span> <span class="p">{</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">_size</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;underflow&quot;</span><span class="p">;</span>
-            <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+            <span class="k">return</span> <span class="mi">-1</span><span class="p">;</span>
         <span class="p">}</span>
         <span class="kt">int</span> <span class="n">max</span> <span class="o">=</span> <span class="n">_buf</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
         <span class="n">_buf</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">_buf</span><span class="p">[</span><span class="o">--</span><span class="n">_size</span><span class="p">];</span>
@@ -1855,7 +1855,7 @@ space complexity: $\Omicron(n)$</p>
         <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">_size</span> <span class="o">==</span> <span class="n">_capacity</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">reserve</span><span class="p">(</span><span class="n">_size</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="p">);</span>
         <span class="p">}</span> 
-        <span class="n">_buf</span><span class="p">[</span><span class="n">_size</span><span class="p">]</span> <span class="o">=</span> <span class="n">key</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+        <span class="n">_buf</span><span class="p">[</span><span class="n">_size</span><span class="p">]</span> <span class="o">=</span> <span class="n">key</span><span class="mi">-1</span><span class="p">;</span>
         <span class="n">increase_key</span><span class="p">(</span><span class="n">_size</span><span class="o">++</span><span class="p">,</span> <span class="n">key</span><span class="p">);</span>
     <span class="p">}</span>
 

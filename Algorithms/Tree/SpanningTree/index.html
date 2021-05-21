@@ -1807,7 +1807,7 @@ But, Prim's algorithm simply selects the minimum weight edge that adds a new nod
     <span class="kt">int</span> <span class="n">starter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// starting node or initial node.</span>
 
     <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">key</span><span class="p">(</span><span class="n">V</span><span class="p">,</span> <span class="n">INF</span><span class="p">);</span>
-    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">parent</span><span class="p">(</span><span class="n">V</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">parent</span><span class="p">(</span><span class="n">V</span><span class="p">,</span> <span class="mi">-1</span><span class="p">);</span>
     <span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">inMST</span><span class="p">(</span><span class="n">V</span><span class="p">,</span> <span class="nb">false</span><span class="p">);</span>
     <span class="n">pq</span><span class="p">.</span><span class="n">push</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span> <span class="n">starter</span><span class="p">});</span>
     <span class="kt">int</span> <span class="n">MST_weight</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>

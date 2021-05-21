@@ -1657,8 +1657,8 @@
 92
 93</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">// A C++ program to find maximal </span>
 <span class="c1">// Bipartite matching. </span>
-<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt; </span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&lt;string.h&gt; </span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="c1"> </span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;string.h&gt;</span><span class="c1"> </span><span class="cp"></span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span> 
 
 <span class="c1">// M is number of applicants  </span>
@@ -1713,7 +1713,7 @@
     <span class="kt">int</span> <span class="n">matchR</span><span class="p">[</span><span class="n">N</span><span class="p">];</span> 
 
     <span class="c1">// Initially all jobs are available </span>
-    <span class="n">memset</span><span class="p">(</span><span class="n">matchR</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">matchR</span><span class="p">));</span> 
+    <span class="n">memset</span><span class="p">(</span><span class="n">matchR</span><span class="p">,</span> <span class="mi">-1</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">matchR</span><span class="p">));</span> 
 
     <span class="c1">// Count of jobs assigned to applicants </span>
     <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  

@@ -1795,7 +1795,7 @@ For example, we can efficiently solve the following problems concerning paths fr
 <p>Let <code>paths(x)</code> denote the number of paths from node $1$ to node $x$.
 As a basecase, <code>paths(1)</code> 1. Then to calculate other values of <code>paths(x)</code>, we may use recursion</p>
 </blockquote>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">paths</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">=</span> <span class="n">paths</span><span class="p">(</span><span class="n">a1</span><span class="p">)</span> <span class="o">+</span> <span class="n">paths</span><span class="p">(</span><span class="n">a2</span><span class="p">)</span> <span class="o">+</span> <span class="p">...</span> <span class="o">+</span> <span class="n">paths</span><span class="p">(</span><span class="n">ak</span><span class="p">)</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">paths(x) = paths(a1) + paths(a2) + ... + paths(ak)</span>
 </pre></div>
 </td></tr></table>
 
@@ -1831,12 +1831,12 @@ As a basecase, <code>paths(1)</code> 1. Then to calculate other values of <code>
 3
 4
 5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nv">int</span> <span class="nv">succ</span><span class="ss">(</span><span class="nv">x</span>, <span class="nv">k</span><span class="ss">)</span> {
-    <span class="k">if</span> <span class="ss">(</span><span class="nv">k</span> <span class="o">==</span> <span class="mi">1</span><span class="ss">)</span> {
-        <span class="k">return</span> <span class="nv">succ</span><span class="ss">(</span><span class="nv">x</span><span class="ss">)</span><span class="c1">;</span>
-    }
-    <span class="nv">succ</span><span class="ss">(</span><span class="nv">succ</span><span class="ss">(</span><span class="nv">x</span>, <span class="nv">k</span><span class="o">/</span><span class="mi">2</span><span class="ss">)</span>, <span class="nv">k</span><span class="o">/</span><span class="mi">2</span><span class="ss">)</span><span class="c1">;</span>
-}
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">int succ(x, k) {</span>
+<span class="err">    if (k == 1) {</span>
+<span class="err">        return succ(x);</span>
+<span class="err">    }</span>
+<span class="err">    succ(succ(x, k/2), k/2);</span>
+<span class="err">}</span>
 </pre></div>
 </td></tr></table>
 
