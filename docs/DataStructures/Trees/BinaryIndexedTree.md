@@ -21,7 +21,7 @@
 
 > ==we assume that all arrays are one-indexed, because it makes the implement easier==
 
-> ==Let $p(k)$ denote the largest power of two that divides $k$.==
+> ==Let $p(k)$ denote the largest power of two that divides $k$.(or right most 1 in it's binary representation)==
 
 > We store a binary indexed tree as an array tree such that
 
