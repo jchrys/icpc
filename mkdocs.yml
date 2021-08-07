@@ -109,7 +109,6 @@ nav:
             - HeapSort: Algorithms/Sort/HeapSort.md
             - QuickSort: Algorithms/Sort/QuickSort.md
         - Euclidean: Algorithms/EuclideanAlgorithm.md
-        - FastPower: Algorithms/FastPower.md
         - Linear:
             BinarySearch: Algorithms/Linear/BinarySearch.md
             Lower and Upper Bounds: Algorithms/Linear/LowerAndUpperBounds.md
@@ -122,6 +121,9 @@ nav:
         - Range Queries: 
             - Preface: Algorithms/RangeQueries/Preface.md
             - StaticArrayQueries: Algorithms/RangeQueries/StaticArrayQueries.md
+        - Bit:
+            - FastPower: Algorithms/Bit/FastPower.md
+            - BitManipulation: Algorithms/Bit/BitManipulation.md
 
     - DataStructures: 
         - Linear:
