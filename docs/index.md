@@ -1,3 +1,2 @@
 # Welcome to ICPC.NINJA
-Algorithms for competitive programming :smile: 
-
+Implementations of Algorithms for competitive programming :smile: 
