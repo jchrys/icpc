@@ -110,8 +110,8 @@ nav:
             - QuickSort: Algorithms/Sort/QuickSort.md
         - Euclidean: Algorithms/EuclideanAlgorithm.md
         - Linear:
-            BinarySearch: Algorithms/Linear/BinarySearch.md
-            Lower and Upper Bounds: Algorithms/Linear/LowerAndUpperBounds.md
+            - BinarySearch: Algorithms/Linear/BinarySearch.md
+            - Lower and Upper Bounds: Algorithms/Linear/LowerAndUpperBounds.md
         - String: 
             - Preface: Algorithms/String/Preface.md
             - String Hashing: Algorithms/String/StringHashing.md
@@ -124,6 +124,8 @@ nav:
         - Bit:
             - FastPower: Algorithms/Bit/FastPower.md
             - BitManipulation: Algorithms/Bit/BitManipulation.md
+        - NumberTheory:
+            - MobiusInversion: Algorithms/NumberTheory/MobiusInversion.md
 
     - DataStructures: 
         - Linear:
