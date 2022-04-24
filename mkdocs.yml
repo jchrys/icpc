@@ -146,11 +146,11 @@ nav:
       - MobiusInversion: NumberTheory/MobiusInversion.md
 
     - MISC:
-        Lemma: MISC/Lemma.md
+      - Lemma: MISC/Lemma.md
     - Language: 
-        Preface: Language/Preface.md
-        Keywords: Language/Keywords.md
-        Class: Language/Class.md
+      - Preface: Language/Preface.md
+      - Keywords: Language/Keywords.md
+      - Class: Language/Class.md
     - Contribute:
         - HowToContribute: Contribute/HowToContribute.md
         - CodeOfConduct: Contribute/CodeOfConduct.md
