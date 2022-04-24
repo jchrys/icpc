@@ -226,13 +226,13 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://icpc.ninja/Algorithms/NumberTheory/MobiusInversion/</loc>
-     <lastmod>2022-04-24</lastmod>
+     <loc></loc>
+     
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://icpc.ninja/Algorithms/NumberTheory/Theorems/</loc>
-     <lastmod>2022-04-24</lastmod>
+     <loc></loc>
+     
      <changefreq>daily</changefreq>
     </url>
     <url>
@@ -292,6 +292,16 @@
     </url>
     <url>
      <loc>https://icpc.ninja/DataStructures/Trees/SegmentTree/</loc>
+     <lastmod>2022-04-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://icpc.ninja/NumberTheory/Theorems/</loc>
+     <lastmod>2022-04-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://icpc.ninja/NumberTheory/MobiusInversion/</loc>
      <lastmod>2022-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url>

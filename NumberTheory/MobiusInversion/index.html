@@ -13,7 +13,7 @@
         <meta name="description" content="Solutions to Competitive Programming Problems">
       
       
-        <link rel="canonical" href="https://icpc.ninja/Algorithms/NumberTheory/Theorems/">
+        <link rel="canonical" href="https://icpc.ninja/NumberTheory/MobiusInversion/">
       
       
         <meta name="author" content="JCHRYS">
@@ -37,21 +37,21 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
     
     
       
-        <title>Theorems - ICPC.NINJA</title>
+        <title>MobiusInversion - ICPC.NINJA</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.0284f74d.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
       
       
     
     
-      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
@@ -60,10 +60,10 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
     
-      <link rel="stylesheet" href="../../../css/katex.css">
+      <link rel="stylesheet" href="../../css/katex.css">
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css">
     
@@ -112,7 +112,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#number_theory" tabindex="1" class="md-skip">
+      <a href="#mobius_inversion" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -138,7 +138,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Theorems
+                MobiusInversion
               
             </span>
           
@@ -249,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." title="Home" class="md-nav__link">
+    <a href="../.." title="Home" class="md-nav__link">
       Home
     </a>
   </li>
@@ -259,12 +259,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
       Algorithms
@@ -301,7 +299,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/Basics/" title="Basics" class="md-nav__link">
+    <a href="../../Algorithms/Graph/Basics/" title="Basics" class="md-nav__link">
       Basics
     </a>
   </li>
@@ -313,7 +311,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/GraphTraversal/" title="Graph Traversal" class="md-nav__link">
+    <a href="../../Algorithms/Graph/GraphTraversal/" title="Graph Traversal" class="md-nav__link">
       Graph Traversal
     </a>
   </li>
@@ -325,7 +323,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/DirectedGraphs/" title="Directed Graphs" class="md-nav__link">
+    <a href="../../Algorithms/Graph/DirectedGraphs/" title="Directed Graphs" class="md-nav__link">
       Directed Graphs
     </a>
   </li>
@@ -337,7 +335,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/StrongConnectivity/" title="Strong Connectivity" class="md-nav__link">
+    <a href="../../Algorithms/Graph/StrongConnectivity/" title="Strong Connectivity" class="md-nav__link">
       Strong Connectivity
     </a>
   </li>
@@ -368,7 +366,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/ShortestPaths/Preface/" title="Preface" class="md-nav__link">
+    <a href="../../Algorithms/Graph/ShortestPaths/Preface/" title="Preface" class="md-nav__link">
       Preface
     </a>
   </li>
@@ -380,7 +378,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/ShortestPaths/Bellman-Ford/" title="Bellman-Ford" class="md-nav__link">
+    <a href="../../Algorithms/Graph/ShortestPaths/Bellman-Ford/" title="Bellman-Ford" class="md-nav__link">
       Bellman-Ford
     </a>
   </li>
@@ -392,7 +390,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/ShortestPaths/Dijkstra/" title="Dijkstra" class="md-nav__link">
+    <a href="../../Algorithms/Graph/ShortestPaths/Dijkstra/" title="Dijkstra" class="md-nav__link">
       Dijkstra
     </a>
   </li>
@@ -404,7 +402,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/ShortestPaths/Floyd-Warshall/" title="Floyd-Warshall" class="md-nav__link">
+    <a href="../../Algorithms/Graph/ShortestPaths/Floyd-Warshall/" title="Floyd-Warshall" class="md-nav__link">
       Floyd-Warshall
     </a>
   </li>
@@ -421,7 +419,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/EulerianPaths/" title="Eulerian Paths" class="md-nav__link">
+    <a href="../../Algorithms/Graph/EulerianPaths/" title="Eulerian Paths" class="md-nav__link">
       Eulerian Paths
     </a>
   </li>
@@ -433,7 +431,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/HamiltonianPaths/" title="Hamiltonian Paths" class="md-nav__link">
+    <a href="../../Algorithms/Graph/HamiltonianPaths/" title="Hamiltonian Paths" class="md-nav__link">
       Hamiltonian Paths
     </a>
   </li>
@@ -445,7 +443,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/DeBruijnSequences/" title="De Bruijn sequences" class="md-nav__link">
+    <a href="../../Algorithms/Graph/DeBruijnSequences/" title="De Bruijn sequences" class="md-nav__link">
       De Bruijn sequences
     </a>
   </li>
@@ -457,7 +455,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/KnightsTours/" title="Knight's tours" class="md-nav__link">
+    <a href="../../Algorithms/Graph/KnightsTours/" title="Knight's tours" class="md-nav__link">
       Knight's tours
     </a>
   </li>
@@ -469,7 +467,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/MaximumFlow/" title="Maximum flow" class="md-nav__link">
+    <a href="../../Algorithms/Graph/MaximumFlow/" title="Maximum flow" class="md-nav__link">
       Maximum flow
     </a>
   </li>
@@ -481,7 +479,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/MinimumCut/" title="Minimum cut" class="md-nav__link">
+    <a href="../../Algorithms/Graph/MinimumCut/" title="Minimum cut" class="md-nav__link">
       Minimum cut
     </a>
   </li>
@@ -493,7 +491,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/FordFulkerson/" title="Ford-Fulkerson" class="md-nav__link">
+    <a href="../../Algorithms/Graph/FordFulkerson/" title="Ford-Fulkerson" class="md-nav__link">
       Ford-Fulkerson
     </a>
   </li>
@@ -505,7 +503,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/DisjointPaths/" title="Disjoint Paths" class="md-nav__link">
+    <a href="../../Algorithms/Graph/DisjointPaths/" title="Disjoint Paths" class="md-nav__link">
       Disjoint Paths
     </a>
   </li>
@@ -517,7 +515,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/MaximumMatchings/" title="Maximum Matchings" class="md-nav__link">
+    <a href="../../Algorithms/Graph/MaximumMatchings/" title="Maximum Matchings" class="md-nav__link">
       Maximum Matchings
     </a>
   </li>
@@ -529,7 +527,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/KonigsTheorem/" title="Konig's Theorem" class="md-nav__link">
+    <a href="../../Algorithms/Graph/KonigsTheorem/" title="Konig's Theorem" class="md-nav__link">
       Konig's Theorem
     </a>
   </li>
@@ -541,7 +539,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/PathCovers/" title="Path Covers" class="md-nav__link">
+    <a href="../../Algorithms/Graph/PathCovers/" title="Path Covers" class="md-nav__link">
       Path Covers
     </a>
   </li>
@@ -577,7 +575,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/DFS/Preface/" title="Preface" class="md-nav__link">
+    <a href="../../Algorithms/Graph/DFS/Preface/" title="Preface" class="md-nav__link">
       Preface
     </a>
   </li>
@@ -589,7 +587,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/DFS/Tree/" title="DFSTree" class="md-nav__link">
+    <a href="../../Algorithms/Graph/DFS/Tree/" title="DFSTree" class="md-nav__link">
       DFSTree
     </a>
   </li>
@@ -601,7 +599,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/DFS/StartingFinishingTime/" title="StartingFinishingTime" class="md-nav__link">
+    <a href="../../Algorithms/Graph/DFS/StartingFinishingTime/" title="StartingFinishingTime" class="md-nav__link">
       StartingFinishingTime
     </a>
   </li>
@@ -613,7 +611,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Graph/DFS/FindingCutEdges/" title="FindingCutEdges" class="md-nav__link">
+    <a href="../../Algorithms/Graph/DFS/FindingCutEdges/" title="FindingCutEdges" class="md-nav__link">
       FindingCutEdges
     </a>
   </li>
@@ -649,7 +647,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Tree/Basics/" title="Basics" class="md-nav__link">
+    <a href="../../Algorithms/Tree/Basics/" title="Basics" class="md-nav__link">
       Basics
     </a>
   </li>
@@ -661,7 +659,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Tree/Traversal/" title="Traversal" class="md-nav__link">
+    <a href="../../Algorithms/Tree/Traversal/" title="Traversal" class="md-nav__link">
       Traversal
     </a>
   </li>
@@ -673,7 +671,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Tree/DP/" title="DP" class="md-nav__link">
+    <a href="../../Algorithms/Tree/DP/" title="DP" class="md-nav__link">
       DP
     </a>
   </li>
@@ -685,7 +683,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Tree/SpanningTree/" title="SpanningTree" class="md-nav__link">
+    <a href="../../Algorithms/Tree/SpanningTree/" title="SpanningTree" class="md-nav__link">
       SpanningTree
     </a>
   </li>
@@ -697,7 +695,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Tree/TreeQueries/" title="TreeQueries" class="md-nav__link">
+    <a href="../../Algorithms/Tree/TreeQueries/" title="TreeQueries" class="md-nav__link">
       TreeQueries
     </a>
   </li>
@@ -733,7 +731,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Sort/InsertionSort/" title="InsertionSort" class="md-nav__link">
+    <a href="../../Algorithms/Sort/InsertionSort/" title="InsertionSort" class="md-nav__link">
       InsertionSort
     </a>
   </li>
@@ -745,7 +743,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Sort/BubbleSort/" title="BubbleSort" class="md-nav__link">
+    <a href="../../Algorithms/Sort/BubbleSort/" title="BubbleSort" class="md-nav__link">
       BubbleSort
     </a>
   </li>
@@ -757,7 +755,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Sort/HeapSort/" title="HeapSort" class="md-nav__link">
+    <a href="../../Algorithms/Sort/HeapSort/" title="HeapSort" class="md-nav__link">
       HeapSort
     </a>
   </li>
@@ -769,7 +767,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Sort/QuickSort/" title="QuickSort" class="md-nav__link">
+    <a href="../../Algorithms/Sort/QuickSort/" title="QuickSort" class="md-nav__link">
       QuickSort
     </a>
   </li>
@@ -786,7 +784,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../EuclideanAlgorithm/" title="Euclidean" class="md-nav__link">
+    <a href="../../Algorithms/EuclideanAlgorithm/" title="Euclidean" class="md-nav__link">
       Euclidean
     </a>
   </li>
@@ -817,7 +815,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Linear/BinarySearch/" title="BinarySearch" class="md-nav__link">
+    <a href="../../Algorithms/Linear/BinarySearch/" title="BinarySearch" class="md-nav__link">
       BinarySearch
     </a>
   </li>
@@ -829,7 +827,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Linear/LowerAndUpperBounds/" title="Lower and Upper Bounds" class="md-nav__link">
+    <a href="../../Algorithms/Linear/LowerAndUpperBounds/" title="Lower and Upper Bounds" class="md-nav__link">
       Lower and Upper Bounds
     </a>
   </li>
@@ -865,7 +863,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../String/Preface/" title="Preface" class="md-nav__link">
+    <a href="../../Algorithms/String/Preface/" title="Preface" class="md-nav__link">
       Preface
     </a>
   </li>
@@ -877,7 +875,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../String/StringHashing/" title="String Hashing" class="md-nav__link">
+    <a href="../../Algorithms/String/StringHashing/" title="String Hashing" class="md-nav__link">
       String Hashing
     </a>
   </li>
@@ -889,7 +887,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../String/Trie/" title="Trie" class="md-nav__link">
+    <a href="../../Algorithms/String/Trie/" title="Trie" class="md-nav__link">
       Trie
     </a>
   </li>
@@ -901,7 +899,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../String/Z-Algorithm/" title="Z-Algorithm" class="md-nav__link">
+    <a href="../../Algorithms/String/Z-Algorithm/" title="Z-Algorithm" class="md-nav__link">
       Z-Algorithm
     </a>
   </li>
@@ -913,7 +911,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../String/KMP-Algorithm/" title="KMP-Algorithm" class="md-nav__link">
+    <a href="../../Algorithms/String/KMP-Algorithm/" title="KMP-Algorithm" class="md-nav__link">
       KMP-Algorithm
     </a>
   </li>
@@ -949,7 +947,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../RangeQueries/Preface/" title="Preface" class="md-nav__link">
+    <a href="../../Algorithms/RangeQueries/Preface/" title="Preface" class="md-nav__link">
       Preface
     </a>
   </li>
@@ -961,7 +959,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../RangeQueries/StaticArrayQueries/" title="StaticArrayQueries" class="md-nav__link">
+    <a href="../../Algorithms/RangeQueries/StaticArrayQueries/" title="StaticArrayQueries" class="md-nav__link">
       StaticArrayQueries
     </a>
   </li>
@@ -997,7 +995,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Bit/FastPower/" title="FastPower" class="md-nav__link">
+    <a href="../../Algorithms/Bit/FastPower/" title="FastPower" class="md-nav__link">
       FastPower
     </a>
   </li>
@@ -1009,7 +1007,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Bit/BitManipulation/" title="BitManipulation" class="md-nav__link">
+    <a href="../../Algorithms/Bit/BitManipulation/" title="BitManipulation" class="md-nav__link">
       BitManipulation
     </a>
   </li>
@@ -1024,12 +1022,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-10" type="checkbox" id="nav-2-10" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-10" type="checkbox" id="nav-2-10">
     
     <label class="md-nav__link" for="nav-2-10">
       NumberTheory
@@ -1047,7 +1043,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../MobiusInversion/" title="MobiusInversion" class="md-nav__link">
+    <a href="../../Algorithms/NumberTheory/MobiusInversion.md" title="MobiusInversion" class="md-nav__link">
       MobiusInversion
     </a>
   </li>
@@ -1057,201 +1053,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Theorems
-      </label>
-    
-    <a href="./" title="Theorems" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../Algorithms/NumberTheory/Theorems.md" title="Theorems" class="md-nav__link">
       Theorems
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#11_introduction" title="1.1 INTRODUCTION" class="md-nav__link">
-    1.1 INTRODUCTION
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#12_divisibility" title="1.2 DIVISIBILITY" class="md-nav__link">
-    1.2 DIVISIBILITY
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#definition_11" title="Definition 1.1" class="md-nav__link">
-    Definition 1.1
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#definition_12" title="Definition 1.2" class="md-nav__link">
-    Definition 1.2
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#definition_13" title="Definition 1.3" class="md-nav__link">
-    Definition 1.3
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#definition_14" title="Definition 1.4" class="md-nav__link">
-    Definition 1.4
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_11" title="Theorem 1.1" class="md-nav__link">
-    Theorem 1.1
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_12" title="Theorem 1.2" class="md-nav__link">
-    Theorem 1.2
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_13" title="Theorem 1.3" class="md-nav__link">
-    Theorem 1.3
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_14" title="Theorem 1.4" class="md-nav__link">
-    Theorem 1.4
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_15" title="Theorem 1.5" class="md-nav__link">
-    Theorem 1.5
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_16" title="Theorem 1.6" class="md-nav__link">
-    Theorem 1.6
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_17" title="Theorem 1.7" class="md-nav__link">
-    Theorem 1.7
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_18" title="Theorem 1.8" class="md-nav__link">
-    Theorem 1.8
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_19" title="Theorem 1.9" class="md-nav__link">
-    Theorem 1.9
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_110" title="Theorem 1.10" class="md-nav__link">
-    Theorem 1.10
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_111" title="Theorem 1.11" class="md-nav__link">
-    Theorem 1.11
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_112" title="Theorem 1.12" class="md-nav__link">
-    Theorem 1.12
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_113" title="Theorem 1.13" class="md-nav__link">
-    Theorem 1.13
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#problem_129" title="Problem 1.2.9" class="md-nav__link">
-    Problem 1.2.9
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#problem_1212" title="Problem 1.2.12" class="md-nav__link">
-    Problem 1.2.12
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
-          </a>
-        </li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1309,7 +1115,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../DataStructures/Linear/Stack/" title="Stack" class="md-nav__link">
+    <a href="../../DataStructures/Linear/Stack/" title="Stack" class="md-nav__link">
       Stack
     </a>
   </li>
@@ -1321,7 +1127,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../DataStructures/Linear/Vector/" title="Vector" class="md-nav__link">
+    <a href="../../DataStructures/Linear/Vector/" title="Vector" class="md-nav__link">
       Vector
     </a>
   </li>
@@ -1333,7 +1139,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../DataStructures/Linear/Heap/" title="Heap" class="md-nav__link">
+    <a href="../../DataStructures/Linear/Heap/" title="Heap" class="md-nav__link">
       Heap
     </a>
   </li>
@@ -1345,7 +1151,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../DataStructures/Linear/LinkedList/" title="Linked List" class="md-nav__link">
+    <a href="../../DataStructures/Linear/LinkedList/" title="Linked List" class="md-nav__link">
       Linked List
     </a>
   </li>
@@ -1357,7 +1163,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../DataStructures/Linear/Pair/" title="Pair" class="md-nav__link">
+    <a href="../../DataStructures/Linear/Pair/" title="Pair" class="md-nav__link">
       Pair
     </a>
   </li>
@@ -1393,7 +1199,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../DataStructures/HashTables/Preface/" title="Preface" class="md-nav__link">
+    <a href="../../DataStructures/HashTables/Preface/" title="Preface" class="md-nav__link">
       Preface
     </a>
   </li>
@@ -1405,7 +1211,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../DataStructures/HashTables/HashFunctions/" title="Hash Functions" class="md-nav__link">
+    <a href="../../DataStructures/HashTables/HashFunctions/" title="Hash Functions" class="md-nav__link">
       Hash Functions
     </a>
   </li>
@@ -1441,7 +1247,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../DataStructures/Trees/SearchTree/" title="SearchTree" class="md-nav__link">
+    <a href="../../DataStructures/Trees/SearchTree/" title="SearchTree" class="md-nav__link">
       SearchTree
     </a>
   </li>
@@ -1453,7 +1259,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../DataStructures/Trees/BST/" title="BST" class="md-nav__link">
+    <a href="../../DataStructures/Trees/BST/" title="BST" class="md-nav__link">
       BST
     </a>
   </li>
@@ -1465,7 +1271,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../DataStructures/Trees/RedBlackTree/" title="RedBlackTree" class="md-nav__link">
+    <a href="../../DataStructures/Trees/RedBlackTree/" title="RedBlackTree" class="md-nav__link">
       RedBlackTree
     </a>
   </li>
@@ -1477,7 +1283,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../DataStructures/Trees/BinaryIndexedTree/" title="Binary Indexed Tree" class="md-nav__link">
+    <a href="../../DataStructures/Trees/BinaryIndexedTree/" title="Binary Indexed Tree" class="md-nav__link">
       Binary Indexed Tree
     </a>
   </li>
@@ -1489,7 +1295,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../DataStructures/Trees/SegmentTree/" title="Segment Tree" class="md-nav__link">
+    <a href="../../DataStructures/Trees/SegmentTree/" title="Segment Tree" class="md-nav__link">
       Segment Tree
     </a>
   </li>
@@ -1509,17 +1315,19 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
-      MISC
+      NumberTheory
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
-        MISC
+        NumberTheory
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -1530,9 +1338,120 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../MISC/Lemma/" title="Lemma" class="md-nav__link">
-      Lemma
+    <a href="../Theorems/" title="Divisibility" class="md-nav__link">
+      Divisibility
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        MobiusInversion
+      </label>
+    
+    <a href="./" title="MobiusInversion" class="md-nav__link md-nav__link--active">
+      MobiusInversion
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#properties" title="Properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mobius_inversion_formula" title="Mobius Inversion Formula" class="md-nav__link">
+    Mobius Inversion Formula
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#series_relations" title="Series relations" class="md-nav__link">
+    Series relations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generalizations" title="Generalizations" class="md-nav__link">
+    Generalizations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related_problems" title="Related problems" class="md-nav__link">
+    Related problems
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#find_out_the_number_of_co-prime_pairs_of_integer_x_y_in_range_1_n" title="Find out the number of co-prime pairs of integer $(x, y)$ in range $[1, n]$" class="md-nav__link">
+    Find out the number of co-prime pairs of integer $(x, y)$ in range $[1, n]$
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find_out_the_sum_of_gcdx_y_for_every_pair_of_integer_x_y_in_range_1_n" title="Find out the sum of $gcd(x, y)$ for every pair of integer $(x, y)$ in range $[1, N]$" class="md-nav__link">
+    Find out the sum of $gcd(x, y)$ for every pair of integer $(x, y)$ in range $[1, N]$
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#links" title="Links" class="md-nav__link">
+    Links
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1551,11 +1470,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
-      Language
+      MISC
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
-        Language
+        MISC
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -1566,32 +1485,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Language/Preface/" title="Preface" class="md-nav__link">
-      Preface
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../Language/Keywords/" title="Keywords" class="md-nav__link">
-      Keywords
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../Language/Class/" title="Class" class="md-nav__link">
-      Class
+    <a href="../../MISC/Lemma/" title="Lemma" class="md-nav__link">
+      Lemma
     </a>
   </li>
 
@@ -1611,10 +1506,70 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
-      Contribute
+      Language
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-6">
+        Language
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Language/Preface/" title="Preface" class="md-nav__link">
+      Preface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Language/Keywords/" title="Keywords" class="md-nav__link">
+      Keywords
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Language/Class/" title="Class" class="md-nav__link">
+      Class
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Contribute
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
         Contribute
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1626,7 +1581,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Contribute/HowToContribute/" title="HowToContribute" class="md-nav__link">
+    <a href="../../Contribute/HowToContribute/" title="HowToContribute" class="md-nav__link">
       HowToContribute
     </a>
   </li>
@@ -1638,7 +1593,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Contribute/CodeOfConduct/" title="CodeOfConduct" class="md-nav__link">
+    <a href="../../Contribute/CodeOfConduct/" title="CodeOfConduct" class="md-nav__link">
       CodeOfConduct
     </a>
   </li>
@@ -1650,7 +1605,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Contribute/Template/" title="Template" class="md-nav__link">
+    <a href="../../Contribute/Template/" title="Template" class="md-nav__link">
       Template
     </a>
   </li>
@@ -1662,7 +1617,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Contribute/Emoji/" title="Emoji" class="md-nav__link">
+    <a href="../../Contribute/Emoji/" title="Emoji" class="md-nav__link">
       Emoji
     </a>
   </li>
@@ -1694,149 +1649,58 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#11_introduction" title="1.1 INTRODUCTION" class="md-nav__link">
-    1.1 INTRODUCTION
+  <a href="#properties" title="Properties" class="md-nav__link">
+    Properties
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#12_divisibility" title="1.2 DIVISIBILITY" class="md-nav__link">
-    1.2 DIVISIBILITY
+  <a href="#mobius_inversion_formula" title="Mobius Inversion Formula" class="md-nav__link">
+    Mobius Inversion Formula
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#series_relations" title="Series relations" class="md-nav__link">
+    Series relations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generalizations" title="Generalizations" class="md-nav__link">
+    Generalizations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related_problems" title="Related problems" class="md-nav__link">
+    Related problems
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#definition_11" title="Definition 1.1" class="md-nav__link">
-    Definition 1.1
+  <a href="#find_out_the_number_of_co-prime_pairs_of_integer_x_y_in_range_1_n" title="Find out the number of co-prime pairs of integer $(x, y)$ in range $[1, n]$" class="md-nav__link">
+    Find out the number of co-prime pairs of integer $(x, y)$ in range $[1, n]$
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#definition_12" title="Definition 1.2" class="md-nav__link">
-    Definition 1.2
+  <a href="#find_out_the_sum_of_gcdx_y_for_every_pair_of_integer_x_y_in_range_1_n" title="Find out the sum of $gcd(x, y)$ for every pair of integer $(x, y)$ in range $[1, N]$" class="md-nav__link">
+    Find out the sum of $gcd(x, y)$ for every pair of integer $(x, y)$ in range $[1, N]$
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#definition_13" title="Definition 1.3" class="md-nav__link">
-    Definition 1.3
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#definition_14" title="Definition 1.4" class="md-nav__link">
-    Definition 1.4
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_11" title="Theorem 1.1" class="md-nav__link">
-    Theorem 1.1
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_12" title="Theorem 1.2" class="md-nav__link">
-    Theorem 1.2
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_13" title="Theorem 1.3" class="md-nav__link">
-    Theorem 1.3
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_14" title="Theorem 1.4" class="md-nav__link">
-    Theorem 1.4
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_15" title="Theorem 1.5" class="md-nav__link">
-    Theorem 1.5
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_16" title="Theorem 1.6" class="md-nav__link">
-    Theorem 1.6
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_17" title="Theorem 1.7" class="md-nav__link">
-    Theorem 1.7
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_18" title="Theorem 1.8" class="md-nav__link">
-    Theorem 1.8
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_19" title="Theorem 1.9" class="md-nav__link">
-    Theorem 1.9
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_110" title="Theorem 1.10" class="md-nav__link">
-    Theorem 1.10
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_111" title="Theorem 1.11" class="md-nav__link">
-    Theorem 1.11
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_112" title="Theorem 1.12" class="md-nav__link">
-    Theorem 1.12
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#theorem_113" title="Theorem 1.13" class="md-nav__link">
-    Theorem 1.13
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#problem_129" title="Problem 1.2.9" class="md-nav__link">
-    Problem 1.2.9
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#problem_1212" title="Problem 1.2.12" class="md-nav__link">
-    Problem 1.2.12
+  <a href="#links" title="Links" class="md-nav__link">
+    Links
   </a>
   
 </li>
@@ -1868,114 +1732,94 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/jchrys/icpc/edit/master/docs/Algorithms/NumberTheory/Theorems.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/jchrys/icpc/edit/master/docs/NumberTheory/MobiusInversion.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="number_theory">Number Theory<a class="headerlink" href="#number_theory" title="Permanent link">&para;</a></h1>
-<h3 id="11_introduction">1.1 INTRODUCTION<a class="headerlink" href="#11_introduction" title="Permanent link">&para;</a></h3>
-<p>For two assertions $A$ and $B$, the following statements are logically equivalent.</p>
-<ol>
-<li>$A$ implies $B$.</li>
-<li>If $A$ is true, then $B$ is true.</li>
-<li>In order that $A$ be true it is necessary that $B$ be true.</li>
-<li>$B$ is a necessary condition for $A$.</li>
-<li>$A$ is a sufficient condition of $B$</li>
-</ol>
-<p>If $A$ implies $B$ and $B$ implies $A$, then one can say that $B$ is necessary and sufficient condition for $A$ to hold.</p>
-<h3 id="12_divisibility">1.2 DIVISIBILITY<a class="headerlink" href="#12_divisibility" title="Permanent link">&para;</a></h3>
-<h4 id="definition_11">Definition 1.1<a class="headerlink" href="#definition_11" title="Permanent link">&para;</a></h4>
-<p>An Integer $b$ is divisible by an integer $a$, not zero, if there is an integer $x$ such that $b = ax$ and we write $a|b$. In case $b$ is not divisible by $a$, we write $a \not|  b$.</p>
-<h4 id="definition_12">Definition 1.2<a class="headerlink" href="#definition_12" title="Permanent link">&para;</a></h4>
-<p>The integer $a$ is a common divisor of $b$ and $c$ in case $a|b$ and $a|c$.
-Since there is only a finite number of divisors of any nonzero integer, there is only a finite number of common divisors of $b$ and $c$, except in the case $b = c = 0$.
-If at least one of $b$ and $c$ is not 0, the greatest among their common divisors is called the greatest common divisor of $b$ and $c$ and is denoted by $(b, c)$.
-Similarly, we denote the greatest common divisor $g$ of the integer $b_1, b_2, \dotsm , b_n$, not all zero, by $(b_1, b_2, \dotsm, b_n)$.</p>
-<h4 id="definition_13">Definition 1.3<a class="headerlink" href="#definition_13" title="Permanent link">&para;</a></h4>
-<p>We say that $a$ and $b$ are relatively prime in case $(a, b) = 1$, and that $a_1, a_2, \dotsm, a_n$ are relatively prime in case $(a_1, a_2, \dotsm, a_n) = 1$.
-We say that $a_1, a_2, \dotsm, a_n$ are relatively prime in pairs in case $(a_i, a_j) = 1$ for all $i = 1, 2, \dotsm, n$ and $j = 1, 2, \dotsm, n$ with $i \not = j$.</p>
-<p>The fact that $(a, b) = 1$ is sometimes expressed by saying that $a$ and $b$ are coprime, or by saying that $a$ is prime to $b$.</p>
-<h4 id="definition_14">Definition 1.4<a class="headerlink" href="#definition_14" title="Permanent link">&para;</a></h4>
-<p>The integers $a_1, a_2, \dotsm, a_n$, all different from zero, have a common multiple $b$ if $a_i|b$ for $i = 1, 2, \dotsm, n$.
-(Note that common multiples do exist; for example the product $a_1 a_2 \dotsm a_n$ is one)
-The least of the positive common multiples is called the least common multiple, and it is denoted by $[a_1, a_2, \dotsm, a_n]$.</p>
-<h4 id="theorem_11">Theorem 1.1<a class="headerlink" href="#theorem_11" title="Permanent link">&para;</a></h4>
-<ol>
-<li>$a|b \text{ implies } a|bc \text{ for any integer } c$  </li>
-<li>$a|b \text{ and } b|c \text{ imply  } a|c$</li>
-<li>$a|b \text{ and } a|c \text{ imply } a|(bx+cy) \text{ for any integers } x \text{ and } y$</li>
-<li>$a|b \text{ and } b|a \text{ imply } a = \pm b$</li>
-<li>$a|b, a &gt; 0, b &gt; 0 \text{ imply } a \leqslant b$</li>
-<li>$\text{if } m \ne 0, a|b \text{ implies and is implied by } ma|mb$</li>
-</ol>
-<h4 id="theorem_12">Theorem 1.2<a class="headerlink" href="#theorem_12" title="Permanent link">&para;</a></h4>
-<p>The Division algorithm. Given any integers $a$ and $b$, with $a &gt; 0$, there exists unique integers $q$ and $r$ such that $b = qa + r$, $0 \leqslant r \le a$. If $a \nmid b$, then $r$ satisfies the stronger inequalities $0 &lt; r &lt; a$.</p>
-<h4 id="theorem_13">Theorem 1.3<a class="headerlink" href="#theorem_13" title="Permanent link">&para;</a></h4>
-<p>If $g$ is the greatest common divisor of $b$ and $c$, then there exist integers $x_0$ and $y_0$ such that $g = (b, c) = bx_0 + cy_0$.</p>
-<p>Another way to state this very fundamental result is that the g.c.d. of two integers $b$ and $c$ is expressible as a linear combination of $b$ and $c$ with integral multipliers $x_0$ and $y_0$.</p>
-<h4 id="theorem_14">Theorem 1.4<a class="headerlink" href="#theorem_14" title="Permanent link">&para;</a></h4>
-<p>The greatest common divisor $g$ of $b$ and $c$ can be characterized in the following two ways<br />
-1. It is the least positive value of $bx + cy$ where $x$ and $y$ range over all integers.<br />
-2. It is the positive common divisor of $b$ and $c$ that is divisible by every common divisor.</p>
-<h4 id="theorem_15">Theorem 1.5<a class="headerlink" href="#theorem_15" title="Permanent link">&para;</a></h4>
-<p>Given any integers $b_1, b_2, \cdots, b_n$ not all zero, with greatest common divisor $g$, there exist integers $x_1, x_2, \cdots, x_n$ such that
-$$
-g = (b_1, b_2, \cdots, b_n) = \sum_{j=1}^{n} b_j x_j.
-$$
-Further more, $g$ is the least positive value of the linear form $\textstyle\sum_{j=1}^{n}b_j y_j$ where the $y_j$ range over all integers; also $g$ is the positive common divisor of $b_1, b_2, \cdots, b_n$ that is divisible by every common divisor.</p>
-<h4 id="theorem_16">Theorem 1.6<a class="headerlink" href="#theorem_16" title="Permanent link">&para;</a></h4>
-<p>For any positive integer $m$, $(ma, mb) = m(a, b)$.</p>
-<h4 id="theorem_17">Theorem 1.7<a class="headerlink" href="#theorem_17" title="Permanent link">&para;</a></h4>
-<p>If $d|a$ and $d|b$ and $d &gt; 0$, then
-$$
-(\frac a d, \frac b d) = \frac 1 d(a, b)
-$$
-If $(a, b) = g$, then 
-$$
-(\frac a g, \frac b g) = 1
+                <h1 id="mobius_inversion">Mobius Inversion<a class="headerlink" href="#mobius_inversion" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>Mobius Function</p>
+</blockquote>
+<p>$$
+\mu(n) = \begin{cases}
+    -1 &amp;\text{if } n \text{ is a square-free positive integer with an \textcolor{blue}{even} number of prime factors.} \\
+     1 &amp;\text{if } n \text{ is a square-free positive integer with an \textcolor{blue}{odd} number of prime factors.}  \\
+     0 &amp;\text{if } n \text{ has a squared prime factor.} 
+\end{cases}
 $$</p>
-<h4 id="theorem_18">Theorem 1.8<a class="headerlink" href="#theorem_18" title="Permanent link">&para;</a></h4>
-<p>If $(a, m) = (b, m) = 1$, then $(ab, m) = 1$.</p>
-<h4 id="theorem_19">Theorem 1.9<a class="headerlink" href="#theorem_19" title="Permanent link">&para;</a></h4>
-<p>For any integer $x$, $(a, b) = (b, a) = (a, -b) = (a, b+ax)$.</p>
-<h4 id="theorem_110">Theorem 1.10<a class="headerlink" href="#theorem_110" title="Permanent link">&para;</a></h4>
-<p>If $c|ab$ and $(b, c) = 1$, then $c|a$.</p>
-<h4 id="theorem_111">Theorem 1.11<a class="headerlink" href="#theorem_111" title="Permanent link">&para;</a></h4>
-<p>The Euclidean algorithm. Given integers $b$ and $c &gt; 0$, we make a repeated application of the division algorithm, Theorem 1.2, to obtain a series of equations
+<h2 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Mobius function is multiplicative.  </p>
+</blockquote>
+<p>$\mu(ab) = \mu(a)\mu(b) \text{ whenever } a \text{ and  } b \text{ are coprime.}$</p>
+<blockquote>
+<p>The sum of the Mobius function over all positive divisors of $n$ (including $n$ itself and $1$) is zero except when $n=1$:  </p>
+</blockquote>
+<p>$$
+\sum_{\mathclap{d|n}}\mu(d) = \begin{cases}
+    1 &amp;\text{if }n = 1 \\
+    0 &amp;\text{if }n \gt 1
+\end{cases}
 $$
+The equality above leads to the important Mobius inversion formula and is the main reason why $\mu$ is of relevance in theory of multiplicative and arithmetic functions.</p>
+<h2 id="mobius_inversion_formula">Mobius Inversion Formula<a class="headerlink" href="#mobius_inversion_formula" title="Permanent link">&para;</a></h2>
+<p>The classic version states that if $g$ and $f$ are arithmetic functions satisfying
+$$
+g(n) = \sum_{d|n}f(d) \text{ for every integer } n \ge 1 \\
+$$
+then
+$$
+f(n) = \sum_{d|n}\mu(d)g(\frac n d) \text{ for every integer } n \ge 1 \\ 
+$$
+where $\mu$ is the Mobius function and the sums extend over all positive divisors $d$ of $n$ (indicated by $d|n$ in the above formulae). in effect, the original $f(n)$ can be determined given $g(n)$ by using inversion formula. The two sequences are said to be <strong>Mobius transforms</strong> of each other.</p>
+<h2 id="series_relations">Series relations<a class="headerlink" href="#series_relations" title="Permanent link">&para;</a></h2>
+<h2 id="generalizations">Generalizations<a class="headerlink" href="#generalizations" title="Permanent link">&para;</a></h2>
+<p>A related inversion formula more useful in combinatorics is as follows: Suppose $F(x)$ and $G(x)$ are complex-valued functions defined on the interval $[1, \infin)$ such that
+$$
+G(x) = \sum_{1 \le n \le x}F(\frac x n) \text{ for all } x \ge 1
+$$
+then
+$$
+F(x) = \sum_{1 \le n \le x}\mu(n)G(\frac x n) \text{ for all } x \ge 1
+$$</p>
+<h2 id="related_problems">Related problems<a class="headerlink" href="#related_problems" title="Permanent link">&para;</a></h2>
+<h3 id="find_out_the_number_of_co-prime_pairs_of_integer_x_y_in_range_1_n">Find out the number of co-prime pairs of integer $(x, y)$ in range $[1, n]$<a class="headerlink" href="#find_out_the_number_of_co-prime_pairs_of_integer_x_y_in_range_1_n" title="Permanent link">&para;</a></h3>
+<p>$$
 \begin{aligned}
-b &amp;= c q_1 + r,     &amp;0 &lt; r_1 &lt; c&amp;, \\
-c &amp;= r_1 q_2 + r_2,  &amp;0 &lt; r_2 &lt; r_1&amp;,\\
-r_1 &amp;= r_2 q_3 + r_3,  &amp;0 &lt; r_3 &lt; r_2&amp;,\\
-&amp;\cdots, &amp;\cdots &amp;, \\
-r_{j - 2} &amp;= r_{j - 1} q_{j} + r_{j},  &amp;0 &lt; r_{j} &lt; r_{j - 1}&amp;,\\
-r_{j - 1} &amp;= r_{j} q_{j + 1}.\\
+&amp;\text{let } F(N) = \sum_{i=1}^N\sum_{j=1}^N[gcd(i, j) = 1] \\
+&amp;\text{Consider that } [n = 1] = \sum_{d|n}\mu(d)  \\
+&amp;\text{set } n = gcd(i, j) \text{ then,  }\\
+&amp;[gcd(i, j) = 1] = \sum_{d|gcd(i, j)}\mu(d) \\
 \end{aligned}
-$$
-The greatest common divisor $(b, c)$ of $b$ and $c$ is $r_j$, the last non zero remainder in the division process. Values of $x_0$ and $y_0$ in $(b, c) = bx_0 + cy_0$ can be obtained by writing each $r_i$ as a linear combination of $b$ and $c$.</p>
-<h4 id="theorem_112">Theorem 1.12<a class="headerlink" href="#theorem_112" title="Permanent link">&para;</a></h4>
-<p>If $b$ is any common multiple of $a_1, a_2, \dotsm, a_n$, then $[a_1, a_2, \dotsm, a_n]|b$. 
-This is the same as saying that if $h$ denotes $[a_1, a_2, \dotsm, a_n]$, then $0, ±h, ±2h, ±3h, \dotsm$ comprise all the common multiples of $a_1, a_2, \dotsm, a_n$.</p>
-<h4 id="theorem_113">Theorem 1.13<a class="headerlink" href="#theorem_113" title="Permanent link">&para;</a></h4>
-<p>If $m &gt; 0$, $[ma, mb] = m[a, b]$. Also $[a, b] \cdot (a, b) = |ab|$.</p>
-<h4 id="problem_129">Problem 1.2.9<a class="headerlink" href="#problem_129" title="Permanent link">&para;</a></h4>
-<p>Show that if $ac|bc$ then $a|b$.</p>
-<blockquote>
-<p>Solution</p>
-<p>Let $ c \not = 0$, above assertion in turn is a direct consequences of Theorem1.1 part 6 obtained by replacing $m$ in that theorem by $c$.</p>
-</blockquote>
-<h4 id="problem_1212">Problem 1.2.12<a class="headerlink" href="#problem_1212" title="Permanent link">&para;</a></h4>
-<p>Given that $(a, 4) = 2$ and $(b, 4) = 2$, prove that $(a + b, 4) = 4$.</p>
-<blockquote>
-<p>Solution</p>
-<p>Since $(a, 4) = 2$ , $2|a$, so $a = 2m$ for $m \in \Z$.
-But we also know $4 \not | a$, so $2 \not | m$, and so $m = 2n + 1$ for $n \in \Z$.
-This gives $a = 4n + 2$, and similarly $b = 4k + 2$ for some $k \in \Z$.
-So we now have that
-$$
-a + b = (4n + 2) + (4k + 2) = 4n + 4k + 4 = 4(n + k + 1)
-$$
-So $4 | (a + b)$, which shows that $(a + b, 4) = 4$.</p>
-</blockquote>
+$$</p>
+<p>$$
+\begin{aligned}
+f(N) &amp;= \sum_{i=1}^N\sum_{j=1}^N\sum_{d|gcd(i, j)}\mu(d) \\
+&amp;= \sum_{i=1}^N\sum_{j=1}^N\sum_{d=1}^N\mu(d)[d|gcd(i, j)] \\
+&amp;= \sum_{i=1}^N\sum_{j=1}^N\sum_{d=1}^N\mu(d)[d | i][d | j] \\
+&amp;= \sum_{d=1}^N\sum_{i=1}^N\sum_{j=1}^N\mu(d)[d | i][d | j] \\
+&amp;= \sum_{d=1}^N\mu(d)\sum_{i=1}^N[d | i]\sum_{j=1}^N[d | j] \\
+&amp;= \sum_{d=1}^N\mu(d){\lfloor \frac N d \rfloor}^2
+\end{aligned}
+$$</p>
+<h3 id="find_out_the_sum_of_gcdx_y_for_every_pair_of_integer_x_y_in_range_1_n">Find out the sum of $gcd(x, y)$ for every pair of integer $(x, y)$ in range $[1, N]$<a class="headerlink" href="#find_out_the_sum_of_gcdx_y_for_every_pair_of_integer_x_y_in_range_1_n" title="Permanent link">&para;</a></h3>
+<p>$$
+\begin{aligned}
+f(N) &amp;= \sum_{i=1}^N\sum_{j=1}^Ngcd(i, j) \\
+&amp;= \sum_{d=1}^N d \sum_{i=1}^N \sum_{j=1}^N [gcd(i, j) = d] \\
+\text{replace } i = ad, j = bd \\
+&amp;= \sum_{d=1}^N d \sum_{ad=1}^N \sum_{bd=1}^N [gcd(ad, bd) = d] \\
+&amp;= \sum_{d=1}^N d \sum_{ad=1}^N \sum_{bd=1}^N [gcd(a, b) = 1] \\
+&amp;= \sum_{d=1}^N d \sum_{a=1}^{\lfloor {N \over d} \rfloor} \sum_{b=1}^{\lfloor {N \over d} \rfloor} [gcd(a, b) = 1] \\
+\text{replace } a= i, b= j \\
+&amp;= \sum_{d=1}^N d \sum_{i=1}^{\lfloor {N \over d} \rfloor} \sum_{j=1}^{\lfloor {N \over d} \rfloor} [gcd(a, b) = 1] \\
+\text{since } \sum_{i=1}^N \sum_{i=1}^N [gcd(i, j) = 1] &amp;= \sum_{d=1}^N \mu(d) {\lfloor{N \over d} \rfloor}^2 \text{ by previous problem }\\
+&amp;= \sum_{d=1}^N d \sum_{k = 1}^{\lfloor {N \over d} \rfloor} \mu(k) {\lfloor {N \over dk} \rfloor}^2 \\
+\end{aligned}
+$$</p>
+<h3 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Mocha and Stars(2200) <a href="https://codeforces.com/contest/1559/problem/E"><img align="absmiddle" alt=":link:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f517.png" title=":link:" width="20px" /></a></li>
+</ol>
                 
                   
                 
@@ -1988,9 +1832,9 @@ So $4 | (a + b)$, which shows that $(a + b, 4) = 4$.</p>
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://icpc.ninja/Algorithms/NumberTheory/Theorems/";
+      this.page.url = "https://icpc.ninja/NumberTheory/MobiusInversion/";
       this.page.identifier =
-        "/Algorithms/NumberTheory/Theorems/";
+        "/NumberTheory/MobiusInversion/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -2012,7 +1856,7 @@ So $4 | (a + b)$, which shows that $(a + b, 4) = 4$.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../MobiusInversion/" title="MobiusInversion" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Theorems/" title="Divisibility" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -2021,19 +1865,19 @@ So $4 | (a + b)$, which shows that $(a + b, 4) = 4$.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                MobiusInversion
+                Divisibility
               </span>
             </div>
           </a>
         
         
-          <a href="../../../DataStructures/Linear/Stack/" title="Stack" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../MISC/Lemma/" title="Lemma" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Stack
+                Lemma
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -2065,11 +1909,11 @@ So $4 | (a + b)$, which shows that $(a + b, 4) = 4$.</p>
       
     </div>
     
-      <script src="../../../assets/javascripts/application.245445c6.js"></script>
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
-        <script src="../../../js/katex.js"></script>
+        <script src="../../js/katex.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js"></script>
       
