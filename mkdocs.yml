@@ -144,6 +144,10 @@ nav:
             - RedBlackTree: DataStructures/Trees/RedBlackTree.md
             - Binary Indexed Tree: DataStructures/Trees/BinaryIndexedTree.md
             - Segment Tree: DataStructures/Trees/SegmentTree.md
+    - NumberTheory:
+      - Divisibility: NumberTheory/Theorems.md
+      - MobiusInversion: NumberTheory/MobiusInversion.md
+
     - MISC:
         Lemma: MISC/Lemma.md
     - Language: 
