@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-4.4.0">
     
     
       
@@ -121,7 +121,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://icpc.ninja" title="ICPC.NINJA" class="md-header-nav__button md-logo">
+        <a href="https://icpc.ninja/" title="ICPC.NINJA" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -180,7 +180,7 @@
 
   
 
-<a href="https://github.com/jchrys/icpc/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/jchrys/icpc" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -213,7 +213,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://icpc.ninja" title="ICPC.NINJA" class="md-nav__button md-logo">
+    <a href="https://icpc.ninja/" title="ICPC.NINJA" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
@@ -227,7 +227,7 @@
 
   
 
-<a href="https://github.com/jchrys/icpc/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/jchrys/icpc" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1596,26 +1596,24 @@
 - note that naming a type after its representation than its purpose is not neccessarily a good idea.</p>
 <h2 id="1_typedef">1. typedef<a class="headerlink" href="#1_typedef" title="Permanent link">&para;</a></h2>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">cpp</span>
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">cpp</span>
 <span class="err">typedef double decimal_places; // is equivalent to &quot;using decimal_places = double;&quot;</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <h2 id="2_using">2. using<a class="headerlink" href="#2_using" title="Permanent link">&para;</a></h2>
 <p>the using keyword can also be used to introduce a template alias.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span>
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span>
     <span class="k">using</span> <span class="n">Vector</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span> <span class="n">my_allocator</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <p>but we cannot apply type specifiers, such as unsigned, to an alias.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">Char</span> <span class="o">=</span> <span class="kt">char</span><span class="p">;</span>
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">using</span> <span class="n">Char</span> <span class="o">=</span> <span class="kt">char</span><span class="p">;</span>
 <span class="k">using</span> <span class="n">Uchar</span> <span class="o">=</span> <span class="kt">unsigned</span> <span class="n">Char</span><span class="p">;</span>  <span class="c1">//error</span>
 <span class="k">using</span> <span class="n">Uchar</span> <span class="o">=</span> <span class="kt">unsigned</span> <span class="kt">char</span><span class="p">;</span> <span class="c1">// ok</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
                 
                   
@@ -1631,7 +1629,7 @@
     var disqus_config = function () {
       this.page.url = "https://icpc.ninja/Language/Keywords/";
       this.page.identifier =
-        "/Language/Keywords/";
+        "Language/Keywords/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -1708,7 +1706,7 @@
     
       <script src="../../assets/javascripts/application.245445c6.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.3.0",url:{base:"../.."}})</script>
       
         <script src="../../js/katex.js"></script>
       

@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-4.4.0">
     
     
       
@@ -121,7 +121,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://icpc.ninja" title="ICPC.NINJA" class="md-header-nav__button md-logo">
+        <a href="https://icpc.ninja/" title="ICPC.NINJA" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -180,7 +180,7 @@
 
   
 
-<a href="https://github.com/jchrys/icpc/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/jchrys/icpc" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -213,7 +213,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://icpc.ninja" title="ICPC.NINJA" class="md-nav__button md-logo">
+    <a href="https://icpc.ninja/" title="ICPC.NINJA" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
@@ -227,7 +227,7 @@
 
   
 
-<a href="https://github.com/jchrys/icpc/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/jchrys/icpc" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1457,7 +1457,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2_put_the_space_between_the_amp_and_the_parameter_name" title="2. put the space between the &amp; and the parameter name;" class="md-nav__link">
+  <a href="#2_put_the_space_between_the_and_the_parameter_name" title="2. put the space between the &amp; and the parameter name;" class="md-nav__link">
     2. put the space between the &amp; and the parameter name;
   </a>
   
@@ -1670,7 +1670,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2_put_the_space_between_the_amp_and_the_parameter_name" title="2. put the space between the &amp; and the parameter name;" class="md-nav__link">
+  <a href="#2_put_the_space_between_the_and_the_parameter_name" title="2. put the space between the &amp; and the parameter name;" class="md-nav__link">
     2. put the space between the &amp; and the parameter name;
   </a>
   
@@ -1749,18 +1749,16 @@ c++17</p>
 </blockquote>
 <p><img align="absmiddle" alt=":+1:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f44d.png" title=":+1:" width="20px" /></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="k">const</span> <span class="n">MAX_SIZE</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// the int is constant</span>
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kt">int</span> <span class="k">const</span> <span class="n">MAX_SIZE</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// the int is constant</span>
 <span class="kt">int</span><span class="o">*</span> <span class="k">const</span> <span class="n">P</span><span class="p">;</span> <span class="c1">// the pointer cannot change, but int value can;</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <p><img align="absmiddle" alt=":-1:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f44e.png" title=":-1:" width="20px" /></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">const</span> <span class="kt">int</span> <span class="n">MAX_SIZE</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> 
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">const</span> <span class="kt">int</span> <span class="n">MAX_SIZE</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> 
 <span class="k">const</span> <span class="kt">int</span><span class="o">*</span> <span class="n">P</span><span class="p">;</span> <span class="c1">// you can not find what&#39;s constant value;</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <p>reason1. easy to know what's constant.
 it's always what is in front of the <code>const</code> qualifier
 reason2. syntatical substitution principle.
@@ -1771,52 +1769,47 @@ consider following example</p>
 4
 5
 6
-7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">typedef</span> <span class="nb">char</span><span class="o">*</span> <span class="n">CHARS</span><span class="p">;</span>
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">typedef</span> <span class="nb">char</span><span class="o">*</span> <span class="n">CHARS</span><span class="p">;</span>
 <span class="n">typedef</span> <span class="n">CHARS</span> <span class="k">const</span> <span class="n">CPTR</span><span class="p">;</span> <span class="o">//</span> <span class="n">constant</span> <span class="n">pointer</span> <span class="n">to</span> <span class="n">chars</span>
 <span class="o">//</span> <span class="o">=&gt;</span> <span class="n">typedef</span> <span class="nb">char</span><span class="o">*</span> <span class="k">const</span> <span class="n">CPTR</span><span class="p">;</span>
 
 <span class="n">using</span> <span class="n">CHARS</span> <span class="o">=</span> <span class="nb">char</span><span class="o">*</span><span class="p">:</span>
 <span class="n">using</span> <span class="n">CPTR</span> <span class="o">=</span> <span class="n">CHARS</span> <span class="k">const</span><span class="p">;</span> <span class="o">//</span> <span class="n">constant</span> <span class="n">pointer</span> <span class="n">to</span> <span class="n">chars</span>
 <span class="o">//</span> <span class="o">=&gt;</span> <span class="n">using</span> <span class="n">CPTR</span> <span class="o">=</span> <span class="nb">char</span><span class="o">*</span> <span class="k">const</span><span class="p">;</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <p>The meaning of the second declaration is preseved when we textually replace CHARS with what it stands for;
 How ever if you write <code>const</code> before the type it qualifies.
 textually </p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">typedef</span> <span class="kt">char</span><span class="o">*</span> <span class="n">CHARS</span><span class="p">;</span>
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">typedef</span> <span class="kt">char</span><span class="o">*</span> <span class="n">CHARS</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="k">const</span> <span class="n">CHARS</span> <span class="n">CTPR</span><span class="p">;</span> <span class="c1">//const pointer to chars;</span>
 <span class="c1">// =&gt; typedef const char* CTPR // pointer to constant chars;</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <ul>
 <li>footnote: note that <code>typedef</code> defines a "type alias" rather than a new type</li>
 </ul>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">typedef</span> <span class="kt">int</span> <span class="n">newInt</span><span class="p">;</span>
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">typedef</span> <span class="kt">int</span> <span class="n">newInt</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">29</span><span class="p">;</span>
 <span class="n">newInt</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1999</span><span class="p">;</span>
 <span class="n">i</span> <span class="o">=</span> <span class="n">j</span><span class="p">;</span> <span class="c1">// OK</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
-<h3 id="2_put_the_space_between_the_amp_and_the_parameter_name">2. put the space between the <code>&amp;</code> and the parameter name;<a class="headerlink" href="#2_put_the_space_between_the_amp_and_the_parameter_name" title="Permanent link">&para;</a></h3>
+<h3 id="2_put_the_space_between_the_and_the_parameter_name">2. put the space between the <code>&amp;</code> and the parameter name;<a class="headerlink" href="#2_put_the_space_between_the_and_the_parameter_name" title="Permanent link">&para;</a></h3>
 <p>by doing this, we emphasize the separation between the parameter type and the parameter name.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kt">void</span> <span class="nf">foo</span> <span class="p">(</span><span class="kt">int</span> <span class="k">const</span><span class="o">&amp;</span> <span class="n">x</span><span class="p">);</span>
-</pre></div>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kt">void</span> <span class="nf">foo</span> <span class="p">(</span><span class="kt">int</span> <span class="k">const</span><span class="o">&amp;</span> <span class="n">x</span><span class="p">);</span>
+</code></pre></div>
 </td></tr></table>
-
 <h3 id="3_avoid_declaring_multiple_entities_in_this_way">3. avoid declaring multiple entities in this way!.<a class="headerlink" href="#3_avoid_declaring_multiple_entities_in_this_way" title="Permanent link">&para;</a></h3>
 <p><img align="absmiddle" alt=":-1:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/1f44e.png" title=":-1:" width="20px" /></p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kt">char</span><span class="o">*</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">;</span>
-</pre></div>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kt">char</span><span class="o">*</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">;</span>
+</code></pre></div>
 </td></tr></table>
-
 <p>according to the rules inherited from C, <code>a</code> is a pointer but <code>b</code> is an ordinary <code>char</code>;</p>
                 
                   
@@ -1832,7 +1825,7 @@ textually </p>
     var disqus_config = function () {
       this.page.url = "https://icpc.ninja/Language/Preface/";
       this.page.identifier =
-        "/Language/Preface/";
+        "Language/Preface/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -1909,7 +1902,7 @@ textually </p>
     
       <script src="../../assets/javascripts/application.245445c6.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.3.0",url:{base:"../.."}})</script>
       
         <script src="../../js/katex.js"></script>
       

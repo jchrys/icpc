@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-4.4.0">
     
     
       
@@ -121,7 +121,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://icpc.ninja" title="ICPC.NINJA" class="md-header-nav__button md-logo">
+        <a href="https://icpc.ninja/" title="ICPC.NINJA" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -180,7 +180,7 @@
 
   
 
-<a href="https://github.com/jchrys/icpc/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/jchrys/icpc" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -213,7 +213,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://icpc.ninja" title="ICPC.NINJA" class="md-nav__button md-logo">
+    <a href="https://icpc.ninja/" title="ICPC.NINJA" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
@@ -227,7 +227,7 @@
 
   
 
-<a href="https://github.com/jchrys/icpc/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/jchrys/icpc" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1772,7 +1772,7 @@ if a node does not belong to a component, the algorithm creates a new component 
 35
 36
 37
-38</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">adj</span><span class="p">[</span><span class="n">V</span><span class="p">];</span> <span class="c1">//adjancecy lists</span>
+38</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">adj</span><span class="p">[</span><span class="n">V</span><span class="p">];</span> <span class="c1">//adjancecy lists</span>
 <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">radj</span><span class="p">[</span><span class="n">V</span><span class="p">];</span> <span class="c1">// reversed adjacency list (directions are opposite to original)</span>
 <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">order</span><span class="p">;</span>
 <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">result</span><span class="p">;</span>
@@ -1810,9 +1810,8 @@ if a node does not belong to a component, the algorithm creates a new component 
             <span class="n">result</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">());</span> <span class="c1">// add new component</span>
             <span class="n">search2</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
 <span class="p">}</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <h3 id="time_complexity">Time complexity<a class="headerlink" href="#time_complexity" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>$\Omicron(n+m)$ because the algorithm performs two depth-first searches.</p>
@@ -1927,7 +1926,7 @@ node $\neg x_j$, then node $x_i$ never becomes true. The reason for this is that
 64
 65
 66
-67</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="k">const</span> <span class="n">MAXN</span><span class="p">;</span> <span class="c1">// maximum number of variables</span>
+67</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kt">int</span> <span class="k">const</span> <span class="n">MAXN</span><span class="p">;</span> <span class="c1">// maximum number of variables</span>
 <span class="kt">int</span> <span class="n">N</span><span class="p">;</span> <span class="c1">// number of variables</span>
 <span class="kt">int</span> <span class="n">M</span><span class="p">;</span> <span class="c1">// number of conditions</span>
 <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">adj</span><span class="p">;</span> <span class="c1">// adjancecy list</span>
@@ -1994,9 +1993,8 @@ node $\neg x_j$, then node $x_i$ never becomes true. The reason for this is that
         <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">i</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">answer</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <h3 id="related_problems">Related Problems<a class="headerlink" href="#related_problems" title="Permanent link">&para;</a></h3>
 <ol>
 <li><a href="https://www.acmicpc.net/problem/11277">2-SAT 1</a> <img align="absmiddle" alt=":star:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2b50.png" title=":star:" width="20px" /><img align="absmiddle" alt=":star:" class="gemoji" height="20px" src="https://github.com/images/icons/emoji/unicode/2b50.png" title=":star:" width="20px" /></li>
@@ -2018,7 +2016,7 @@ node $\neg x_j$, then node $x_i$ never becomes true. The reason for this is that
     var disqus_config = function () {
       this.page.url = "https://icpc.ninja/Algorithms/Graph/StrongConnectivity/";
       this.page.identifier =
-        "/Algorithms/Graph/StrongConnectivity/";
+        "Algorithms/Graph/StrongConnectivity/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -2095,7 +2093,7 @@ node $\neg x_j$, then node $x_i$ never becomes true. The reason for this is that
     
       <script src="../../../assets/javascripts/application.245445c6.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"1.3.0",url:{base:"../../.."}})</script>
       
         <script src="../../../js/katex.js"></script>
       

@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-4.4.0">
     
     
       
@@ -121,7 +121,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://icpc.ninja" title="ICPC.NINJA" class="md-header-nav__button md-logo">
+        <a href="https://icpc.ninja/" title="ICPC.NINJA" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -180,7 +180,7 @@
 
   
 
-<a href="https://github.com/jchrys/icpc/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/jchrys/icpc" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -224,7 +224,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://icpc.ninja" title="ICPC.NINJA" class="md-nav__button md-logo">
+    <a href="https://icpc.ninja/" title="ICPC.NINJA" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
@@ -238,7 +238,7 @@
 
   
 
-<a href="https://github.com/jchrys/icpc/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/jchrys/icpc" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1787,7 +1787,7 @@ so we can calculate the number of nodes recursively using the following code</p>
  7
  8
  9
-10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">count</span><span class="p">[</span><span class="err">#</span><span class="n">nodes</span><span class="p">];</span>
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kt">int</span> <span class="n">count</span><span class="p">[</span><span class="err">#</span><span class="n">nodes</span><span class="p">];</span>
 
 <span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//current node s, previous node e;</span>
     <span class="n">count</span><span class="p">[</span><span class="n">s</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
@@ -1797,9 +1797,8 @@ so we can calculate the number of nodes recursively using the following code</p>
         <span class="n">count</span><span class="p">[</span><span class="n">s</span><span class="p">]</span> <span class="o">+=</span> <span class="n">count</span><span class="p">[</span><span class="n">u</span><span class="p">];</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <h2 id="diameter">Diameter<a class="headerlink" href="#diameter" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>The Diameter of a tree is the maximum length of a path between two nodes.</p>
@@ -1860,7 +1859,7 @@ Our first algorithm for calculating the diameter is based on this idea.</p>
 28
 29
 30
-31</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">//adjacency list</span>
+31</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1">//adjacency list</span>
 <span class="c1">//adj[i] contains all neighbors of i</span>
 <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">adj</span><span class="p">[</span><span class="n">N</span><span class="p">];</span>
 
@@ -1891,9 +1890,8 @@ Our first algorithm for calculating the diameter is based on this idea.</p>
         <span class="n">g</span><span class="p">[</span><span class="n">V</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">fValues</span><span class="p">.</span><span class="n">back</span><span class="p">()</span> <span class="o">+</span> <span class="n">fValues</span><span class="p">[</span><span class="n">fValues</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="mi">-2</span><span class="p">];</span>
     <span class="n">diameter</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">diameter</span><span class="p">,</span> <span class="n">max</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="n">V</span><span class="p">],</span> <span class="n">g</span><span class="p">[</span><span class="n">V</span><span class="p">]));</span>
 <span class="p">}</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <h4 id="more_general_implementation">More General Implementation<a class="headerlink" href="#more_general_implementation" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>with weighted edges</p>
@@ -1927,7 +1925,7 @@ Our first algorithm for calculating the diameter is based on this idea.</p>
 27
 28
 29
-30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">//adjacency list </span>
+30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1">//adjacency list </span>
 <span class="c1">//adj[i] contains all neighbors of i, and weights to i -&gt; its neighbor</span>
 <span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;&gt;&gt;</span> <span class="n">adj</span><span class="p">[</span><span class="n">N</span><span class="p">];</span>
 <span class="kt">int</span> <span class="n">diameter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
@@ -1957,9 +1955,8 @@ Our first algorithm for calculating the diameter is based on this idea.</p>
         <span class="n">g</span><span class="p">[</span><span class="n">V</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
     <span class="n">diameter</span> <span class="o">=</span> <span class="n">max</span><span class="p">(</span><span class="n">diameter</span><span class="p">,</span> <span class="n">max</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="n">V</span><span class="p">],</span> <span class="n">g</span><span class="p">[</span><span class="n">V</span><span class="p">]));</span>
 <span class="p">}</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <h3 id="algorithm_2_based_on_dfs">Algorithm 2 (based on DFS)<a class="headerlink" href="#algorithm_2_based_on_dfs" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>Another efficient way to calculate the diameter of a tree is based on two depth-first searches.
@@ -1987,7 +1984,7 @@ Then, we find the farthest node $c$ from $b$. The diameter of the tree is the di
 14
 15
 16
-17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">firstFar</span><span class="p">;</span>
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kt">int</span> <span class="n">firstFar</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">diameter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">V</span><span class="p">,</span> <span class="kt">int</span> <span class="n">pV</span><span class="p">,</span> <span class="kt">int</span> <span class="n">dis</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">diameter</span> <span class="o">&lt;</span> <span class="n">dis</span><span class="p">)</span> <span class="p">{</span>
@@ -2004,9 +2001,8 @@ Then, we find the farthest node $c$ from $b$. The diameter of the tree is the di
 <span class="c1">// diameter = 0; // not necessary;</span>
 <span class="n">dfs</span><span class="p">(</span><span class="n">firstFar</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
 <span class="c1">// now diameter is diameter of tree</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <h4 id="resources">resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h4>
 <p>https://codeforces.com/blog/entry/20935</p>
                 
@@ -2023,7 +2019,7 @@ Then, we find the farthest node $c$ from $b$. The diameter of the tree is the di
     var disqus_config = function () {
       this.page.url = "https://icpc.ninja/Algorithms/Tree/DP/";
       this.page.identifier =
-        "/Algorithms/Tree/DP/";
+        "Algorithms/Tree/DP/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -2100,7 +2096,7 @@ Then, we find the farthest node $c$ from $b$. The diameter of the tree is the di
     
       <script src="../../../assets/javascripts/application.245445c6.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"1.3.0",url:{base:"../../.."}})</script>
       
         <script src="../../../js/katex.js"></script>
       

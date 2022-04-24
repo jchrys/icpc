@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-4.4.0">
     
     
       
@@ -121,7 +121,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://icpc.ninja" title="ICPC.NINJA" class="md-header-nav__button md-logo">
+        <a href="https://icpc.ninja/" title="ICPC.NINJA" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -180,7 +180,7 @@
 
   
 
-<a href="https://github.com/jchrys/icpc/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/jchrys/icpc" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -213,7 +213,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://icpc.ninja" title="ICPC.NINJA" class="md-nav__button md-logo">
+    <a href="https://icpc.ninja/" title="ICPC.NINJA" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
@@ -227,7 +227,7 @@
 
   
 
-<a href="https://github.com/jchrys/icpc/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/jchrys/icpc" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1743,15 +1743,14 @@ Finally, all nodes belong to the same component and a minimum spanning tree has 
 3
 4
 5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">vector</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span> <span class="n">u</span><span class="p">,</span> <span class="kt">int</span> <span class="n">v</span><span class="o">&gt;&gt;</span> <span class="n">edges</span><span class="p">;</span> <span class="c1">//edge list</span>
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">vector</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span> <span class="n">u</span><span class="p">,</span> <span class="kt">int</span> <span class="n">v</span><span class="o">&gt;&gt;</span> <span class="n">edges</span><span class="p">;</span> <span class="c1">//edge list</span>
 <span class="n">sort</span><span class="p">(</span><span class="n">vector</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">vector</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
 
 <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="nl">edge</span> <span class="p">:</span> <span class="n">edges</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//using union find structure</span>
     <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">same</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span> <span class="n">unite</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">);</span>
 <span class="p">}</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <div class="admonition note">
 <p class="admonition-title">efficiency</p>
 <p>The problem is how to efficiently implement the function <code>same</code> and <code>unite</code>. One possibility is to implement function <code>same</code> as a graph traversal and check if we can get from node <code>a</code> to node <code>b</code>. However, the time complexity of such a function would be $\Omicron(n+m)$ and resulting algorithm would be slow, because the function <code>same</code> will be called for each edge in graph.</p>
@@ -1795,7 +1794,7 @@ Using this strategy, the length of any chain will be $\Omicron(lg(n))$ </p>
 20
 21
 22
-23</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="n">link</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+23</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="n">link</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
 <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="n">size</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 
 <span class="kt">int</span> <span class="nf">find</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span> 
@@ -1818,9 +1817,8 @@ Using this strategy, the length of any chain will be $\Omicron(lg(n))$ </p>
     <span class="n">size</span><span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="o">+=</span> <span class="n">size</span><span class="p">[</span><span class="n">b</span><span class="p">];</span>
     <span class="n">link</span><span class="p">[</span><span class="n">b</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <h2 id="prims_algorithm">Prim's algorithm<a class="headerlink" href="#prims_algorithm" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>The algorithm first adds an arbitrary node to the tree.
@@ -1877,7 +1875,7 @@ But, Prim's algorithm simply selects the minimum weight edge that adds a new nod
 39
 40
 41
-42</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kt">int</span> <span class="n">V</span><span class="p">;</span> <span class="c1">// #nodes(vertices)</span>
+42</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kt">int</span> <span class="n">V</span><span class="p">;</span> <span class="c1">// #nodes(vertices)</span>
 <span class="kt">int</span> <span class="n">E</span><span class="p">;</span> <span class="c1">// #edges </span>
 <span class="kt">int</span> <span class="k">const</span> <span class="n">INF</span> <span class="o">=</span> <span class="mf">2e9</span><span class="p">;</span>
 
@@ -1919,7 +1917,7 @@ But, Prim's algorithm simply selects the minimum weight edge that adds a new nod
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
                 
                   
@@ -1935,7 +1933,7 @@ But, Prim's algorithm simply selects the minimum weight edge that adds a new nod
     var disqus_config = function () {
       this.page.url = "https://icpc.ninja/Algorithms/Tree/SpanningTree/";
       this.page.identifier =
-        "/Algorithms/Tree/SpanningTree/";
+        "Algorithms/Tree/SpanningTree/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -2012,7 +2010,7 @@ But, Prim's algorithm simply selects the minimum weight edge that adds a new nod
     
       <script src="../../../assets/javascripts/application.245445c6.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"1.3.0",url:{base:"../../.."}})</script>
       
         <script src="../../../js/katex.js"></script>
       

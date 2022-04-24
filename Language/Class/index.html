@@ -38,7 +38,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-4.4.0">
     
     
       
@@ -121,7 +121,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://icpc.ninja" title="ICPC.NINJA" class="md-header-nav__button md-logo">
+        <a href="https://icpc.ninja/" title="ICPC.NINJA" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -180,7 +180,7 @@
 
   
 
-<a href="https://github.com/jchrys/icpc/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/jchrys/icpc" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -213,7 +213,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://icpc.ninja" title="ICPC.NINJA" class="md-nav__button md-logo">
+    <a href="https://icpc.ninja/" title="ICPC.NINJA" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
@@ -227,7 +227,7 @@
 
   
 
-<a href="https://github.com/jchrys/icpc/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/jchrys/icpc" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -1722,7 +1722,7 @@ The Fundamental idea in defining a new type is to separate the details of the im
 15
 16
 17
-18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">X</span> <span class="p">{</span>
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="nc">X</span> <span class="p">{</span>
     <span class="k">private</span><span class="o">:</span> <span class="c1">// the representation (implementation) is private</span>
         <span class="kt">int</span> <span class="n">m</span><span class="p">;</span>
     <span class="k">public</span><span class="o">:</span> <span class="c1">// the user interface is public</span>
@@ -1740,9 +1740,8 @@ The Fundamental idea in defining a new type is to separate the details of the im
     <span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="n">ptr</span><span class="o">-&gt;</span><span class="n">mf</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span> <span class="c1">// access using -&gt;</span>
     <span class="kt">int</span> <span class="n">z</span> <span class="o">=</span> <span class="n">var</span><span class="p">.</span><span class="n">m</span><span class="p">;</span> <span class="c1">// error: cannot acces private member</span>
 <span class="p">}</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <h3 id="1_member_functions">1. Member functions<a class="headerlink" href="#1_member_functions" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>Functions declared within a class definition are called <em>member functions</em></p>
@@ -1752,11 +1751,10 @@ The Fundamental idea in defining a new type is to separate the details of the im
 <p>a class object can be initialized with a copy of an obejct of its class</p>
 </blockquote>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">UserClass</span> <span class="n">c1</span> <span class="o">=</span> <span class="n">c0</span><span class="p">;</span> <span class="c1">// initialization by copy</span>
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">UserClass</span> <span class="n">c1</span> <span class="o">=</span> <span class="n">c0</span><span class="p">;</span> <span class="c1">// initialization by copy</span>
 <span class="n">UserClass</span> <span class="n">c2</span> <span class="p">{</span><span class="n">d1</span><span class="p">};</span> <span class="c1">// initialization by copy</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <h3 id="3_access_control">3. Access Control<a class="headerlink" href="#3_access_control" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>class is consist of two parts
@@ -1783,7 +1781,7 @@ programmers can declare a function with the explicit purpose of initializing obj
  9
 10
 11
-12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Date</span> <span class="p">{</span>
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="nc">Date</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">d</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">y</span><span class="p">;</span>
     <span class="k">public</span><span class="o">:</span>
     <span class="n">Date</span><span class="p">(</span><span class="kt">int</span> <span class="n">dd</span><span class="p">,</span> <span class="kt">int</span> <span class="n">mm</span><span class="p">,</span> <span class="kt">int</span> <span class="n">yy</span><span class="p">);</span> <span class="c1">// constructor</span>
@@ -1795,9 +1793,8 @@ programmers can declare a function with the explicit purpose of initializing obj
 <span class="n">Date</span> <span class="nf">release1_0</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span> <span class="c1">//error: third argument missing</span>
 
 <span class="n">Date</span> <span class="n">today</span> <span class="o">=</span> <span class="n">Date</span><span class="p">{</span><span class="mi">23</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1982</span><span class="p">}</span> <span class="c1">// good!</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
-
 <p>I recommend the <code>{}</code> notation over the () notation for initializing, because it is explicit about what is being done</p>
 <blockquote>
 <p>we could use default values directly as default arguments</p>
@@ -1806,12 +1803,12 @@ programmers can declare a function with the explicit purpose of initializing obj
 2
 3
 4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">Date</span> <span class="p">{</span>
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="nc">Date</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">d</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">y</span><span class="p">;</span>
     <span class="k">public</span><span class="o">:</span>
     <span class="n">Date</span><span class="p">(</span><span class="kt">int</span> <span class="n">dd</span> <span class="o">=</span> <span class="n">today</span><span class="p">.</span><span class="n">d</span><span class="p">,</span> <span class="kt">int</span> <span class="n">mm</span> <span class="o">=</span> <span class="n">today</span><span class="p">.</span><span class="n">m</span><span class="p">,</span> <span class="kt">int</span> <span class="n">yy</span> <span class="o">=</span> <span class="n">today</span><span class="p">.</span><span class="n">y</span><span class="p">);</span> <span class="c1">// constructor</span>
 <span class="p">}</span>
-</pre></div>
+</code></pre></div>
 </td></tr></table>
                 
                   
@@ -1827,7 +1824,7 @@ programmers can declare a function with the explicit purpose of initializing obj
     var disqus_config = function () {
       this.page.url = "https://icpc.ninja/Language/Class/";
       this.page.identifier =
-        "/Language/Class/";
+        "Language/Class/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -1904,7 +1901,7 @@ programmers can declare a function with the explicit purpose of initializing obj
     
       <script src="../../assets/javascripts/application.245445c6.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.3.0",url:{base:"../.."}})</script>
       
         <script src="../../js/katex.js"></script>
       
