@@ -126,6 +126,7 @@ nav:
             - BitManipulation: Algorithms/Bit/BitManipulation.md
         - NumberTheory:
             - MobiusInversion: Algorithms/NumberTheory/MobiusInversion.md
+            - Theorems: Algorithms/NumberTheory/Theorems.md
 
     - DataStructures: 
         - Linear:
