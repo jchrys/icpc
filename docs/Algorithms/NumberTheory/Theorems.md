@@ -104,3 +104,26 @@ This is the same as saying that if $h$ denotes $[a_1, a_2, \dotsm, a_n]$, then $
 
 #### Theorem 1.13
 If $m > 0$, $[ma, mb] = m[a, b]$. Also $[a, b] \cdot (a, b) = |ab|$.
+
+#### Problem 1.2.9
+Show that if $ac|bc$ then $a|b$.
+
+>Solution
+>
+Let $ c \not = 0$, above assertion in turn is a direct consequences of Theorem1.1 part 6 obtained by replacing $m$ in that theorem by $c$.
+
+#### Problem 1.2.12
+Given that $(a, 4) = 2$ and $(b, 4) = 2$, prove that $(a + b, 4) = 4$.
+
+>Solution
+>
+Since $(a, 4) = 2$ , $2|a$, so $a = 2m$ for $m \in \Z$.
+But we also know $4 \not | a$, so $2 \not | m$, and so $m = 2n + 1$ for $n \in \Z$.
+This gives $a = 4n + 2$, and similarly $b = 4k + 2$ for some $k \in \Z$.
+So we now have that
+$$
+a + b = (4n + 2) + (4k + 2) = 4n + 4k + 4 = 4(n + k + 1)
+$$
+So $4 | (a + b)$, which shows that $(a + b, 4) = 4$.
+
+
