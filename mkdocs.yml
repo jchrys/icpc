@@ -115,7 +115,6 @@ nav:
         - String: 
             - Preface: Algorithms/String/Preface.md
             - String Hashing: Algorithms/String/StringHashing.md
-            - Trie: Algorithms/String/Trie.md
             - Z-Algorithm: Algorithms/String/Z-Algorithm.md
             - KMP-Algorithm: Algorithms/String/KMP-Algorithm.md
         - Range Queries: 
@@ -141,6 +140,7 @@ nav:
             - RedBlackTree: DataStructures/Trees/RedBlackTree.md
             - Binary Indexed Tree: DataStructures/Trees/BinaryIndexedTree.md
             - Segment Tree: DataStructures/Trees/SegmentTree.md
+            - Trie: DataStructures/Trees/Trie.md
     - NumberTheory:
       - Divisibility: NumberTheory/Theorems.md
       - MobiusInversion: NumberTheory/MobiusInversion.md
