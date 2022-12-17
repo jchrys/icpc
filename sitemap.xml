@@ -196,11 +196,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://icpc.ninja/Algorithms/String/Trie/</loc>
-         <lastmod>2022-12-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://icpc.ninja/Algorithms/String/Z-Algorithm/</loc>
          <lastmod>2022-12-17</lastmod>
          <changefreq>daily</changefreq>
@@ -307,6 +302,11 @@
     </url>
     <url>
          <loc>https://icpc.ninja/DataStructures/Trees/SegmentTree/</loc>
+         <lastmod>2022-12-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://icpc.ninja/DataStructures/Trees/Trie/</loc>
          <lastmod>2022-12-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
